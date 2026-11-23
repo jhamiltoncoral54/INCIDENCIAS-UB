@@ -44,13 +44,15 @@
 
   window.dash = dash;
 
-  window.UB_cargar = async function (url) {
-    try {
-      datasets.incidencia = { status: 'ok', data: await d3.csv(url, { cache: 'no-cache' }) };
-    } catch (e) {
-      console.error('no se pudo cargar ' + url, e);
-      datasets.incidencia = { status: 'error', data: null };
-    }
+  window.UB_cargar = async function (fuentes) {
+    await Promise.all(Object.entries(fuentes).map(async ([nombre, url]) => {
+      try {
+        datasets[nombre] = { status: 'ok', data: await d3.csv(url, { cache: 'no-cache' }) };
+      } catch (e) {
+        console.error('no se pudo cargar ' + url, e);
+        datasets[nombre] = { status: 'error', data: null };
+      }
+    }));
     dash.redrawAll();
   };
 

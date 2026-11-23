@@ -6,11 +6,12 @@ Sitio estático. No necesita servidor ni compilación: son archivos planos.
 
 | Archivo | Qué es |
 |---|---|
-| `index.html` | La página: filtros, pestañas Semana e Histórico |
+| `index.html` | La página: filtros y pestañas Semana, Histórico y Mortalidad |
 | `ub.js` | Metas, cálculos y gráficas del informe |
 | `dash.js` | Carga el CSV y coordina cálculos y dibujos |
 | `d3.min.js` | Librería de gráficas (incluida, sin CDN) |
 | `datos.csv` | Incidencia por cultivo, semana, bloque y blanco (semanas 36 a 47 de 2026) |
+| `mortalidad.csv` | Mortalidad de clavel por bloque y variedad, lectura mensual (septiembre y octubre de 2026) |
 | `base.css` | Tipografía y colores |
 | `vercel.json` | Configuración mínima de despliegue |
 

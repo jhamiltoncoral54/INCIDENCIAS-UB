@@ -94,6 +94,7 @@
   <nav class="tabs" role="tablist" aria-label="Vistas del reporte">
     <button type="button" class="tab" role="tab" data-tab="vista-semana" aria-selected="true">Semana</button>
     <button type="button" class="tab" role="tab" data-tab="historico" aria-selected="false">Histórico</button>
+    <button type="button" class="tab" role="tab" data-tab="mortalidad" aria-selected="false">Mortalidad</button>
   </nav>
 
   <div id="vista-semana" class="vista">
@@ -180,12 +181,50 @@
     </div>
   </section>
   </div>
+
+  <div id="mortalidad" class="vista" hidden>
+  <section id="mort-cab">
+    <div class="bar">
+      <span><label for="ub-mes">Lectura</label>
+        <select id="ub-mes" class="dash-select" data-draw="sel-mes" aria-label="Lectura mensual"></select></span>
+      <span class="note" data-draw="mort-fuente"></span>
+    </div>
+    <h2 style="margin-top: var(--cds-gap-lg)">Mortalidad de clavel <span data-draw="mort-tit">—</span></h2>
+    <p class="lead" data-draw="mort-lead">—</p>
+    <div class="cards" data-draw="mort-cards" data-source="mortalidad" style="margin-top: var(--cds-gap-md)"></div>
+  </section>
+
+  <section id="mort-bloques">
+    <h2>Mortalidad por bloque</h2>
+    <p class="sub">Plantas muertas sobre plantas sembradas de cada bloque. La línea punteada marca la mortalidad de todo el cultivo.</p>
+    <div class="hbar" data-draw="mort-hbar" data-source="mortalidad"></div>
+  </section>
+
+  <section id="mort-variedades">
+    <h2>Variedades con mayor mortalidad</h2>
+    <p class="sub">Las quince variedades más afectadas del cultivo, sumando todos sus bloques. Entre paréntesis, las plantas sembradas.</p>
+    <div class="hbar" data-draw="mort-var" data-source="mortalidad"></div>
+  </section>
+
+  <section id="mort-matriz">
+    <h2>Mortalidad por bloque y variedad (%)</h2>
+    <div class="wrap">
+      <table data-draw="mort-matriz" data-source="mortalidad" aria-label="Mortalidad por bloque y variedad"></table>
+    </div>
+    <div class="legend">
+      <span><span class="sw" style="background: color-mix(in srgb, var(--color-bad) 30%, transparent)"></span>5 % o más</span>
+      <span><span class="sw b"></span>Entre 1 % y 5 %</span>
+      <span>Celda vacía: la variedad no está sembrada en ese bloque</span>
+      <span>Última fila y última columna: totales ponderados por plantas sembradas</span>
+    </div>
+  </section>
+  </div>
 </div>
 </div>
 
 <script src="d3.min.js"></script>
 <script src="dash.js"></script>
 <script src="ub.js"></script>
-<script>window.UB_cargar('datos.csv');</script>
+<script>window.UB_cargar({ incidencia: 'datos.csv', mortalidad_src: 'mortalidad.csv' });</script>
 </body>
 </html>

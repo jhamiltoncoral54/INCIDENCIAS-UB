@@ -8,6 +8,7 @@ window.UB_CORTO = { 'ACAROS':'Ácaros','AFIDOS':'Áfidos','BABOSA DAÑO Y/O PRES
 window.UB_NOMBRE = (b) => window.UB_CORTO[b] || (b.charAt(0) + b.slice(1).toLowerCase());
 window.UB = window.UB || { cultivo: 'Clavel', bloque: null };
 window.UB_FMT = (v) => v == null ? '—' : (+v).toLocaleString('es-CO', { maximumFractionDigits: 1 });
+window.UB_FMT2 = (v) => v == null ? '—' : (+v).toLocaleString('es-CO', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 dash.calc('ultima', {
   title: 'Última semana por bloque y blanco',
@@ -392,13 +393,191 @@ window.UB_tab = (id) => {
   document.querySelectorAll('.ub .vista').forEach((v) => { v.hidden = v.id !== id; });
   document.querySelectorAll('.ub .tab').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === id)));
   if (id === 'historico') window.UB_HIST.forEach((n) => dash.draw(n));
+  if (id === 'mortalidad') window.UB_MORT_redraw();
   dash.setLink(id);
 };
 document.querySelectorAll('.ub .tab').forEach((b) => b.addEventListener('click', () => window.UB_tab(b.dataset.tab)));
 if (location.hash === '#historico') window.UB_tab('historico');
-window.addEventListener('beforeprint', () => { document.querySelectorAll('.ub .vista').forEach((v) => { v.hidden = false; }); window.UB_HIST.forEach((n) => dash.draw(n)); });
+window.addEventListener('beforeprint', () => { document.querySelectorAll('.ub .vista').forEach((v) => { v.hidden = false; }); window.UB_HIST.forEach((n) => dash.draw(n)); window.UB_MORT_redraw(); });
 window.addEventListener('afterprint', () => { const sel = document.querySelector('.ub .tab[aria-selected="true"]'); window.UB_tab(sel ? sel.dataset.tab : 'vista-semana'); });
 document.querySelectorAll('#ub-cult').forEach((sel) => {
   sel.value = window.UB.cultivo;
   sel.addEventListener('change', () => { window.UB.cultivo = sel.value; window.UB.bloque = null; window.UB_redraw(); });
 });
+
+/* ---------- Mortalidad (Monitoreo Plantas Muertas, lectura mensual) ---------- */
+
+dash.calc('mortalidad', {
+  title: 'Mortalidad por bloque y variedad',
+  inputs: ['mortalidad_src'],
+  fn: (src) => src.map((r) => {
+    const sem = +r.sembradas, mue = +r.muertas;
+    return { periodo: r.periodo, periodo_nombre: r.periodo_nombre, cultivo: r.cultivo, bloque: r.bloque,
+      variedad: r.variedad, camas: +r.camas, sembradas: sem, muertas: mue,
+      mortalidad: sem ? Math.round(mue / sem * 10000) / 100 : 0 };
+  })
+});
+
+window.UB_MORT = () => {
+  const d = dash.data('mortalidad');
+  if (d.status !== 'ok' || !d.data) return null;
+  const st = window.UB;
+  const periodos = [...new Set(d.data.map((r) => r.periodo))].sort().reverse();
+  if (!st.mes || !periodos.includes(st.mes)) st.mes = periodos[0];
+  const rows = d.data.filter((r) => r.periodo === st.mes);
+  const nombre = rows.length ? rows[0].periodo_nombre : st.mes;
+  const pct = (m, s) => s ? Math.round(m / s * 10000) / 100 : 0;
+  const agrupa = (clave) => {
+    const g = new Map();
+    for (const r of rows) {
+      const k = r[clave];
+      const o = g.get(k) || { k, sembradas: 0, muertas: 0, camas: 0 };
+      o.sembradas += r.sembradas; o.muertas += r.muertas; o.camas += r.camas;
+      g.set(k, o);
+    }
+    return [...g.values()].map((o) => ({ ...o, mortalidad: pct(o.muertas, o.sembradas) }));
+  };
+  const sembradas = d3.sum(rows, (r) => r.sembradas);
+  const muertas = d3.sum(rows, (r) => r.muertas);
+  return { rows, periodos, nombre, sembradas, muertas, total: pct(muertas, sembradas), pct,
+    bloques: agrupa('bloque').sort((a, b) => b.mortalidad - a.mortalidad),
+    variedades: agrupa('variedad').sort((a, b) => b.mortalidad - a.mortalidad) };
+};
+
+window.UB_MORT_COLOR = (v) => v >= 5 ? 'var(--cds-chart-status-critical)'
+  : v >= 1 ? 'color-mix(in srgb, var(--color-warn) 75%, var(--color-fg))' : dash.colors[0];
+
+dash.draw('sel-mes', (sel) => {
+  const m = window.UB_MORT();
+  if (!m) { sel.replaceChildren(); return; }
+  const nom = {};
+  dash.data('mortalidad').data.forEach((r) => { nom[r.periodo] = r.periodo_nombre; });
+  sel.replaceChildren(...m.periodos.map((p) => new Option(nom[p] || p, p)));
+  sel.value = window.UB.mes;
+  sel.onchange = () => { window.UB.mes = sel.value; window.UB_MORT_redraw(); };
+});
+
+dash.draw('mort-fuente', (el) => {
+  el.textContent = 'WiPest · Monitoreo Plantas Muertas · lectura mensual · finca UB';
+});
+
+dash.draw('mort-tit', (el) => {
+  const m = window.UB_MORT();
+  el.textContent = m ? '· ' + m.nombre : '—';
+});
+
+dash.draw('mort-lead', (el) => {
+  const m = window.UB_MORT();
+  el.classList.toggle('dash-skeleton', dash.data('mortalidad').status === 'loading');
+  if (!m) { el.textContent = '—'; return; }
+  const f = (v) => window.UB_FMT(v) + ' %';
+  const n = (v) => v.toLocaleString('es-CO');
+  const peor = m.bloques[0], pv = m.variedades.filter((v) => v.sembradas >= 2000)[0];
+  let t = 'Mortalidad del cultivo ' + window.UB_FMT2(m.total) + ' %: ' + n(m.muertas) + ' plantas muertas de ' + n(m.sembradas) + ' sembradas en ' + m.bloques.length + ' bloques.';
+  if (peor) t += ' El bloque más afectado es el ' + peor.k.replace('Bloque ', '') + ' con ' + f(peor.mortalidad) + '.';
+  if (pv) t += ' Entre las variedades de volumen, la más afectada es ' + pv.k + ' con ' + f(pv.mortalidad) + '.';
+  el.textContent = t;
+});
+
+dash.draw('mort-cards', (el) => {
+  const m = window.UB_MORT();
+  el.replaceChildren();
+  if (!m) { el.textContent = '—'; return; }
+  const n = (v) => v.toLocaleString('es-CO');
+  const sobre = m.bloques.filter((b) => b.mortalidad >= 5).length;
+  const datos = [
+    ['Mortalidad del cultivo', window.UB_FMT2(m.total) + ' %', n(m.muertas) + ' de ' + n(m.sembradas) + ' plantas'],
+    ['Bloque más afectado', m.bloques[0] ? m.bloques[0].k.replace('Bloque ', '') : '—', m.bloques[0] ? window.UB_FMT(m.bloques[0].mortalidad) + ' %' : ''],
+    ['Bloques en 5 % o más', String(sobre), 'de ' + m.bloques.length + ' bloques'],
+    ['Variedades sembradas', String(m.variedades.length), n(d3.sum(m.rows, (r) => r.camas)) + ' camas']
+  ];
+  for (const [lbl, big, det] of datos) {
+    const card = document.createElement('div'); card.className = 'card';
+    const l = document.createElement('span'); l.className = 'lbl'; l.textContent = lbl;
+    const v = document.createElement('span'); v.className = 'big'; v.textContent = big;
+    const d = document.createElement('span'); d.className = 'det'; d.textContent = det;
+    card.append(l, v, d); el.append(card);
+  }
+});
+
+window.UB_MORT_BARRAS = (el, items, etiqueta, general) => {
+  el.replaceChildren();
+  if (!items.length) { el.textContent = 'Sin datos en esta lectura.'; return; }
+  const f = (v) => window.UB_FMT(v) + ' %';
+  const n = (v) => v.toLocaleString('es-CO');
+  const W = Math.max(280, el.clientWidth), rowH = 26;
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${items.length * rowH + 30}`)
+    .attr('role', 'img').attr('aria-label', etiqueta);
+  const tmp = svg.append('g'); let ml = 0;
+  items.forEach((r) => { ml = Math.max(ml, tmp.append('text').text(r.etq).node().getComputedTextLength()); });
+  tmp.remove(); ml += 12;
+  const xmax = Math.max(1, d3.max(items, (r) => r.mortalidad), general || 0);
+  const x = d3.scaleLinear().domain([0, xmax]).nice().range([ml, W - 70]);
+  const h = items.length * rowH;
+  svg.append('g').selectAll('line').data(x.ticks(5)).join('line').attr('x1', (v) => x(v)).attr('x2', (v) => x(v)).attr('y1', 0).attr('y2', h).style('stroke', 'var(--cds-chart-grid)');
+  const ax = svg.append('g').attr('class', 'axis').attr('transform', `translate(0,${h + 4})`).call(d3.axisBottom(x).ticks(5).tickFormat((v) => v + ' %').tickSize(0));
+  ax.select('.domain').remove();
+  const g = svg.append('g').selectAll('g').data(items).join('g').attr('transform', (r, i) => `translate(0,${i * rowH})`);
+  g.append('text').attr('x', ml - 8).attr('y', rowH / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text((r) => r.etq);
+  g.append('rect').attr('x', x(0)).attr('y', 5).attr('height', rowH - 10).attr('rx', 3)
+    .attr('width', (r) => Math.max(0, x(r.mortalidad) - x(0))).style('fill', (r) => window.UB_MORT_COLOR(r.mortalidad));
+  g.append('text').attr('x', (r) => x(r.mortalidad) + 8).attr('y', rowH / 2).attr('dy', '0.35em')
+    .style('font-variant-numeric', 'tabular-nums').text((r) => f(r.mortalidad));
+  if (general != null) svg.append('line').attr('x1', x(general)).attr('x2', x(general)).attr('y1', 0).attr('y2', h)
+    .style('stroke', 'var(--color-fg)').style('stroke-dasharray', '4 3').style('stroke-width', 1.5);
+  const tip = d3.select(el).append('div').attr('class', 'tip').style('display', 'none');
+  g.append('rect').attr('width', W).attr('height', rowH).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => { const [px, py] = d3.pointer(ev, el);
+      tip.style('display', null).style('left', Math.min(px + 12, el.clientWidth - 260) + 'px').style('top', (py + 12) + 'px')
+        .text(r.etq + ': ' + f(r.mortalidad) + ' · ' + n(r.muertas) + ' de ' + n(r.sembradas) + ' plantas · ' + r.camas + ' camas'); })
+    .on('pointerleave', () => tip.style('display', 'none'));
+};
+
+dash.draw('mort-hbar', (el) => {
+  const m = window.UB_MORT();
+  if (!m) { el.textContent = dash.data('mortalidad').status === 'error' ? 'No se pudo cargar' : '—'; return; }
+  window.UB_MORT_BARRAS(el, m.bloques.map((b) => ({ ...b, etq: b.k.replace('Bloque ', 'Bl ') })), 'Mortalidad por bloque', m.total);
+});
+
+dash.draw('mort-var', (el) => {
+  const m = window.UB_MORT();
+  if (!m) { el.textContent = dash.data('mortalidad').status === 'error' ? 'No se pudo cargar' : '—'; return; }
+  window.UB_MORT_BARRAS(el, m.variedades.slice(0, 15).map((v) => ({ ...v, etq: v.k + ' (' + v.sembradas.toLocaleString('es-CO') + ')' })), 'Variedades con mayor mortalidad', m.total);
+});
+
+dash.draw('mort-matriz', (tbl) => {
+  const m = window.UB_MORT();
+  tbl.replaceChildren();
+  if (!m) { tbl.createTBody().insertRow().insertCell().textContent = dash.data('mortalidad').status === 'error' ? 'No se pudo cargar' : 'Cargando…'; return; }
+  const bloques = [...new Set(m.rows.map((r) => r.bloque))].sort();
+  const vars = m.variedades.map((v) => v.k);
+  const celda = new Map(m.rows.map((r) => [r.bloque + '|' + r.variedad, r]));
+  const th = tbl.createTHead().insertRow();
+  const h0 = document.createElement('th'); h0.textContent = 'Bloque'; th.append(h0);
+  for (const v of vars) { const h = document.createElement('th'); h.textContent = v; th.append(h); }
+  const hT = document.createElement('th'); hT.textContent = 'Bloque %'; hT.className = 'meta'; th.append(hT);
+  const pinta = (td, v) => {
+    if (v >= 5) { td.classList.add('over'); td.style.background = 'color-mix(in srgb, var(--color-bad) 30%, transparent)'; }
+    else if (v >= 1) td.style.background = 'color-mix(in srgb, var(--color-warn) ' + Math.min(45, 8 + v * 5) + '%, transparent)';
+  };
+  const body = tbl.createTBody();
+  for (const bl of bloques) {
+    const tr = body.insertRow();
+    tr.insertCell().textContent = bl;
+    for (const v of vars) {
+      const r = celda.get(bl + '|' + v); const td = tr.insertCell();
+      if (!r) { td.textContent = ''; continue; }
+      td.textContent = window.UB_FMT(r.mortalidad); pinta(td, r.mortalidad);
+      td.title = r.muertas.toLocaleString('es-CO') + ' de ' + r.sembradas.toLocaleString('es-CO') + ' plantas';
+    }
+    const b = m.bloques.find((x) => x.k === bl); const td = tr.insertCell();
+    td.textContent = window.UB_FMT(b ? b.mortalidad : 0); pinta(td, b ? b.mortalidad : 0);
+  }
+  const tr = body.insertRow(); tr.className = 'total';
+  tr.insertCell().textContent = 'Variedad %';
+  for (const v of vars) { const o = m.variedades.find((x) => x.k === v); const td = tr.insertCell(); td.textContent = window.UB_FMT(o ? o.mortalidad : 0); pinta(td, o ? o.mortalidad : 0); }
+  const tdT = tr.insertCell(); tdT.textContent = window.UB_FMT2(m.total); pinta(tdT, m.total);
+});
+
+window.UB_MORT_LISTA = ['sel-mes', 'mort-fuente', 'mort-tit', 'mort-lead', 'mort-cards', 'mort-hbar', 'mort-var', 'mort-matriz'];
+window.UB_MORT_redraw = () => window.UB_MORT_LISTA.forEach((n) => dash.draw(n));
