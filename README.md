@@ -13,6 +13,7 @@ Sitio estático. No necesita servidor ni compilación: son archivos planos.
 | `datos.csv` | Incidencia por cultivo, semana, bloque y blanco (semanas 36 a 47 de 2026) |
 | `mortalidad.csv` | Mortalidad de clavel por bloque y variedad, lecturas mensuales de enero a octubre de 2026 |
 | `camas.csv` | Las ocho camas con mayor mortalidad de cada bloque en cada lectura |
+| `edad.csv` | Mortalidad por edad del cultivo (semanas desde siembra o poda) y bloque |
 | `base.css` | Tipografía y colores |
 | `vercel.json` | Configuración mínima de despliegue |
 

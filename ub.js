@@ -689,3 +689,113 @@ dash.draw('mort-anual', (el) => {
 
 window.UB_MORT_LISTA = ['sel-mes', 'mort-fuente', 'mort-tit', 'mort-lead', 'mort-cards', 'mort-anual', 'mort-hbar', 'mort-camas-tit', 'mort-camas', 'mort-var', 'mort-matriz'];
 window.UB_MORT_redraw = () => window.UB_MORT_LISTA.forEach((n) => dash.draw(n));
+
+/* ---------- Rango de edad vs mortalidad, por bloque ---------- */
+
+dash.calc('edad', {
+  title: 'Mortalidad por edad del cultivo y bloque',
+  inputs: ['edad_src'],
+  fn: (src) => src.map((r) => ({ bloque: r.bloque, edad: +r.edad_semanas, lecturas: +r.lecturas,
+    sembradas: +r.sembradas, muertas: +r.muertas }))
+});
+
+window.UB_RANGOS_WIPEST = [
+  { ini: 0, fin: 12, etq: '0–12' }, { ini: 13, fin: 32, etq: '13–32' },
+  { ini: 33, fin: 55, etq: '33–55' }, { ini: 56, fin: 74, etq: '56–74' }, { ini: 75, fin: 999, etq: '≥75' }
+];
+
+window.UB_EDAD = () => {
+  const d = dash.data('edad');
+  if (d.status !== 'ok' || !d.data) return null;
+  const modo = window.UB.edadModo || '4';
+  const rangos = modo === 'wipest' ? window.UB_RANGOS_WIPEST
+    : (() => {
+        const p = +modo, out = [];
+        for (let i = 0; i <= 72; i += p) out.push({ ini: i, fin: Math.min(i + p - 1, 72), etq: p === 1 ? String(i) : i + '–' + Math.min(i + p - 1, 72) });
+        out.push({ ini: 73, fin: 999, etq: '73+' });
+        return out;
+      })();
+  const bloques = [...new Set(d.data.map((r) => r.bloque))].sort();
+  const por = bloques.map((bl) => {
+    const filas = d.data.filter((r) => r.bloque === bl);
+    const serie = rangos.map((g) => {
+      const f = filas.filter((r) => r.edad >= g.ini && r.edad <= g.fin);
+      const s = d3.sum(f, (r) => r.sembradas), m = d3.sum(f, (r) => r.muertas);
+      return { etq: g.etq, ini: g.ini, sembradas: s, muertas: m, hay: s > 0,
+        mortalidad: s ? Math.round(m / s * 10000) / 100 : 0 };
+    }).filter((r) => r.hay);
+    const cruce = serie.find((r) => r.mortalidad > window.UB_META_MORT);
+    return { bloque: bl, serie, cruce };
+  }).filter((b) => b.serie.length);
+  return { por, modo };
+};
+
+dash.draw('edad-lead', (el) => {
+  const e = window.UB_EDAD();
+  el.classList.toggle('dash-skeleton', dash.data('edad').status === 'loading');
+  if (!e) { el.textContent = '—'; return; }
+  const con = e.por.filter((b) => b.cruce);
+  if (!con.length) { el.textContent = 'Ningún bloque pasa la meta del 2 % en los rangos de edad con datos.'; return; }
+  con.sort((a, b) => a.cruce.ini - b.cruce.ini);
+  const lista = con.map((b) => b.bloque.replace('Bloque ', '') + ' en ' + b.cruce.etq).join(', ');
+  el.textContent = 'La mortalidad pasa la meta del 2 % a partir de estas edades (semanas desde la siembra o poda): ' + lista + '.'
+    + ' El más temprano es el bloque ' + con[0].bloque.replace('Bloque ', '') + '.';
+});
+
+dash.draw('edad-charts', (el) => {
+  const e = window.UB_EDAD();
+  el.replaceChildren();
+  if (!e) { el.textContent = dash.data('edad').status === 'error' ? 'No se pudo cargar' : '—'; return; }
+  const f = (v) => window.UB_FMT(v) + ' %';
+  const n = (v) => v.toLocaleString('es-CO');
+  const meta = window.UB_META_MORT;
+  const ymax = Math.max(meta * 1.5, d3.max(e.por, (b) => d3.max(b.serie, (r) => r.mortalidad)) || 0);
+  for (const b of e.por) {
+    const card = document.createElement('div'); card.className = 'tr-card'; el.append(card);
+    const h = document.createElement('h3'); h.textContent = b.bloque; card.append(h);
+    const v = document.createElement('div'); v.className = 'tr-v';
+    v.textContent = b.cruce ? 'Pasa la meta en la semana ' + b.cruce.etq + ' con ' + f(b.cruce.mortalidad)
+      : 'No pasa la meta en el rango con datos';
+    card.append(v);
+    const W = Math.max(240, card.clientWidth - 24), H = 160, m = { t: 12, r: 10, b: 30, l: 34 };
+    const x = d3.scaleBand().domain(b.serie.map((r) => r.etq)).range([m.l, W - m.r]).padding(0.15);
+    const y = d3.scaleLinear().domain([0, ymax]).nice().range([H - m.b, m.t]);
+    const svg = d3.select(card).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`)
+      .attr('role', 'img').attr('aria-label', 'Mortalidad por edad del cultivo en ' + b.bloque);
+    svg.append('g').selectAll('line').data(y.ticks(3)).join('line').attr('x1', m.l).attr('x2', W - m.r)
+      .attr('y1', (q) => y(q)).attr('y2', (q) => y(q)).style('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(y.ticks(3)).join('text').attr('x', m.l - 5).attr('y', (q) => y(q))
+      .attr('dy', '0.35em').attr('text-anchor', 'end').text((q) => q);
+    svg.append('g').selectAll('rect').data(b.serie).join('rect')
+      .attr('x', (r) => x(r.etq)).attr('width', x.bandwidth())
+      .attr('y', (r) => y(r.mortalidad)).attr('height', (r) => Math.max(0, y(0) - y(r.mortalidad))).attr('rx', 2)
+      .style('fill', (r) => window.UB_MORT_COLOR(r.mortalidad));
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(meta)).attr('y2', y(meta))
+      .style('stroke', 'var(--color-bad)').style('stroke-dasharray', '4 3').style('stroke-width', 1.5);
+    if (b.cruce) svg.append('circle').attr('cx', x(b.cruce.etq) + x.bandwidth() / 2)
+      .attr('cy', y(b.cruce.mortalidad)).attr('r', 4)
+      .style('fill', 'var(--color-bg)').style('stroke', 'var(--color-fg)').style('stroke-width', 2);
+    const paso = Math.ceil(b.serie.length / (W < 320 ? 4 : 7));
+    svg.append('g').selectAll('text').data(b.serie.filter((r, i) => i % paso === 0)).join('text')
+      .attr('x', (r) => x(r.etq) + x.bandwidth() / 2).attr('y', H - 14).attr('text-anchor', 'middle')
+      .text((r) => r.etq);
+    svg.append('text').attr('x', (m.l + W - m.r) / 2).attr('y', H - 2).attr('text-anchor', 'middle')
+      .text('semanas desde siembra o poda');
+    const tip = d3.select(card).append('div').attr('class', 'tip').style('display', 'none');
+    svg.append('g').selectAll('rect').data(b.serie).join('rect')
+      .attr('x', (r) => x(r.etq)).attr('width', x.step()).attr('y', 0).attr('height', H).style('fill', 'transparent')
+      .on('pointermove', (ev, r) => { const [px, py] = d3.pointer(ev, card);
+        tip.style('display', null).style('left', Math.min(px + 10, card.clientWidth - 230) + 'px').style('top', (py + 10) + 'px')
+          .text('Semanas ' + r.etq + ': ' + f(r.mortalidad) + ' · ' + n(r.muertas) + ' de ' + n(r.sembradas) + ' plantas'); })
+      .on('pointerleave', () => tip.style('display', 'none'));
+  }
+});
+
+document.querySelectorAll('#ub-edad').forEach((sel) => {
+  window.UB.edadModo = window.UB.edadModo || sel.value;
+  sel.value = window.UB.edadModo;
+  sel.addEventListener('change', () => { window.UB.edadModo = sel.value; dash.draw('edad-lead'); dash.draw('edad-charts'); });
+});
+
+window.UB_MORT_LISTA = ['sel-mes', 'mort-fuente', 'mort-tit', 'mort-lead', 'mort-cards', 'mort-anual', 'mort-hbar', 'mort-camas-tit', 'mort-camas', 'edad-lead', 'edad-charts', 'mort-var', 'mort-matriz'];
+window.UB_MORT_redraw = () => window.UB_MORT_LISTA.forEach((n) => dash.draw(n));

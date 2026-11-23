@@ -187,6 +187,13 @@
     <div class="bar">
       <span><label for="ub-mes">Lectura</label>
         <select id="ub-mes" class="dash-select" data-draw="sel-mes" aria-label="Lectura mensual"></select></span>
+      <span><label for="ub-edad">Rango de edad</label>
+        <select id="ub-edad" class="dash-select" aria-label="Agrupación del rango de edad">
+          <option value="4">Cada 4 semanas</option>
+          <option value="8">Cada 8 semanas</option>
+          <option value="1">Semana a semana</option>
+          <option value="wipest">Rangos de WiPest</option>
+        </select></span>
       <span class="note" data-draw="mort-fuente"></span>
     </div>
     <h2 style="margin-top: var(--cds-gap-lg)">Mortalidad de clavel <span data-draw="mort-tit">—</span></h2>
@@ -211,6 +218,18 @@
     <p class="sub">Toca una barra de bloque para ver sus camas. Se listan las ocho con mayor mortalidad de la lectura.</p>
     <div class="wrap">
       <table class="t-left" data-draw="mort-camas" data-source="camas" aria-label="Camas con mayor mortalidad del bloque"></table>
+    </div>
+  </section>
+
+  <section id="mort-edad">
+    <h2>Rango de edad y mortalidad, por bloque</h2>
+    <p class="sub">Edad del cultivo desde la siembra o poda, hasta 72 semanas, frente al porcentaje de mortalidad acumulada. Reúne las diez lecturas mensuales de 2026, así que muestra a qué edad empieza a morir el cultivo en cada bloque.</p>
+    <p class="lead" data-draw="edad-lead">—</p>
+    <div class="tr-grid" data-draw="edad-charts" data-source="edad"></div>
+    <div class="legend">
+      <span><span class="ln met"></span>Meta 2 %</span>
+      <span><span class="sw" style="background: var(--cds-chart-status-critical)"></span>Rango sobre la meta</span>
+      <span>Punto marcado: primera edad en que el bloque pasa la meta</span>
     </div>
   </section>
 
@@ -239,6 +258,6 @@
 <script src="d3.min.js"></script>
 <script src="dash.js"></script>
 <script src="ub.js"></script>
-<script>window.UB_cargar({ incidencia: 'datos.csv', mortalidad_src: 'mortalidad.csv', camas_src: 'camas.csv' });</script>
+<script>window.UB_cargar({ incidencia: 'datos.csv', mortalidad_src: 'mortalidad.csv', camas_src: 'camas.csv', edad_src: 'edad.csv' });</script>
 </body>
 </html>
