@@ -1,309 +1,1756 @@
 periodo,periodo_nombre,cultivo,bloque,variedad,camas,sembradas,muertas
-2026-10,octubre 2026,Clavel,Bloque 04,Trueno,5,7120,5
-2026-10,octubre 2026,Clavel,Bloque 04,Diamante,16,22784,215
-2026-10,octubre 2026,Clavel,Bloque 04,Novia,2,2848,245
+2026-01,enero 2026,Clavel,Bloque 04,Cheerio,1,1424,0
+2026-01,enero 2026,Clavel,Bloque 04,Chopin,9,12816,0
+2026-01,enero 2026,Clavel,Bloque 04,Corvette,7,9968,0
+2026-01,enero 2026,Clavel,Bloque 04,Diamante,16,22784,0
+2026-01,enero 2026,Clavel,Bloque 04,Diletta,4,5696,0
+2026-01,enero 2026,Clavel,Bloque 04,Doncel,5,7120,0
+2026-01,enero 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-01,enero 2026,Clavel,Bloque 04,Metalica,1,1424,0
+2026-01,enero 2026,Clavel,Bloque 04,Moon Light,9,12816,0
+2026-01,enero 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,0
+2026-01,enero 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,0
+2026-01,enero 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,0
+2026-01,enero 2026,Clavel,Bloque 04,Novia,2,2848,0
+2026-01,enero 2026,Clavel,Bloque 04,Prinz,1,1424,0
+2026-01,enero 2026,Clavel,Bloque 04,Trueno,5,7120,0
+2026-01,enero 2026,Clavel,Bloque 04,Virgilio,10,14240,0
+2026-01,enero 2026,Clavel,Bloque 04,Zeppelin,3,4272,0
+2026-01,enero 2026,Clavel,Bloque 06,Brut,1,1092,3
+2026-01,enero 2026,Clavel,Bloque 06,Caronte,3,3276,17
+2026-01,enero 2026,Clavel,Bloque 06,Chopin,4,4368,143
+2026-01,enero 2026,Clavel,Bloque 06,Daniko,6,6552,43
+2026-01,enero 2026,Clavel,Bloque 06,Diamante,2,2184,3
+2026-01,enero 2026,Clavel,Bloque 06,Diletta,4,4368,93
+2026-01,enero 2026,Clavel,Bloque 06,Gioele,19,20748,154
+2026-01,enero 2026,Clavel,Bloque 06,Golem,8,8736,10
+2026-01,enero 2026,Clavel,Bloque 06,Grand Slam,5,5460,14
+2026-01,enero 2026,Clavel,Bloque 06,Megan,14,15288,203
+2026-01,enero 2026,Clavel,Bloque 06,Moon Light,39,42588,269
+2026-01,enero 2026,Clavel,Bloque 06,Nobbio Violet,1,1092,74
+2026-01,enero 2026,Clavel,Bloque 06,Selva,1,1092,8
+2026-01,enero 2026,Clavel,Bloque 06,Trueno,14,15288,15
+2026-01,enero 2026,Clavel,Bloque 06,Virgilio,41,44772,234
+2026-01,enero 2026,Clavel,Bloque 06,Zafiro,6,6552,51
+2026-01,enero 2026,Clavel,Bloque 08,Bizet,10,10920,1146
+2026-01,enero 2026,Clavel,Bloque 08,Brut,5,5880,640
+2026-01,enero 2026,Clavel,Bloque 08,Caronte,6,7056,1138
+2026-01,enero 2026,Clavel,Bloque 08,Chopin,1,1176,164
+2026-01,enero 2026,Clavel,Bloque 08,Corvette,6,6048,798
+2026-01,enero 2026,Clavel,Bloque 08,Diletta,1,1008,36
+2026-01,enero 2026,Clavel,Bloque 08,Doncel,70,76608,5446
+2026-01,enero 2026,Clavel,Bloque 08,Farida,11,11928,181
+2026-01,enero 2026,Clavel,Bloque 08,Gioele,6,6048,188
+2026-01,enero 2026,Clavel,Bloque 08,Golem,3,3188,63
+2026-01,enero 2026,Clavel,Bloque 08,Megan,5,5040,323
+2026-01,enero 2026,Clavel,Bloque 08,Nobbio Violet,1,1008,28
+2026-01,enero 2026,Clavel,Bloque 08,Tangelo,1,1008,46
+2026-01,enero 2026,Clavel,Bloque 08,Verona,7,8232,98
+2026-01,enero 2026,Clavel,Bloque 08,Virgilio,11,12096,1754
+2026-01,enero 2026,Clavel,Bloque 09,Caronte,2,2096,2
+2026-01,enero 2026,Clavel,Bloque 09,Daniko,12,13600,85
+2026-01,enero 2026,Clavel,Bloque 09,Diamante,10,10608,2
+2026-01,enero 2026,Clavel,Bloque 09,Moon Light,51,56904,61
+2026-01,enero 2026,Clavel,Bloque 09,Selva,3,3144,4
+2026-01,enero 2026,Clavel,Bloque 09,Virgilio,60,66720,161
+2026-01,enero 2026,Clavel,Bloque 09,Zeppelin,6,7056,10
+2026-01,enero 2026,Clavel,Bloque 10,Bizet,2,2080,34
+2026-01,enero 2026,Clavel,Bloque 10,Brut,1,1152,17
+2026-01,enero 2026,Clavel,Bloque 10,Capricho,2,2080,87
+2026-01,enero 2026,Clavel,Bloque 10,Caramel,1,1152,1
+2026-01,enero 2026,Clavel,Bloque 10,Caronte,3,3120,108
+2026-01,enero 2026,Clavel,Bloque 10,Cheerio,1,1040,6
+2026-01,enero 2026,Clavel,Bloque 10,Chopin,1,1040,82
+2026-01,enero 2026,Clavel,Bloque 10,Daniko,7,7952,159
+2026-01,enero 2026,Clavel,Bloque 10,Diamante,12,12480,66
+2026-01,enero 2026,Clavel,Bloque 10,Diletta,2,2080,44
+2026-01,enero 2026,Clavel,Bloque 10,Fiesta Komachi,1,1152,27
+2026-01,enero 2026,Clavel,Bloque 10,Gioele,10,10400,88
+2026-01,enero 2026,Clavel,Bloque 10,Golem,6,6912,13
+2026-01,enero 2026,Clavel,Bloque 10,Grand Slam,4,4608,61
+2026-01,enero 2026,Clavel,Bloque 10,Megan,28,29792,469
+2026-01,enero 2026,Clavel,Bloque 10,Metalica,3,3120,110
+2026-01,enero 2026,Clavel,Bloque 10,Moon Light,25,28800,241
+2026-01,enero 2026,Clavel,Bloque 10,Nobbio Burgundy,1,1040,6
+2026-01,enero 2026,Clavel,Bloque 10,Nobbio Cherry,1,1040,33
+2026-01,enero 2026,Clavel,Bloque 10,Nobbio Violet,1,1040,9
+2026-01,enero 2026,Clavel,Bloque 10,Novia,2,2192,81
+2026-01,enero 2026,Clavel,Bloque 10,Olympia,2,2192,92
+2026-01,enero 2026,Clavel,Bloque 10,Prinz,3,3120,43
+2026-01,enero 2026,Clavel,Bloque 10,Trueno,11,12336,35
+2026-01,enero 2026,Clavel,Bloque 10,Virgilio,10,11520,72
+2026-01,enero 2026,Clavel,Bloque 10,Zafiro,2,2304,84
+2026-01,enero 2026,Clavel,Bloque 10,Zenit,2,2080,14
+2026-01,enero 2026,Clavel,Bloque 11,Daniko,25,26472,54
+2026-01,enero 2026,Clavel,Bloque 11,Doncel,1,1038,0
+2026-01,enero 2026,Clavel,Bloque 11,F136°,3,3264,0
+2026-01,enero 2026,Clavel,Bloque 11,K259°,2,2076,0
+2026-01,enero 2026,Clavel,Bloque 11,Megan,9,9568,5
+2026-01,enero 2026,Clavel,Bloque 11,Novia,4,4202,19
+2026-01,enero 2026,Clavel,Bloque 11,Prinz,2,2126,1
+2026-01,enero 2026,Clavel,Bloque 11,Trueno,9,9568,0
+2026-01,enero 2026,Clavel,Bloque 11,Verona,43,45608,5
+2026-01,enero 2026,Clavel,Bloque 11,Zenit,1,1088,6
+2026-01,enero 2026,Clavel,Bloque 11,Zeppelin,21,22232,23
+2026-01,enero 2026,Clavel,Bloque 17,Diamante,25,27800,0
+2026-01,enero 2026,Clavel,Bloque 17,Doncel,8,8896,0
+2026-01,enero 2026,Clavel,Bloque 17,Megan,1,1112,0
+2026-01,enero 2026,Clavel,Bloque 17,Moon Light,50,55600,0
+2026-01,enero 2026,Clavel,Bloque 17,Olympia,2,2224,0
+2026-01,enero 2026,Clavel,Bloque 17,Verona,41,45592,0
+2026-01,enero 2026,Clavel,Bloque 17,Zenit,2,2224,0
+2026-01,enero 2026,Clavel,Bloque 17,Zeppelin,38,42256,0
+2026-01,enero 2026,Clavel,Bloque 19,Brut,4,4448,2
+2026-01,enero 2026,Clavel,Bloque 19,Caramel,4,4448,2
+2026-01,enero 2026,Clavel,Bloque 19,Caronte,4,4448,2
+2026-01,enero 2026,Clavel,Bloque 19,Corvette,18,20016,4
+2026-01,enero 2026,Clavel,Bloque 19,Daniko,4,4448,5
+2026-01,enero 2026,Clavel,Bloque 19,Diamante,16,17792,7
+2026-01,enero 2026,Clavel,Bloque 19,Diletta,3,3336,0
+2026-01,enero 2026,Clavel,Bloque 19,Gioele,8,8896,1
+2026-01,enero 2026,Clavel,Bloque 19,Golem,8,8896,0
+2026-01,enero 2026,Clavel,Bloque 19,K259°,4,4448,1
+2026-01,enero 2026,Clavel,Bloque 19,Moon Light,2,2224,0
+2026-01,enero 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,0
+2026-01,enero 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,11
+2026-01,enero 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,0
+2026-01,enero 2026,Clavel,Bloque 19,Novia,1,1112,0
+2026-01,enero 2026,Clavel,Bloque 19,Prinz,10,11120,9
+2026-01,enero 2026,Clavel,Bloque 19,Royal Damascus,3,3336,3
+2026-01,enero 2026,Clavel,Bloque 19,Selva,5,5560,0
+2026-01,enero 2026,Clavel,Bloque 19,Trueno,2,2224,0
+2026-01,enero 2026,Clavel,Bloque 19,Verona,21,23352,0
+2026-01,enero 2026,Clavel,Bloque 19,Virgilio,36,40016,14
+2026-01,enero 2026,Clavel,Bloque 19,Zafiro,6,6672,2
+2026-01,enero 2026,Clavel,Bloque 19,Zeppelin,3,3336,1
+2026-01,enero 2026,Clavel,Bloque 5B,Bizet,12,11880,1281
+2026-01,enero 2026,Clavel,Bloque 5B,Boheme,2,1980,12
+2026-01,enero 2026,Clavel,Bloque 5B,Brut,1,990,76
+2026-01,enero 2026,Clavel,Bloque 5B,Capricho,2,1980,1037
+2026-01,enero 2026,Clavel,Bloque 5B,Chopin,11,10890,3408
+2026-01,enero 2026,Clavel,Bloque 5B,Corvette,3,2970,546
+2026-01,enero 2026,Clavel,Bloque 5B,Daniko,2,1980,367
+2026-01,enero 2026,Clavel,Bloque 5B,Diamante,13,12870,522
+2026-01,enero 2026,Clavel,Bloque 5B,Diletta,3,2970,399
+2026-01,enero 2026,Clavel,Bloque 5B,Doncel,2,1980,106
+2026-01,enero 2026,Clavel,Bloque 5B,Epic°,1,990,224
+2026-01,enero 2026,Clavel,Bloque 5B,F425°,1,990,342
+2026-01,enero 2026,Clavel,Bloque 5B,Fiesta Komachi,3,2970,443
+2026-01,enero 2026,Clavel,Bloque 5B,Gioele,14,13860,1193
+2026-01,enero 2026,Clavel,Bloque 5B,Golem,3,2970,34
+2026-01,enero 2026,Clavel,Bloque 5B,K444°,3,2970,391
+2026-01,enero 2026,Clavel,Bloque 5B,Komachi,6,5940,1212
+2026-01,enero 2026,Clavel,Bloque 5B,Megan,2,1980,187
+2026-01,enero 2026,Clavel,Bloque 5B,Metalica,1,990,196
+2026-01,enero 2026,Clavel,Bloque 5B,Moon Light,36,35640,4864
+2026-01,enero 2026,Clavel,Bloque 5B,Nobbio Party,5,4950,766
+2026-01,enero 2026,Clavel,Bloque 5B,Nobbio Violet,3,2970,501
+2026-01,enero 2026,Clavel,Bloque 5B,Novia,3,2970,777
+2026-01,enero 2026,Clavel,Bloque 5B,Prinz,1,990,167
+2026-01,enero 2026,Clavel,Bloque 5B,Royal Damascus,2,1980,14
+2026-01,enero 2026,Clavel,Bloque 5B,Sassicaia°,1,990,45
+2026-01,enero 2026,Clavel,Bloque 5B,Selva,6,5940,696
+2026-01,enero 2026,Clavel,Bloque 5B,Trueno,2,1980,4
+2026-01,enero 2026,Clavel,Bloque 5B,Verona,5,4950,8
+2026-01,enero 2026,Clavel,Bloque 5B,Virgilio,1,990,216
+2026-01,enero 2026,Clavel,Bloque 5B,Voragine,3,2970,516
+2026-01,enero 2026,Clavel,Bloque 5B,Zafiro,1,990,117
+2026-01,enero 2026,Clavel,Bloque 5B,Zenit,1,990,69
+2026-01,enero 2026,Clavel,Bloque 5B,Zeppelin,13,12870,321
+2026-01,enero 2026,Clavel,Bloque 7A,18ST073°,1,1308,13
+2026-01,enero 2026,Clavel,Bloque 7A,Bizet,2,2616,462
+2026-01,enero 2026,Clavel,Bloque 7A,Brut,4,5232,626
+2026-01,enero 2026,Clavel,Bloque 7A,Capricho,2,2616,622
+2026-01,enero 2026,Clavel,Bloque 7A,Caronte,4,5232,680
+2026-01,enero 2026,Clavel,Bloque 7A,Cheerio,2,2616,117
+2026-01,enero 2026,Clavel,Bloque 7A,Chopin,3,3924,292
+2026-01,enero 2026,Clavel,Bloque 7A,Corvette,4,5232,41
+2026-01,enero 2026,Clavel,Bloque 7A,Daniko,4,5232,1556
+2026-01,enero 2026,Clavel,Bloque 7A,Diamante,2,2616,37
+2026-01,enero 2026,Clavel,Bloque 7A,Diletta,3,3924,518
+2026-01,enero 2026,Clavel,Bloque 7A,Doncel,1,1308,2
+2026-01,enero 2026,Clavel,Bloque 7A,F425°,1,1308,32
+2026-01,enero 2026,Clavel,Bloque 7A,Farida,1,1308,72
+2026-01,enero 2026,Clavel,Bloque 7A,Gioele,11,14388,1523
+2026-01,enero 2026,Clavel,Bloque 7A,Golem,5,6540,86
+2026-01,enero 2026,Clavel,Bloque 7A,Grand Slam,2,2616,212
+2026-01,enero 2026,Clavel,Bloque 7A,K444°,2,2616,212
+2026-01,enero 2026,Clavel,Bloque 7A,Megan,4,5232,255
+2026-01,enero 2026,Clavel,Bloque 7A,Metalica,2,2616,296
+2026-01,enero 2026,Clavel,Bloque 7A,Moon Light,27,35316,2286
+2026-01,enero 2026,Clavel,Bloque 7A,Nobbio Burgundy,2,2616,191
+2026-01,enero 2026,Clavel,Bloque 7A,Nobbio Cherry,2,2616,48
+2026-01,enero 2026,Clavel,Bloque 7A,Nobbio Party,1,1308,432
+2026-01,enero 2026,Clavel,Bloque 7A,Nobbio Violet,5,6540,100
+2026-01,enero 2026,Clavel,Bloque 7A,Novia,2,2616,657
+2026-01,enero 2026,Clavel,Bloque 7A,Olympia,2,2616,220
+2026-01,enero 2026,Clavel,Bloque 7A,Prinz,4,5232,735
+2026-01,enero 2026,Clavel,Bloque 7A,Selva,4,5232,120
+2026-01,enero 2026,Clavel,Bloque 7A,Trueno,5,6540,178
+2026-01,enero 2026,Clavel,Bloque 7A,Verona,4,5232,14
+2026-01,enero 2026,Clavel,Bloque 7A,Virgilio,9,11772,598
+2026-01,enero 2026,Clavel,Bloque 7A,Zafiro,2,2616,148
+2026-01,enero 2026,Clavel,Bloque 7A,Zenit,1,1308,312
+2026-01,enero 2026,Clavel,Bloque 7A,Zeppelin,9,11772,469
+2026-01,enero 2026,Clavel,Bloque 7B,Brut,6,5968,0
+2026-01,enero 2026,Clavel,Bloque 7B,Caramel,4,5120,0
+2026-01,enero 2026,Clavel,Bloque 7B,Caronte,6,6000,0
+2026-01,enero 2026,Clavel,Bloque 7B,Chopin,1,1288,0
+2026-01,enero 2026,Clavel,Bloque 7B,Corvette,7,9072,1
+2026-01,enero 2026,Clavel,Bloque 7B,Daniko,30,34392,0
+2026-01,enero 2026,Clavel,Bloque 7B,Diletta,5,4920,0
+2026-01,enero 2026,Clavel,Bloque 7B,Golem,7,8920,0
+2026-01,enero 2026,Clavel,Bloque 7B,K259°,3,3864,1
+2026-01,enero 2026,Clavel,Bloque 7B,Metalica,2,2608,0
+2026-01,enero 2026,Clavel,Bloque 7B,Novia,5,6440,0
+2026-01,enero 2026,Clavel,Bloque 7B,Olympia,1,1288,0
+2026-01,enero 2026,Clavel,Bloque 7B,Prinz,16,15648,0
+2026-01,enero 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,0
+2026-01,enero 2026,Clavel,Bloque 7B,Trueno,10,13168,0
+2026-01,enero 2026,Clavel,Bloque 7B,Verona,9,11448,0
+2026-01,enero 2026,Clavel,Bloque 7B,Virgilio,8,10520,0
+2026-01,enero 2026,Clavel,Bloque 7B,Zafiro,9,11752,0
+2026-01,enero 2026,Clavel,Bloque 7B,Zeppelin,11,11120,0
+2026-02,febrero 2026,Clavel,Bloque 04,Cheerio,1,1424,0
+2026-02,febrero 2026,Clavel,Bloque 04,Chopin,9,12816,0
+2026-02,febrero 2026,Clavel,Bloque 04,Corvette,7,9968,0
+2026-02,febrero 2026,Clavel,Bloque 04,Diamante,16,22784,0
+2026-02,febrero 2026,Clavel,Bloque 04,Diletta,4,5696,0
+2026-02,febrero 2026,Clavel,Bloque 04,Doncel,5,7120,0
+2026-02,febrero 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-02,febrero 2026,Clavel,Bloque 04,Metalica,1,1424,0
+2026-02,febrero 2026,Clavel,Bloque 04,Moon Light,9,12816,0
+2026-02,febrero 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,0
+2026-02,febrero 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,0
+2026-02,febrero 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,0
+2026-02,febrero 2026,Clavel,Bloque 04,Novia,2,2848,0
+2026-02,febrero 2026,Clavel,Bloque 04,Prinz,1,1424,0
+2026-02,febrero 2026,Clavel,Bloque 04,Trueno,5,7120,0
+2026-02,febrero 2026,Clavel,Bloque 04,Virgilio,10,14240,0
+2026-02,febrero 2026,Clavel,Bloque 04,Zeppelin,3,4272,0
+2026-02,febrero 2026,Clavel,Bloque 06,Brut,1,1092,8
+2026-02,febrero 2026,Clavel,Bloque 06,Caronte,3,3276,40
+2026-02,febrero 2026,Clavel,Bloque 06,Chopin,4,4368,226
+2026-02,febrero 2026,Clavel,Bloque 06,Daniko,6,6552,83
+2026-02,febrero 2026,Clavel,Bloque 06,Diamante,2,2184,4
+2026-02,febrero 2026,Clavel,Bloque 06,Diletta,4,4368,152
+2026-02,febrero 2026,Clavel,Bloque 06,Gioele,19,20748,190
+2026-02,febrero 2026,Clavel,Bloque 06,Golem,8,8736,9
+2026-02,febrero 2026,Clavel,Bloque 06,Grand Slam,5,5460,24
+2026-02,febrero 2026,Clavel,Bloque 06,Megan,14,15288,314
+2026-02,febrero 2026,Clavel,Bloque 06,Moon Light,39,42588,475
+2026-02,febrero 2026,Clavel,Bloque 06,Nobbio Violet,1,1092,74
+2026-02,febrero 2026,Clavel,Bloque 06,Selva,1,1092,10
+2026-02,febrero 2026,Clavel,Bloque 06,Trueno,14,15288,21
+2026-02,febrero 2026,Clavel,Bloque 06,Virgilio,41,44772,590
+2026-02,febrero 2026,Clavel,Bloque 06,Zafiro,6,6552,78
+2026-02,febrero 2026,Clavel,Bloque 09,Caronte,2,2096,2
+2026-02,febrero 2026,Clavel,Bloque 09,Daniko,12,13600,95
+2026-02,febrero 2026,Clavel,Bloque 09,Diamante,10,10608,2
+2026-02,febrero 2026,Clavel,Bloque 09,Moon Light,50,55728,60
+2026-02,febrero 2026,Clavel,Bloque 09,Selva,3,3144,4
+2026-02,febrero 2026,Clavel,Bloque 09,Virgilio,60,66720,199
+2026-02,febrero 2026,Clavel,Bloque 09,Zeppelin,6,7056,15
+2026-02,febrero 2026,Clavel,Bloque 10,Bizet,2,2080,34
+2026-02,febrero 2026,Clavel,Bloque 10,Brut,1,1152,26
+2026-02,febrero 2026,Clavel,Bloque 10,Capricho,2,2080,124
+2026-02,febrero 2026,Clavel,Bloque 10,Caramel,1,1152,6
+2026-02,febrero 2026,Clavel,Bloque 10,Caronte,3,3120,130
+2026-02,febrero 2026,Clavel,Bloque 10,Cheerio,1,1040,6
+2026-02,febrero 2026,Clavel,Bloque 10,Chopin,1,1040,111
+2026-02,febrero 2026,Clavel,Bloque 10,Daniko,7,7952,194
+2026-02,febrero 2026,Clavel,Bloque 10,Diamante,12,12480,72
+2026-02,febrero 2026,Clavel,Bloque 10,Diletta,2,2080,45
+2026-02,febrero 2026,Clavel,Bloque 10,Fiesta Komachi,1,1152,27
+2026-02,febrero 2026,Clavel,Bloque 10,Gioele,10,10400,106
+2026-02,febrero 2026,Clavel,Bloque 10,Golem,6,6912,13
+2026-02,febrero 2026,Clavel,Bloque 10,Grand Slam,4,4608,70
+2026-02,febrero 2026,Clavel,Bloque 10,Megan,28,29792,494
+2026-02,febrero 2026,Clavel,Bloque 10,Metalica,3,3120,110
+2026-02,febrero 2026,Clavel,Bloque 10,Moon Light,25,28800,320
+2026-02,febrero 2026,Clavel,Bloque 10,Nobbio Burgundy,1,1040,6
+2026-02,febrero 2026,Clavel,Bloque 10,Nobbio Cherry,1,1040,33
+2026-02,febrero 2026,Clavel,Bloque 10,Nobbio Violet,1,1040,9
+2026-02,febrero 2026,Clavel,Bloque 10,Novia,2,2192,82
+2026-02,febrero 2026,Clavel,Bloque 10,Olympia,2,2192,92
+2026-02,febrero 2026,Clavel,Bloque 10,Prinz,3,3120,43
+2026-02,febrero 2026,Clavel,Bloque 10,Trueno,11,12336,38
+2026-02,febrero 2026,Clavel,Bloque 10,Virgilio,10,11520,122
+2026-02,febrero 2026,Clavel,Bloque 10,Zafiro,2,2304,84
+2026-02,febrero 2026,Clavel,Bloque 10,Zenit,2,2080,15
+2026-02,febrero 2026,Clavel,Bloque 11,Daniko,25,26472,43
+2026-02,febrero 2026,Clavel,Bloque 11,Doncel,1,1038,0
+2026-02,febrero 2026,Clavel,Bloque 11,F136°,3,3264,0
+2026-02,febrero 2026,Clavel,Bloque 11,K259°,2,2076,0
+2026-02,febrero 2026,Clavel,Bloque 11,Megan,9,9568,6
+2026-02,febrero 2026,Clavel,Bloque 11,Novia,4,4202,11
+2026-02,febrero 2026,Clavel,Bloque 11,Prinz,2,2126,1
+2026-02,febrero 2026,Clavel,Bloque 11,Trueno,9,9568,1
+2026-02,febrero 2026,Clavel,Bloque 11,Verona,43,45608,6
+2026-02,febrero 2026,Clavel,Bloque 11,Zenit,1,1088,2
+2026-02,febrero 2026,Clavel,Bloque 11,Zeppelin,21,22232,17
+2026-02,febrero 2026,Clavel,Bloque 17,Diamante,25,27800,0
+2026-02,febrero 2026,Clavel,Bloque 17,Doncel,9,10008,0
+2026-02,febrero 2026,Clavel,Bloque 17,Megan,1,1112,0
+2026-02,febrero 2026,Clavel,Bloque 17,Moon Light,50,55600,5
+2026-02,febrero 2026,Clavel,Bloque 17,Olympia,2,2224,0
+2026-02,febrero 2026,Clavel,Bloque 17,Verona,41,45592,0
+2026-02,febrero 2026,Clavel,Bloque 17,Zenit,2,2224,0
+2026-02,febrero 2026,Clavel,Bloque 17,Zeppelin,38,42256,1
+2026-02,febrero 2026,Clavel,Bloque 19,Brut,4,4448,10
+2026-02,febrero 2026,Clavel,Bloque 19,Caramel,4,4448,2
+2026-02,febrero 2026,Clavel,Bloque 19,Caronte,4,4448,1
+2026-02,febrero 2026,Clavel,Bloque 19,Corvette,18,20016,6
+2026-02,febrero 2026,Clavel,Bloque 19,Daniko,4,4448,0
+2026-02,febrero 2026,Clavel,Bloque 19,Diamante,16,17792,5
+2026-02,febrero 2026,Clavel,Bloque 19,Diletta,3,3336,0
+2026-02,febrero 2026,Clavel,Bloque 19,Gioele,8,8896,1
+2026-02,febrero 2026,Clavel,Bloque 19,Golem,8,8896,0
+2026-02,febrero 2026,Clavel,Bloque 19,K259°,4,4448,0
+2026-02,febrero 2026,Clavel,Bloque 19,Moon Light,2,2224,0
+2026-02,febrero 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,0
+2026-02,febrero 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,14
+2026-02,febrero 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,0
+2026-02,febrero 2026,Clavel,Bloque 19,Novia,1,1112,0
+2026-02,febrero 2026,Clavel,Bloque 19,Prinz,10,11120,25
+2026-02,febrero 2026,Clavel,Bloque 19,Royal Damascus,3,3336,4
+2026-02,febrero 2026,Clavel,Bloque 19,Selva,5,5560,0
+2026-02,febrero 2026,Clavel,Bloque 19,Trueno,2,2224,0
+2026-02,febrero 2026,Clavel,Bloque 19,Verona,21,23352,0
+2026-02,febrero 2026,Clavel,Bloque 19,Virgilio,37,41128,57
+2026-02,febrero 2026,Clavel,Bloque 19,Zafiro,6,6672,5
+2026-02,febrero 2026,Clavel,Bloque 19,Zeppelin,3,3336,0
+2026-02,febrero 2026,Clavel,Bloque 5B,Bizet,12,11880,1590
+2026-02,febrero 2026,Clavel,Bloque 5B,Boheme,2,1980,18
+2026-02,febrero 2026,Clavel,Bloque 5B,Brut,1,990,109
+2026-02,febrero 2026,Clavel,Bloque 5B,Capricho,2,1980,1196
+2026-02,febrero 2026,Clavel,Bloque 5B,Chopin,11,10890,4645
+2026-02,febrero 2026,Clavel,Bloque 5B,Corvette,3,2970,1139
+2026-02,febrero 2026,Clavel,Bloque 5B,Daniko,2,1980,445
+2026-02,febrero 2026,Clavel,Bloque 5B,Diamante,13,12870,882
+2026-02,febrero 2026,Clavel,Bloque 5B,Diletta,3,2970,574
+2026-02,febrero 2026,Clavel,Bloque 5B,Doncel,2,1980,200
+2026-02,febrero 2026,Clavel,Bloque 5B,Epic°,1,990,275
+2026-02,febrero 2026,Clavel,Bloque 5B,F425°,1,990,454
+2026-02,febrero 2026,Clavel,Bloque 5B,Fiesta Komachi,3,2970,486
+2026-02,febrero 2026,Clavel,Bloque 5B,Gioele,14,13860,1547
+2026-02,febrero 2026,Clavel,Bloque 5B,Golem,3,2970,48
+2026-02,febrero 2026,Clavel,Bloque 5B,K444°,3,2970,468
+2026-02,febrero 2026,Clavel,Bloque 5B,Komachi,6,5940,1364
+2026-02,febrero 2026,Clavel,Bloque 5B,Megan,2,1980,341
+2026-02,febrero 2026,Clavel,Bloque 5B,Metalica,1,990,199
+2026-02,febrero 2026,Clavel,Bloque 5B,Moon Light,36,35640,6280
+2026-02,febrero 2026,Clavel,Bloque 5B,Nobbio Party,5,4950,1005
+2026-02,febrero 2026,Clavel,Bloque 5B,Nobbio Violet,3,2970,518
+2026-02,febrero 2026,Clavel,Bloque 5B,Novia,3,2970,947
+2026-02,febrero 2026,Clavel,Bloque 5B,Prinz,1,990,270
+2026-02,febrero 2026,Clavel,Bloque 5B,Royal Damascus,2,1980,19
+2026-02,febrero 2026,Clavel,Bloque 5B,Sassicaia°,1,990,77
+2026-02,febrero 2026,Clavel,Bloque 5B,Selva,6,5940,873
+2026-02,febrero 2026,Clavel,Bloque 5B,Trueno,2,1980,12
+2026-02,febrero 2026,Clavel,Bloque 5B,Verona,5,4950,12
+2026-02,febrero 2026,Clavel,Bloque 5B,Virgilio,1,990,297
+2026-02,febrero 2026,Clavel,Bloque 5B,Voragine,3,2970,537
+2026-02,febrero 2026,Clavel,Bloque 5B,Zafiro,1,990,180
+2026-02,febrero 2026,Clavel,Bloque 5B,Zenit,1,990,69
+2026-02,febrero 2026,Clavel,Bloque 5B,Zeppelin,13,12870,455
+2026-02,febrero 2026,Clavel,Bloque 7A,18ST073°,1,1308,17
+2026-02,febrero 2026,Clavel,Bloque 7A,Bizet,2,2616,592
+2026-02,febrero 2026,Clavel,Bloque 7A,Brut,4,5232,1046
+2026-02,febrero 2026,Clavel,Bloque 7A,Capricho,2,2616,1085
+2026-02,febrero 2026,Clavel,Bloque 7A,Caronte,4,5232,1023
+2026-02,febrero 2026,Clavel,Bloque 7A,Cheerio,2,2616,197
+2026-02,febrero 2026,Clavel,Bloque 7A,Chopin,3,3924,429
+2026-02,febrero 2026,Clavel,Bloque 7A,Corvette,4,5232,83
+2026-02,febrero 2026,Clavel,Bloque 7A,Daniko,4,5232,1979
+2026-02,febrero 2026,Clavel,Bloque 7A,Diamante,2,2616,165
+2026-02,febrero 2026,Clavel,Bloque 7A,Diletta,3,3924,726
+2026-02,febrero 2026,Clavel,Bloque 7A,Doncel,1,1308,2
+2026-02,febrero 2026,Clavel,Bloque 7A,F425°,1,1308,71
+2026-02,febrero 2026,Clavel,Bloque 7A,Farida,1,1308,129
+2026-02,febrero 2026,Clavel,Bloque 7A,Gioele,11,14388,2049
+2026-02,febrero 2026,Clavel,Bloque 7A,Golem,5,6540,137
+2026-02,febrero 2026,Clavel,Bloque 7A,Grand Slam,2,2616,582
+2026-02,febrero 2026,Clavel,Bloque 7A,K444°,2,2616,249
+2026-02,febrero 2026,Clavel,Bloque 7A,Megan,4,5232,329
+2026-02,febrero 2026,Clavel,Bloque 7A,Metalica,2,2616,443
+2026-02,febrero 2026,Clavel,Bloque 7A,Moon Light,27,35316,3262
+2026-02,febrero 2026,Clavel,Bloque 7A,Nobbio Burgundy,2,2616,227
+2026-02,febrero 2026,Clavel,Bloque 7A,Nobbio Cherry,2,2616,62
+2026-02,febrero 2026,Clavel,Bloque 7A,Nobbio Party,1,1308,533
+2026-02,febrero 2026,Clavel,Bloque 7A,Nobbio Violet,5,6540,122
+2026-02,febrero 2026,Clavel,Bloque 7A,Novia,2,2616,746
+2026-02,febrero 2026,Clavel,Bloque 7A,Olympia,2,2616,397
+2026-02,febrero 2026,Clavel,Bloque 7A,Prinz,4,5232,1067
+2026-02,febrero 2026,Clavel,Bloque 7A,Selva,4,5232,330
+2026-02,febrero 2026,Clavel,Bloque 7A,Trueno,5,6540,311
+2026-02,febrero 2026,Clavel,Bloque 7A,Verona,4,5232,15
+2026-02,febrero 2026,Clavel,Bloque 7A,Virgilio,9,11772,1041
+2026-02,febrero 2026,Clavel,Bloque 7A,Zafiro,2,2616,227
+2026-02,febrero 2026,Clavel,Bloque 7A,Zeppelin,9,11772,636
+2026-02,febrero 2026,Clavel,Bloque 7B,Brut,6,5968,1
+2026-02,febrero 2026,Clavel,Bloque 7B,Caramel,4,5120,1
+2026-02,febrero 2026,Clavel,Bloque 7B,Caronte,6,6000,1
+2026-02,febrero 2026,Clavel,Bloque 7B,Chopin,1,1288,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Corvette,7,9072,3
+2026-02,febrero 2026,Clavel,Bloque 7B,Daniko,30,34392,18
+2026-02,febrero 2026,Clavel,Bloque 7B,Diletta,6,5904,3
+2026-02,febrero 2026,Clavel,Bloque 7B,Golem,7,8920,0
+2026-02,febrero 2026,Clavel,Bloque 7B,K259°,3,3864,6
+2026-02,febrero 2026,Clavel,Bloque 7B,Metalica,2,2608,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Novia,5,6440,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Olympia,1,1288,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Prinz,16,15648,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Trueno,10,13168,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Verona,9,11448,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Virgilio,8,10520,5
+2026-02,febrero 2026,Clavel,Bloque 7B,Zafiro,9,11752,0
+2026-02,febrero 2026,Clavel,Bloque 7B,Zeppelin,11,11120,1
+2026-03,marzo 2026,Clavel,Bloque 04,Cheerio,1,1424,0
+2026-03,marzo 2026,Clavel,Bloque 04,Chopin,9,12816,0
+2026-03,marzo 2026,Clavel,Bloque 04,Corvette,7,9968,0
+2026-03,marzo 2026,Clavel,Bloque 04,Diamante,16,22784,0
+2026-03,marzo 2026,Clavel,Bloque 04,Diletta,4,5696,0
+2026-03,marzo 2026,Clavel,Bloque 04,Doncel,5,7120,0
+2026-03,marzo 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-03,marzo 2026,Clavel,Bloque 04,Metalica,1,1424,0
+2026-03,marzo 2026,Clavel,Bloque 04,Moon Light,9,12816,0
+2026-03,marzo 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,0
+2026-03,marzo 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,0
+2026-03,marzo 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,0
+2026-03,marzo 2026,Clavel,Bloque 04,Novia,2,2848,0
+2026-03,marzo 2026,Clavel,Bloque 04,Prinz,1,1424,0
+2026-03,marzo 2026,Clavel,Bloque 04,Trueno,5,7120,0
+2026-03,marzo 2026,Clavel,Bloque 04,Virgilio,10,14240,0
+2026-03,marzo 2026,Clavel,Bloque 04,Zeppelin,3,4272,0
+2026-03,marzo 2026,Clavel,Bloque 06,Brut,1,1092,13
+2026-03,marzo 2026,Clavel,Bloque 06,Caronte,3,3276,107
+2026-03,marzo 2026,Clavel,Bloque 06,Chopin,4,4368,304
+2026-03,marzo 2026,Clavel,Bloque 06,Daniko,6,6552,244
+2026-03,marzo 2026,Clavel,Bloque 06,Diamante,2,2184,7
+2026-03,marzo 2026,Clavel,Bloque 06,Diletta,4,4368,218
+2026-03,marzo 2026,Clavel,Bloque 06,Gioele,19,20748,433
+2026-03,marzo 2026,Clavel,Bloque 06,Golem,8,8736,13
+2026-03,marzo 2026,Clavel,Bloque 06,Grand Slam,5,5460,57
+2026-03,marzo 2026,Clavel,Bloque 06,Megan,14,15288,419
+2026-03,marzo 2026,Clavel,Bloque 06,Moon Light,39,42588,742
+2026-03,marzo 2026,Clavel,Bloque 06,Nobbio Violet,1,1092,93
+2026-03,marzo 2026,Clavel,Bloque 06,Selva,1,1092,12
+2026-03,marzo 2026,Clavel,Bloque 06,Trueno,14,15288,34
+2026-03,marzo 2026,Clavel,Bloque 06,Virgilio,41,44772,1298
+2026-03,marzo 2026,Clavel,Bloque 06,Zafiro,6,6552,139
+2026-03,marzo 2026,Clavel,Bloque 09,Caronte,2,2096,2
+2026-03,marzo 2026,Clavel,Bloque 09,Daniko,12,13600,158
+2026-03,marzo 2026,Clavel,Bloque 09,Diamante,10,10608,8
+2026-03,marzo 2026,Clavel,Bloque 09,Moon Light,51,56904,70
+2026-03,marzo 2026,Clavel,Bloque 09,Selva,3,3144,3
+2026-03,marzo 2026,Clavel,Bloque 09,Virgilio,60,66720,258
+2026-03,marzo 2026,Clavel,Bloque 09,Zeppelin,6,7056,10
+2026-03,marzo 2026,Clavel,Bloque 10,Bizet,2,2080,39
+2026-03,marzo 2026,Clavel,Bloque 10,Brut,1,1152,54
+2026-03,marzo 2026,Clavel,Bloque 10,Capricho,2,2080,222
+2026-03,marzo 2026,Clavel,Bloque 10,Caramel,1,1152,7
+2026-03,marzo 2026,Clavel,Bloque 10,Caronte,3,3120,284
+2026-03,marzo 2026,Clavel,Bloque 10,Cheerio,1,1040,6
+2026-03,marzo 2026,Clavel,Bloque 10,Chopin,1,1040,138
+2026-03,marzo 2026,Clavel,Bloque 10,Daniko,7,7952,296
+2026-03,marzo 2026,Clavel,Bloque 10,Diamante,12,12480,105
+2026-03,marzo 2026,Clavel,Bloque 10,Diletta,2,2080,62
+2026-03,marzo 2026,Clavel,Bloque 10,Fiesta Komachi,1,1152,36
+2026-03,marzo 2026,Clavel,Bloque 10,Gioele,10,10400,140
+2026-03,marzo 2026,Clavel,Bloque 10,Golem,5,5760,26
+2026-03,marzo 2026,Clavel,Bloque 10,Grand Slam,4,4608,145
+2026-03,marzo 2026,Clavel,Bloque 10,Megan,28,29792,807
+2026-03,marzo 2026,Clavel,Bloque 10,Metalica,3,3120,129
+2026-03,marzo 2026,Clavel,Bloque 10,Moon Light,25,28800,435
+2026-03,marzo 2026,Clavel,Bloque 10,Nobbio Burgundy,1,1040,16
+2026-03,marzo 2026,Clavel,Bloque 10,Nobbio Cherry,1,1040,33
+2026-03,marzo 2026,Clavel,Bloque 10,Nobbio Violet,1,1040,13
+2026-03,marzo 2026,Clavel,Bloque 10,Novia,2,2192,138
+2026-03,marzo 2026,Clavel,Bloque 10,Olympia,2,2192,124
+2026-03,marzo 2026,Clavel,Bloque 10,Prinz,3,3120,69
+2026-03,marzo 2026,Clavel,Bloque 10,Trueno,11,12336,82
+2026-03,marzo 2026,Clavel,Bloque 10,Virgilio,10,11520,190
+2026-03,marzo 2026,Clavel,Bloque 10,Zafiro,2,2304,153
+2026-03,marzo 2026,Clavel,Bloque 10,Zenit,2,2080,12
+2026-03,marzo 2026,Clavel,Bloque 11,Daniko,25,26472,132
+2026-03,marzo 2026,Clavel,Bloque 11,Doncel,1,1038,0
+2026-03,marzo 2026,Clavel,Bloque 11,F136°,3,3264,0
+2026-03,marzo 2026,Clavel,Bloque 11,K259°,2,2076,0
+2026-03,marzo 2026,Clavel,Bloque 11,Megan,9,9568,11
+2026-03,marzo 2026,Clavel,Bloque 11,Novia,4,4202,23
+2026-03,marzo 2026,Clavel,Bloque 11,Prinz,2,2126,1
+2026-03,marzo 2026,Clavel,Bloque 11,Trueno,9,9568,1
+2026-03,marzo 2026,Clavel,Bloque 11,Verona,43,45608,6
+2026-03,marzo 2026,Clavel,Bloque 11,Zenit,1,1088,4
+2026-03,marzo 2026,Clavel,Bloque 11,Zeppelin,21,22232,18
+2026-03,marzo 2026,Clavel,Bloque 17,Diamante,25,27800,29
+2026-03,marzo 2026,Clavel,Bloque 17,Doncel,9,10008,3
+2026-03,marzo 2026,Clavel,Bloque 17,Megan,1,1112,1
+2026-03,marzo 2026,Clavel,Bloque 17,Moon Light,50,55600,42
+2026-03,marzo 2026,Clavel,Bloque 17,Olympia,2,2224,0
+2026-03,marzo 2026,Clavel,Bloque 17,Verona,41,45592,3
+2026-03,marzo 2026,Clavel,Bloque 17,Zenit,2,2224,2
+2026-03,marzo 2026,Clavel,Bloque 17,Zeppelin,37,41144,28
+2026-03,marzo 2026,Clavel,Bloque 19,Brut,4,4448,14
+2026-03,marzo 2026,Clavel,Bloque 19,Caramel,4,4448,3
+2026-03,marzo 2026,Clavel,Bloque 19,Caronte,4,4448,11
+2026-03,marzo 2026,Clavel,Bloque 19,Corvette,18,20016,26
+2026-03,marzo 2026,Clavel,Bloque 19,Daniko,4,4448,10
+2026-03,marzo 2026,Clavel,Bloque 19,Diamante,16,17792,12
+2026-03,marzo 2026,Clavel,Bloque 19,Diletta,3,3336,2
+2026-03,marzo 2026,Clavel,Bloque 19,Gioele,8,8896,6
+2026-03,marzo 2026,Clavel,Bloque 19,Golem,8,8896,1
+2026-03,marzo 2026,Clavel,Bloque 19,K259°,4,4448,1
+2026-03,marzo 2026,Clavel,Bloque 19,Moon Light,2,2224,0
+2026-03,marzo 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,0
+2026-03,marzo 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,32
+2026-03,marzo 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,2
+2026-03,marzo 2026,Clavel,Bloque 19,Novia,1,1112,0
+2026-03,marzo 2026,Clavel,Bloque 19,Prinz,10,11120,62
+2026-03,marzo 2026,Clavel,Bloque 19,Royal Damascus,3,3336,4
+2026-03,marzo 2026,Clavel,Bloque 19,Selva,5,5560,1
+2026-03,marzo 2026,Clavel,Bloque 19,Trueno,2,2224,0
+2026-03,marzo 2026,Clavel,Bloque 19,Verona,21,23352,0
+2026-03,marzo 2026,Clavel,Bloque 19,Virgilio,37,41128,77
+2026-03,marzo 2026,Clavel,Bloque 19,Zafiro,6,6672,9
+2026-03,marzo 2026,Clavel,Bloque 19,Zeppelin,3,3336,3
+2026-03,marzo 2026,Clavel,Bloque 7A,18ST073°,1,1308,30
+2026-03,marzo 2026,Clavel,Bloque 7A,Bizet,2,2616,88
+2026-03,marzo 2026,Clavel,Bloque 7A,Brut,4,5232,1086
+2026-03,marzo 2026,Clavel,Bloque 7A,Capricho,2,2616,1085
+2026-03,marzo 2026,Clavel,Bloque 7A,Caronte,4,5232,1113
+2026-03,marzo 2026,Clavel,Bloque 7A,Cheerio,2,2616,223
+2026-03,marzo 2026,Clavel,Bloque 7A,Chopin,3,3924,503
+2026-03,marzo 2026,Clavel,Bloque 7A,Corvette,4,5232,118
+2026-03,marzo 2026,Clavel,Bloque 7A,Daniko,4,5232,2110
+2026-03,marzo 2026,Clavel,Bloque 7A,Diamante,2,2616,220
+2026-03,marzo 2026,Clavel,Bloque 7A,Diletta,3,3924,738
+2026-03,marzo 2026,Clavel,Bloque 7A,Doncel,1,1308,4
+2026-03,marzo 2026,Clavel,Bloque 7A,F425°,1,1308,79
+2026-03,marzo 2026,Clavel,Bloque 7A,Farida,1,1308,193
+2026-03,marzo 2026,Clavel,Bloque 7A,Gioele,11,14388,2345
+2026-03,marzo 2026,Clavel,Bloque 7A,Golem,5,6540,189
+2026-03,marzo 2026,Clavel,Bloque 7A,Grand Slam,2,2616,600
+2026-03,marzo 2026,Clavel,Bloque 7A,K444°,2,2616,321
+2026-03,marzo 2026,Clavel,Bloque 7A,Megan,4,5232,352
+2026-03,marzo 2026,Clavel,Bloque 7A,Metalica,2,2616,480
+2026-03,marzo 2026,Clavel,Bloque 7A,Moon Light,27,35316,3664
+2026-03,marzo 2026,Clavel,Bloque 7A,Nobbio Burgundy,2,2616,328
+2026-03,marzo 2026,Clavel,Bloque 7A,Nobbio Cherry,2,2616,77
+2026-03,marzo 2026,Clavel,Bloque 7A,Nobbio Party,1,1308,536
+2026-03,marzo 2026,Clavel,Bloque 7A,Nobbio Violet,5,6540,159
+2026-03,marzo 2026,Clavel,Bloque 7A,Novia,2,2616,746
+2026-03,marzo 2026,Clavel,Bloque 7A,Olympia,2,2616,500
+2026-03,marzo 2026,Clavel,Bloque 7A,Prinz,4,5232,1160
+2026-03,marzo 2026,Clavel,Bloque 7A,Selva,4,5232,388
+2026-03,marzo 2026,Clavel,Bloque 7A,Trueno,5,6540,398
+2026-03,marzo 2026,Clavel,Bloque 7A,Verona,4,5232,28
+2026-03,marzo 2026,Clavel,Bloque 7A,Virgilio,9,11772,1144
+2026-03,marzo 2026,Clavel,Bloque 7A,Zafiro,2,2616,267
+2026-03,marzo 2026,Clavel,Bloque 7A,Zenit,1,1308,412
+2026-03,marzo 2026,Clavel,Bloque 7A,Zeppelin,9,11772,680
+2026-03,marzo 2026,Clavel,Bloque 7B,Brut,6,5968,3
+2026-03,marzo 2026,Clavel,Bloque 7B,Caramel,4,5120,4
+2026-03,marzo 2026,Clavel,Bloque 7B,Caronte,6,6000,4
+2026-03,marzo 2026,Clavel,Bloque 7B,Chopin,1,1288,2
+2026-03,marzo 2026,Clavel,Bloque 7B,Corvette,7,9072,4
+2026-03,marzo 2026,Clavel,Bloque 7B,Daniko,30,34392,81
+2026-03,marzo 2026,Clavel,Bloque 7B,Diletta,6,5904,8
+2026-03,marzo 2026,Clavel,Bloque 7B,Golem,7,8920,0
+2026-03,marzo 2026,Clavel,Bloque 7B,K259°,3,3864,13
+2026-03,marzo 2026,Clavel,Bloque 7B,Metalica,2,2608,0
+2026-03,marzo 2026,Clavel,Bloque 7B,Novia,5,6440,0
+2026-03,marzo 2026,Clavel,Bloque 7B,Olympia,1,1288,0
+2026-03,marzo 2026,Clavel,Bloque 7B,Prinz,16,15648,8
+2026-03,marzo 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,0
+2026-03,marzo 2026,Clavel,Bloque 7B,Trueno,10,13168,0
+2026-03,marzo 2026,Clavel,Bloque 7B,Verona,9,11448,0
+2026-03,marzo 2026,Clavel,Bloque 7B,Virgilio,8,10520,14
+2026-03,marzo 2026,Clavel,Bloque 7B,Zafiro,9,11752,0
+2026-03,marzo 2026,Clavel,Bloque 7B,Zeppelin,11,11120,1
+2026-04,abril 2026,Clavel,Bloque 04,Cheerio,1,1424,3
+2026-04,abril 2026,Clavel,Bloque 04,Chopin,9,12816,16
+2026-04,abril 2026,Clavel,Bloque 04,Corvette,7,9968,4
+2026-04,abril 2026,Clavel,Bloque 04,Diamante,15,21360,4
+2026-04,abril 2026,Clavel,Bloque 04,Diletta,4,5696,22
+2026-04,abril 2026,Clavel,Bloque 04,Doncel,5,7120,1
+2026-04,abril 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-04,abril 2026,Clavel,Bloque 04,Metalica,1,1424,1
+2026-04,abril 2026,Clavel,Bloque 04,Moon Light,9,12816,21
+2026-04,abril 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,0
+2026-04,abril 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,3
+2026-04,abril 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,5
+2026-04,abril 2026,Clavel,Bloque 04,Novia,2,2848,17
+2026-04,abril 2026,Clavel,Bloque 04,Prinz,1,1424,0
+2026-04,abril 2026,Clavel,Bloque 04,Trueno,5,7120,1
+2026-04,abril 2026,Clavel,Bloque 04,Virgilio,10,14240,2
+2026-04,abril 2026,Clavel,Bloque 04,Zeppelin,3,4272,0
+2026-04,abril 2026,Clavel,Bloque 06,Brut,1,1092,13
+2026-04,abril 2026,Clavel,Bloque 06,Caronte,3,3276,115
+2026-04,abril 2026,Clavel,Bloque 06,Chopin,4,4368,375
+2026-04,abril 2026,Clavel,Bloque 06,Daniko,6,6552,284
+2026-04,abril 2026,Clavel,Bloque 06,Diamante,2,2184,9
+2026-04,abril 2026,Clavel,Bloque 06,Diletta,4,4368,256
+2026-04,abril 2026,Clavel,Bloque 06,Gioele,19,20748,445
+2026-04,abril 2026,Clavel,Bloque 06,Golem,8,8736,15
+2026-04,abril 2026,Clavel,Bloque 06,Grand Slam,5,5460,57
+2026-04,abril 2026,Clavel,Bloque 06,Megan,14,15288,450
+2026-04,abril 2026,Clavel,Bloque 06,Moon Light,39,42588,690
+2026-04,abril 2026,Clavel,Bloque 06,Nobbio Violet,1,1092,93
+2026-04,abril 2026,Clavel,Bloque 06,Selva,1,1092,12
+2026-04,abril 2026,Clavel,Bloque 06,Trueno,14,15288,36
+2026-04,abril 2026,Clavel,Bloque 06,Virgilio,40,43680,1565
+2026-04,abril 2026,Clavel,Bloque 06,Zafiro,6,6552,129
+2026-04,abril 2026,Clavel,Bloque 09,Caronte,2,2096,36
+2026-04,abril 2026,Clavel,Bloque 09,Daniko,12,13600,459
+2026-04,abril 2026,Clavel,Bloque 09,Diamante,10,10608,24
+2026-04,abril 2026,Clavel,Bloque 09,Moon Light,51,56904,125
+2026-04,abril 2026,Clavel,Bloque 09,Selva,3,3144,4
+2026-04,abril 2026,Clavel,Bloque 09,Virgilio,60,66720,534
+2026-04,abril 2026,Clavel,Bloque 09,Zeppelin,6,7056,112
+2026-04,abril 2026,Clavel,Bloque 10,Bizet,2,2080,68
+2026-04,abril 2026,Clavel,Bloque 10,Brut,1,1152,104
+2026-04,abril 2026,Clavel,Bloque 10,Capricho,2,2080,335
+2026-04,abril 2026,Clavel,Bloque 10,Caramel,1,1152,16
+2026-04,abril 2026,Clavel,Bloque 10,Caronte,3,3120,488
+2026-04,abril 2026,Clavel,Bloque 10,Cheerio,1,1040,7
+2026-04,abril 2026,Clavel,Bloque 10,Chopin,1,1040,205
+2026-04,abril 2026,Clavel,Bloque 10,Daniko,7,7952,484
+2026-04,abril 2026,Clavel,Bloque 10,Diamante,12,12480,208
+2026-04,abril 2026,Clavel,Bloque 10,Diletta,2,2080,104
+2026-04,abril 2026,Clavel,Bloque 10,Fiesta Komachi,1,1152,44
+2026-04,abril 2026,Clavel,Bloque 10,Gioele,10,10400,243
+2026-04,abril 2026,Clavel,Bloque 10,Golem,6,6912,46
+2026-04,abril 2026,Clavel,Bloque 10,Grand Slam,4,4608,162
+2026-04,abril 2026,Clavel,Bloque 10,Megan,28,29792,1252
+2026-04,abril 2026,Clavel,Bloque 10,Metalica,3,3120,147
+2026-04,abril 2026,Clavel,Bloque 10,Moon Light,25,28800,595
+2026-04,abril 2026,Clavel,Bloque 10,Nobbio Burgundy,1,1040,21
+2026-04,abril 2026,Clavel,Bloque 10,Nobbio Cherry,1,1040,40
+2026-04,abril 2026,Clavel,Bloque 10,Nobbio Violet,1,1040,21
+2026-04,abril 2026,Clavel,Bloque 10,Novia,2,2192,150
+2026-04,abril 2026,Clavel,Bloque 10,Olympia,2,2192,150
+2026-04,abril 2026,Clavel,Bloque 10,Prinz,3,3120,78
+2026-04,abril 2026,Clavel,Bloque 10,Trueno,11,12336,234
+2026-04,abril 2026,Clavel,Bloque 10,Virgilio,10,11520,349
+2026-04,abril 2026,Clavel,Bloque 10,Zafiro,2,2304,192
+2026-04,abril 2026,Clavel,Bloque 10,Zenit,2,2080,16
+2026-04,abril 2026,Clavel,Bloque 11,Daniko,25,26472,334
+2026-04,abril 2026,Clavel,Bloque 11,Doncel,1,1038,0
+2026-04,abril 2026,Clavel,Bloque 11,F136°,3,3264,2
+2026-04,abril 2026,Clavel,Bloque 11,K259°,2,2076,17
+2026-04,abril 2026,Clavel,Bloque 11,Megan,9,9568,46
+2026-04,abril 2026,Clavel,Bloque 11,Novia,4,4202,38
+2026-04,abril 2026,Clavel,Bloque 11,Prinz,2,2126,11
+2026-04,abril 2026,Clavel,Bloque 11,Trueno,9,9568,1
+2026-04,abril 2026,Clavel,Bloque 11,Verona,43,45608,13
+2026-04,abril 2026,Clavel,Bloque 11,Zenit,1,1088,4
+2026-04,abril 2026,Clavel,Bloque 11,Zeppelin,21,22232,55
+2026-04,abril 2026,Clavel,Bloque 17,Diamante,25,27800,118
+2026-04,abril 2026,Clavel,Bloque 17,Doncel,9,10008,19
+2026-04,abril 2026,Clavel,Bloque 17,Megan,1,1112,1
+2026-04,abril 2026,Clavel,Bloque 17,Moon Light,50,55600,108
+2026-04,abril 2026,Clavel,Bloque 17,Olympia,2,2224,0
+2026-04,abril 2026,Clavel,Bloque 17,Verona,41,45592,3
+2026-04,abril 2026,Clavel,Bloque 17,Zenit,2,2224,3
+2026-04,abril 2026,Clavel,Bloque 17,Zeppelin,38,42256,54
+2026-04,abril 2026,Clavel,Bloque 19,Brut,4,4448,14
+2026-04,abril 2026,Clavel,Bloque 19,Caramel,4,4448,9
+2026-04,abril 2026,Clavel,Bloque 19,Caronte,4,4448,55
+2026-04,abril 2026,Clavel,Bloque 19,Corvette,18,20016,130
+2026-04,abril 2026,Clavel,Bloque 19,Daniko,4,4448,27
+2026-04,abril 2026,Clavel,Bloque 19,Diamante,16,17792,31
+2026-04,abril 2026,Clavel,Bloque 19,Diletta,3,3336,4
+2026-04,abril 2026,Clavel,Bloque 19,Gioele,8,8896,21
+2026-04,abril 2026,Clavel,Bloque 19,Golem,8,8896,9
+2026-04,abril 2026,Clavel,Bloque 19,K259°,4,4448,13
+2026-04,abril 2026,Clavel,Bloque 19,Moon Light,2,2224,2
+2026-04,abril 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,2
+2026-04,abril 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,60
+2026-04,abril 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,5
+2026-04,abril 2026,Clavel,Bloque 19,Novia,1,1112,0
+2026-04,abril 2026,Clavel,Bloque 19,Prinz,10,11120,117
+2026-04,abril 2026,Clavel,Bloque 19,Royal Damascus,3,3336,8
+2026-04,abril 2026,Clavel,Bloque 19,Selva,5,5560,10
+2026-04,abril 2026,Clavel,Bloque 19,Trueno,2,2224,0
+2026-04,abril 2026,Clavel,Bloque 19,Verona,21,23352,2
+2026-04,abril 2026,Clavel,Bloque 19,Virgilio,36,40016,301
+2026-04,abril 2026,Clavel,Bloque 19,Zafiro,6,6672,52
+2026-04,abril 2026,Clavel,Bloque 19,Zeppelin,3,3336,7
+2026-04,abril 2026,Clavel,Bloque 5A,Brut,2,1996,0
+2026-04,abril 2026,Clavel,Bloque 5A,Caramel,2,2118,0
+2026-04,abril 2026,Clavel,Bloque 5A,Caronte,2,2016,0
+2026-04,abril 2026,Clavel,Bloque 5A,Chopin,4,3972,3
+2026-04,abril 2026,Clavel,Bloque 5A,Corvette,4,3992,0
+2026-04,abril 2026,Clavel,Bloque 5A,Daniko,14,14418,0
+2026-04,abril 2026,Clavel,Bloque 5A,Diamante,11,11156,0
+2026-04,abril 2026,Clavel,Bloque 5A,Diletta,7,7058,0
+2026-04,abril 2026,Clavel,Bloque 5A,Doncel,5,4960,0
+2026-04,abril 2026,Clavel,Bloque 5A,Gioele,4,4032,0
+2026-04,abril 2026,Clavel,Bloque 5A,Golem,7,7016,0
+2026-04,abril 2026,Clavel,Bloque 5A,J375°,1,988,0
+2026-04,abril 2026,Clavel,Bloque 5A,Megan,2,1996,0
+2026-04,abril 2026,Clavel,Bloque 5A,Metalica,3,3004,1
+2026-04,abril 2026,Clavel,Bloque 5A,Moon Light,12,12240,0
+2026-04,abril 2026,Clavel,Bloque 5A,Novia,4,4012,0
+2026-04,abril 2026,Clavel,Bloque 5A,Olympia,2,1976,3
+2026-04,abril 2026,Clavel,Bloque 5A,Prinz,4,4012,0
+2026-04,abril 2026,Clavel,Bloque 5A,Selva,5,5000,0
+2026-04,abril 2026,Clavel,Bloque 5A,Trueno,16,16086,0
+2026-04,abril 2026,Clavel,Bloque 5A,Verona,7,7016,0
+2026-04,abril 2026,Clavel,Bloque 5A,Virgilio,18,17824,1
+2026-04,abril 2026,Clavel,Bloque 5A,Zafiro,5,5244,0
+2026-04,abril 2026,Clavel,Bloque 5A,Zenit,2,1996,0
+2026-04,abril 2026,Clavel,Bloque 5A,Zeppelin,25,25000,1
+2026-04,abril 2026,Clavel,Bloque 7A,18ST073°,1,1308,30
+2026-04,abril 2026,Clavel,Bloque 7A,Bizet,2,2616,690
+2026-04,abril 2026,Clavel,Bloque 7A,Brut,4,5232,1184
+2026-04,abril 2026,Clavel,Bloque 7A,Capricho,2,2616,1340
+2026-04,abril 2026,Clavel,Bloque 7A,Caronte,4,5232,1234
+2026-04,abril 2026,Clavel,Bloque 7A,Cheerio,2,2616,233
+2026-04,abril 2026,Clavel,Bloque 7A,Chopin,3,3924,600
+2026-04,abril 2026,Clavel,Bloque 7A,Corvette,4,5232,167
+2026-04,abril 2026,Clavel,Bloque 7A,Daniko,4,5232,2653
+2026-04,abril 2026,Clavel,Bloque 7A,Diamante,2,2616,241
+2026-04,abril 2026,Clavel,Bloque 7A,Diletta,3,3924,891
+2026-04,abril 2026,Clavel,Bloque 7A,Doncel,1,1308,5
+2026-04,abril 2026,Clavel,Bloque 7A,F425°,1,1308,79
+2026-04,abril 2026,Clavel,Bloque 7A,Farida,1,1308,193
+2026-04,abril 2026,Clavel,Bloque 7A,Gioele,11,14388,2493
+2026-04,abril 2026,Clavel,Bloque 7A,Golem,5,6540,205
+2026-04,abril 2026,Clavel,Bloque 7A,Grand Slam,2,2616,852
+2026-04,abril 2026,Clavel,Bloque 7A,K444°,2,2616,361
+2026-04,abril 2026,Clavel,Bloque 7A,Megan,4,5232,347
+2026-04,abril 2026,Clavel,Bloque 7A,Metalica,2,2616,480
+2026-04,abril 2026,Clavel,Bloque 7A,Moon Light,27,35316,4043
+2026-04,abril 2026,Clavel,Bloque 7A,Nobbio Burgundy,2,2616,315
+2026-04,abril 2026,Clavel,Bloque 7A,Nobbio Cherry,2,2616,89
+2026-04,abril 2026,Clavel,Bloque 7A,Nobbio Party,1,1308,712
+2026-04,abril 2026,Clavel,Bloque 7A,Nobbio Violet,5,6540,158
+2026-04,abril 2026,Clavel,Bloque 7A,Novia,2,2616,773
+2026-04,abril 2026,Clavel,Bloque 7A,Olympia,2,2616,601
+2026-04,abril 2026,Clavel,Bloque 7A,Prinz,4,5232,1240
+2026-04,abril 2026,Clavel,Bloque 7A,Selva,4,5232,411
+2026-04,abril 2026,Clavel,Bloque 7A,Trueno,5,6540,438
+2026-04,abril 2026,Clavel,Bloque 7A,Verona,4,5232,29
+2026-04,abril 2026,Clavel,Bloque 7A,Virgilio,9,11772,1246
+2026-04,abril 2026,Clavel,Bloque 7A,Zafiro,2,2616,271
+2026-04,abril 2026,Clavel,Bloque 7A,Zenit,1,1308,456
+2026-04,abril 2026,Clavel,Bloque 7A,Zeppelin,9,11772,800
+2026-04,abril 2026,Clavel,Bloque 7B,Brut,6,5968,5
+2026-04,abril 2026,Clavel,Bloque 7B,Caramel,4,5120,4
+2026-04,abril 2026,Clavel,Bloque 7B,Caronte,6,6000,4
+2026-04,abril 2026,Clavel,Bloque 7B,Chopin,1,1288,3
+2026-04,abril 2026,Clavel,Bloque 7B,Corvette,7,9072,16
+2026-04,abril 2026,Clavel,Bloque 7B,Daniko,30,34392,101
+2026-04,abril 2026,Clavel,Bloque 7B,Diletta,6,5904,7
+2026-04,abril 2026,Clavel,Bloque 7B,Golem,7,8920,2
+2026-04,abril 2026,Clavel,Bloque 7B,K259°,3,3864,24
+2026-04,abril 2026,Clavel,Bloque 7B,Metalica,2,2608,1
+2026-04,abril 2026,Clavel,Bloque 7B,Novia,5,6440,1
+2026-04,abril 2026,Clavel,Bloque 7B,Olympia,1,1288,0
+2026-04,abril 2026,Clavel,Bloque 7B,Prinz,16,15648,9
+2026-04,abril 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,0
+2026-04,abril 2026,Clavel,Bloque 7B,Trueno,10,13168,0
+2026-04,abril 2026,Clavel,Bloque 7B,Verona,9,11448,0
+2026-04,abril 2026,Clavel,Bloque 7B,Virgilio,8,10520,21
+2026-04,abril 2026,Clavel,Bloque 7B,Zafiro,9,11752,0
+2026-04,abril 2026,Clavel,Bloque 7B,Zeppelin,11,11120,1
+2026-05,mayo 2026,Clavel,Bloque 04,Cheerio,1,1424,3
+2026-05,mayo 2026,Clavel,Bloque 04,Chopin,9,12816,25
+2026-05,mayo 2026,Clavel,Bloque 04,Corvette,7,9968,5
+2026-05,mayo 2026,Clavel,Bloque 04,Diamante,16,22784,6
+2026-05,mayo 2026,Clavel,Bloque 04,Diletta,4,5696,29
+2026-05,mayo 2026,Clavel,Bloque 04,Doncel,5,7120,1
+2026-05,mayo 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-05,mayo 2026,Clavel,Bloque 04,Metalica,1,1424,4
+2026-05,mayo 2026,Clavel,Bloque 04,Moon Light,9,12816,30
+2026-05,mayo 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,0
+2026-05,mayo 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,5
+2026-05,mayo 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,5
+2026-05,mayo 2026,Clavel,Bloque 04,Novia,2,2848,17
+2026-05,mayo 2026,Clavel,Bloque 04,Prinz,1,1424,0
+2026-05,mayo 2026,Clavel,Bloque 04,Trueno,5,7120,1
+2026-05,mayo 2026,Clavel,Bloque 04,Virgilio,10,14240,7
+2026-05,mayo 2026,Clavel,Bloque 04,Zeppelin,3,4272,0
+2026-05,mayo 2026,Clavel,Bloque 06,Brut,1,1092,136
+2026-05,mayo 2026,Clavel,Bloque 06,Caronte,3,3276,187
+2026-05,mayo 2026,Clavel,Bloque 06,Chopin,4,4368,748
+2026-05,mayo 2026,Clavel,Bloque 06,Daniko,6,6552,544
+2026-05,mayo 2026,Clavel,Bloque 06,Diamante,2,2184,7
+2026-05,mayo 2026,Clavel,Bloque 06,Diletta,4,4368,431
+2026-05,mayo 2026,Clavel,Bloque 06,Gioele,19,20748,752
+2026-05,mayo 2026,Clavel,Bloque 06,Golem,8,8736,23
+2026-05,mayo 2026,Clavel,Bloque 06,Grand Slam,5,5460,113
+2026-05,mayo 2026,Clavel,Bloque 06,Megan,14,15288,822
+2026-05,mayo 2026,Clavel,Bloque 06,Moon Light,39,42588,1119
+2026-05,mayo 2026,Clavel,Bloque 06,Nobbio Violet,1,1092,168
+2026-05,mayo 2026,Clavel,Bloque 06,Selva,1,1092,72
+2026-05,mayo 2026,Clavel,Bloque 06,Trueno,14,15288,75
+2026-05,mayo 2026,Clavel,Bloque 06,Virgilio,41,44772,3582
+2026-05,mayo 2026,Clavel,Bloque 06,Zafiro,6,6552,156
+2026-05,mayo 2026,Clavel,Bloque 09,Caronte,2,2096,42
+2026-05,mayo 2026,Clavel,Bloque 09,Daniko,12,13600,279
+2026-05,mayo 2026,Clavel,Bloque 09,Diamante,10,10608,65
+2026-05,mayo 2026,Clavel,Bloque 09,Moon Light,51,56904,332
+2026-05,mayo 2026,Clavel,Bloque 09,Selva,3,3144,5
+2026-05,mayo 2026,Clavel,Bloque 09,Virgilio,60,66720,1273
+2026-05,mayo 2026,Clavel,Bloque 09,Zeppelin,6,7056,63
+2026-05,mayo 2026,Clavel,Bloque 10,Bizet,2,2080,123
+2026-05,mayo 2026,Clavel,Bloque 10,Brut,1,1152,131
+2026-05,mayo 2026,Clavel,Bloque 10,Capricho,2,2080,371
+2026-05,mayo 2026,Clavel,Bloque 10,Caramel,1,1152,94
+2026-05,mayo 2026,Clavel,Bloque 10,Caronte,3,3120,636
+2026-05,mayo 2026,Clavel,Bloque 10,Cheerio,1,1040,47
+2026-05,mayo 2026,Clavel,Bloque 10,Chopin,1,1040,354
+2026-05,mayo 2026,Clavel,Bloque 10,Daniko,7,7952,791
+2026-05,mayo 2026,Clavel,Bloque 10,Diamante,12,12480,325
+2026-05,mayo 2026,Clavel,Bloque 10,Diletta,2,2080,112
+2026-05,mayo 2026,Clavel,Bloque 10,Fiesta Komachi,1,1152,51
+2026-05,mayo 2026,Clavel,Bloque 10,Gioele,10,10400,287
+2026-05,mayo 2026,Clavel,Bloque 10,Golem,5,5760,80
+2026-05,mayo 2026,Clavel,Bloque 10,Grand Slam,4,4608,326
+2026-05,mayo 2026,Clavel,Bloque 10,Megan,28,29792,2100
+2026-05,mayo 2026,Clavel,Bloque 10,Metalica,3,3120,458
+2026-05,mayo 2026,Clavel,Bloque 10,Moon Light,25,28800,1209
+2026-05,mayo 2026,Clavel,Bloque 10,Nobbio Burgundy,1,1040,38
+2026-05,mayo 2026,Clavel,Bloque 10,Nobbio Cherry,1,1040,66
+2026-05,mayo 2026,Clavel,Bloque 10,Nobbio Violet,1,1040,26
+2026-05,mayo 2026,Clavel,Bloque 10,Novia,2,2192,219
+2026-05,mayo 2026,Clavel,Bloque 10,Olympia,2,2192,218
+2026-05,mayo 2026,Clavel,Bloque 10,Prinz,3,3120,82
+2026-05,mayo 2026,Clavel,Bloque 10,Trueno,11,12336,704
+2026-05,mayo 2026,Clavel,Bloque 10,Virgilio,10,11520,641
+2026-05,mayo 2026,Clavel,Bloque 10,Zafiro,2,2304,266
+2026-05,mayo 2026,Clavel,Bloque 10,Zenit,2,2080,23
+2026-05,mayo 2026,Clavel,Bloque 11,Daniko,25,26472,862
+2026-05,mayo 2026,Clavel,Bloque 11,Doncel,1,1038,3
+2026-05,mayo 2026,Clavel,Bloque 11,F136°,3,3264,4
+2026-05,mayo 2026,Clavel,Bloque 11,K259°,2,2076,37
+2026-05,mayo 2026,Clavel,Bloque 11,Megan,9,9568,107
+2026-05,mayo 2026,Clavel,Bloque 11,Novia,4,4202,93
+2026-05,mayo 2026,Clavel,Bloque 11,Prinz,2,2126,30
+2026-05,mayo 2026,Clavel,Bloque 11,Trueno,9,9568,9
+2026-05,mayo 2026,Clavel,Bloque 11,Verona,43,45608,15
+2026-05,mayo 2026,Clavel,Bloque 11,Zenit,1,1088,8
+2026-05,mayo 2026,Clavel,Bloque 11,Zeppelin,21,22232,139
+2026-05,mayo 2026,Clavel,Bloque 17,Diamante,25,27800,206
+2026-05,mayo 2026,Clavel,Bloque 17,Doncel,9,10008,20
+2026-05,mayo 2026,Clavel,Bloque 17,Megan,1,1112,1
+2026-05,mayo 2026,Clavel,Bloque 17,Moon Light,50,55600,150
+2026-05,mayo 2026,Clavel,Bloque 17,Olympia,2,2224,1
+2026-05,mayo 2026,Clavel,Bloque 17,Verona,41,45592,6
+2026-05,mayo 2026,Clavel,Bloque 17,Zenit,2,2224,5
+2026-05,mayo 2026,Clavel,Bloque 17,Zeppelin,37,41144,137
+2026-05,mayo 2026,Clavel,Bloque 19,Brut,4,4448,29
+2026-05,mayo 2026,Clavel,Bloque 19,Caramel,4,4448,9
+2026-05,mayo 2026,Clavel,Bloque 19,Caronte,4,4448,65
+2026-05,mayo 2026,Clavel,Bloque 19,Corvette,18,20016,156
+2026-05,mayo 2026,Clavel,Bloque 19,Daniko,4,4448,51
+2026-05,mayo 2026,Clavel,Bloque 19,Diamante,16,17792,22
+2026-05,mayo 2026,Clavel,Bloque 19,Diletta,3,3336,4
+2026-05,mayo 2026,Clavel,Bloque 19,Gioele,8,8896,26
+2026-05,mayo 2026,Clavel,Bloque 19,Golem,8,8896,15
+2026-05,mayo 2026,Clavel,Bloque 19,K259°,4,4448,14
+2026-05,mayo 2026,Clavel,Bloque 19,Moon Light,2,2224,3
+2026-05,mayo 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,9
+2026-05,mayo 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,60
+2026-05,mayo 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,6
+2026-05,mayo 2026,Clavel,Bloque 19,Novia,1,1112,1
+2026-05,mayo 2026,Clavel,Bloque 19,Prinz,10,11120,124
+2026-05,mayo 2026,Clavel,Bloque 19,Royal Damascus,3,3336,8
+2026-05,mayo 2026,Clavel,Bloque 19,Selva,5,5560,10
+2026-05,mayo 2026,Clavel,Bloque 19,Trueno,2,2224,0
+2026-05,mayo 2026,Clavel,Bloque 19,Verona,21,23352,4
+2026-05,mayo 2026,Clavel,Bloque 19,Virgilio,37,41128,526
+2026-05,mayo 2026,Clavel,Bloque 19,Zafiro,6,6672,65
+2026-05,mayo 2026,Clavel,Bloque 19,Zeppelin,3,3336,9
+2026-05,mayo 2026,Clavel,Bloque 5A,Brut,2,1996,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Caramel,2,2118,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Caronte,2,2016,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Chopin,4,3972,13
+2026-05,mayo 2026,Clavel,Bloque 5A,Corvette,4,3992,1
+2026-05,mayo 2026,Clavel,Bloque 5A,Daniko,14,14418,10
+2026-05,mayo 2026,Clavel,Bloque 5A,Diamante,11,11156,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Diletta,7,7058,3
+2026-05,mayo 2026,Clavel,Bloque 5A,Doncel,5,4960,1
+2026-05,mayo 2026,Clavel,Bloque 5A,Gioele,4,4032,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Golem,7,7016,0
+2026-05,mayo 2026,Clavel,Bloque 5A,J375°,1,988,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Megan,2,1996,2
+2026-05,mayo 2026,Clavel,Bloque 5A,Metalica,3,3004,2
+2026-05,mayo 2026,Clavel,Bloque 5A,Moon Light,12,12240,5
+2026-05,mayo 2026,Clavel,Bloque 5A,Nobbio Cherry,1,1008,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Novia,4,4012,1
+2026-05,mayo 2026,Clavel,Bloque 5A,Olympia,2,1976,7
+2026-05,mayo 2026,Clavel,Bloque 5A,Prinz,4,4012,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Selva,5,5000,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Trueno,16,16086,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Verona,7,7016,0
+2026-05,mayo 2026,Clavel,Bloque 5A,Virgilio,18,17824,6
+2026-05,mayo 2026,Clavel,Bloque 5A,Zafiro,5,5244,2
+2026-05,mayo 2026,Clavel,Bloque 5A,Zenit,2,1996,1
+2026-05,mayo 2026,Clavel,Bloque 5A,Zeppelin,25,25000,2
+2026-05,mayo 2026,Clavel,Bloque 7B,Brut,6,5968,14
+2026-05,mayo 2026,Clavel,Bloque 7B,Caramel,4,5120,6
+2026-05,mayo 2026,Clavel,Bloque 7B,Caronte,6,6000,7
+2026-05,mayo 2026,Clavel,Bloque 7B,Chopin,1,1288,3
+2026-05,mayo 2026,Clavel,Bloque 7B,Corvette,7,9072,21
+2026-05,mayo 2026,Clavel,Bloque 7B,Daniko,30,34392,501
+2026-05,mayo 2026,Clavel,Bloque 7B,Diletta,6,5904,27
+2026-05,mayo 2026,Clavel,Bloque 7B,Golem,7,8920,2
+2026-05,mayo 2026,Clavel,Bloque 7B,K259°,3,3864,26
+2026-05,mayo 2026,Clavel,Bloque 7B,Metalica,2,2608,2
+2026-05,mayo 2026,Clavel,Bloque 7B,Novia,5,6440,1
+2026-05,mayo 2026,Clavel,Bloque 7B,Olympia,1,1288,0
+2026-05,mayo 2026,Clavel,Bloque 7B,Prinz,16,15648,58
+2026-05,mayo 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,0
+2026-05,mayo 2026,Clavel,Bloque 7B,Trueno,10,13168,0
+2026-05,mayo 2026,Clavel,Bloque 7B,Verona,9,11448,0
+2026-05,mayo 2026,Clavel,Bloque 7B,Virgilio,8,10520,28
+2026-05,mayo 2026,Clavel,Bloque 7B,Zafiro,9,11752,6
+2026-05,mayo 2026,Clavel,Bloque 7B,Zeppelin,11,11120,2
+2026-06,junio 2026,Clavel,Bloque 04,Cheerio,1,1424,7
+2026-06,junio 2026,Clavel,Bloque 04,Chopin,9,12816,49
+2026-06,junio 2026,Clavel,Bloque 04,Corvette,7,9968,18
+2026-06,junio 2026,Clavel,Bloque 04,Diamante,16,22784,25
+2026-06,junio 2026,Clavel,Bloque 04,Diletta,4,5696,108
+2026-06,junio 2026,Clavel,Bloque 04,Doncel,5,7120,8
+2026-06,junio 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-06,junio 2026,Clavel,Bloque 04,Metalica,1,1424,5
+2026-06,junio 2026,Clavel,Bloque 04,Moon Light,9,12816,87
+2026-06,junio 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,0
+2026-06,junio 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,14
+2026-06,junio 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,11
+2026-06,junio 2026,Clavel,Bloque 04,Novia,2,2848,73
+2026-06,junio 2026,Clavel,Bloque 04,Prinz,1,1424,0
+2026-06,junio 2026,Clavel,Bloque 04,Trueno,5,7120,6
+2026-06,junio 2026,Clavel,Bloque 04,Virgilio,10,14240,9
+2026-06,junio 2026,Clavel,Bloque 04,Zeppelin,3,4272,0
+2026-06,junio 2026,Clavel,Bloque 06,Brut,1,1092,706
+2026-06,junio 2026,Clavel,Bloque 06,Caronte,3,3276,390
+2026-06,junio 2026,Clavel,Bloque 06,Chopin,4,4368,1017
+2026-06,junio 2026,Clavel,Bloque 06,Daniko,6,6552,763
+2026-06,junio 2026,Clavel,Bloque 06,Diamante,2,2184,9
+2026-06,junio 2026,Clavel,Bloque 06,Diletta,4,4368,576
+2026-06,junio 2026,Clavel,Bloque 06,Gioele,19,20748,967
+2026-06,junio 2026,Clavel,Bloque 06,Golem,8,8736,132
+2026-06,junio 2026,Clavel,Bloque 06,Grand Slam,5,5460,225
+2026-06,junio 2026,Clavel,Bloque 06,Megan,14,15288,1128
+2026-06,junio 2026,Clavel,Bloque 06,Moon Light,39,42588,1939
+2026-06,junio 2026,Clavel,Bloque 06,Nobbio Violet,1,1092,235
+2026-06,junio 2026,Clavel,Bloque 06,Selva,1,1092,215
+2026-06,junio 2026,Clavel,Bloque 06,Trueno,14,15288,417
+2026-06,junio 2026,Clavel,Bloque 06,Virgilio,41,44772,8105
+2026-06,junio 2026,Clavel,Bloque 06,Zafiro,6,6552,323
+2026-06,junio 2026,Clavel,Bloque 08,Brut,1,1008,0
+2026-06,junio 2026,Clavel,Bloque 08,Caramel,1,1008,0
+2026-06,junio 2026,Clavel,Bloque 08,Caronte,3,3528,0
+2026-06,junio 2026,Clavel,Bloque 08,Chopin,2,2016,0
+2026-06,junio 2026,Clavel,Bloque 08,Daniko,57,61992,0
+2026-06,junio 2026,Clavel,Bloque 08,Diamante,19,20496,0
+2026-06,junio 2026,Clavel,Bloque 08,Diletta,2,2016,0
+2026-06,junio 2026,Clavel,Bloque 08,Fiesta Komachi,1,1008,0
+2026-06,junio 2026,Clavel,Bloque 08,Gioele,11,11088,0
+2026-06,junio 2026,Clavel,Bloque 08,Golem,3,3024,0
+2026-06,junio 2026,Clavel,Bloque 08,Metalica,2,2016,0
+2026-06,junio 2026,Clavel,Bloque 08,Moon Light,11,12936,0
+2026-06,junio 2026,Clavel,Bloque 08,Nobbio Burgundy,1,1008,0
+2026-06,junio 2026,Clavel,Bloque 08,Nobbio Violet,1,1008,0
+2026-06,junio 2026,Clavel,Bloque 08,Novia,1,1008,0
+2026-06,junio 2026,Clavel,Bloque 08,Prinz,3,3528,0
+2026-06,junio 2026,Clavel,Bloque 08,Trueno,16,18792,0
+2026-06,junio 2026,Clavel,Bloque 08,Virgilio,5,5712,0
+2026-06,junio 2026,Clavel,Bloque 08,Zafiro,3,3024,0
+2026-06,junio 2026,Clavel,Bloque 08,Zenit,1,1008,0
+2026-06,junio 2026,Clavel,Bloque 09,Caronte,2,2096,50
+2026-06,junio 2026,Clavel,Bloque 09,Daniko,12,13600,319
+2026-06,junio 2026,Clavel,Bloque 09,Diamante,10,10608,65
+2026-06,junio 2026,Clavel,Bloque 09,Moon Light,50,55728,303
+2026-06,junio 2026,Clavel,Bloque 09,Selva,3,3144,5
+2026-06,junio 2026,Clavel,Bloque 09,Virgilio,60,66720,1313
+2026-06,junio 2026,Clavel,Bloque 09,Zeppelin,6,7056,57
+2026-06,junio 2026,Clavel,Bloque 10,Bizet,2,2080,245
+2026-06,junio 2026,Clavel,Bloque 10,Brut,1,1152,131
+2026-06,junio 2026,Clavel,Bloque 10,Capricho,2,2080,394
+2026-06,junio 2026,Clavel,Bloque 10,Caramel,1,1152,94
+2026-06,junio 2026,Clavel,Bloque 10,Caronte,3,3120,662
+2026-06,junio 2026,Clavel,Bloque 10,Cheerio,1,1040,56
+2026-06,junio 2026,Clavel,Bloque 10,Chopin,1,1040,446
+2026-06,junio 2026,Clavel,Bloque 10,Daniko,7,7952,886
+2026-06,junio 2026,Clavel,Bloque 10,Diamante,12,12480,383
+2026-06,junio 2026,Clavel,Bloque 10,Diletta,2,2080,116
+2026-06,junio 2026,Clavel,Bloque 10,Fiesta Komachi,1,1152,71
+2026-06,junio 2026,Clavel,Bloque 10,Gioele,10,10400,313
+2026-06,junio 2026,Clavel,Bloque 10,Golem,6,6912,170
+2026-06,junio 2026,Clavel,Bloque 10,Grand Slam,4,4608,393
+2026-06,junio 2026,Clavel,Bloque 10,Megan,28,29792,2389
+2026-06,junio 2026,Clavel,Bloque 10,Metalica,3,3120,186
+2026-06,junio 2026,Clavel,Bloque 10,Moon Light,25,28800,1551
+2026-06,junio 2026,Clavel,Bloque 10,Nobbio Burgundy,1,1040,32
+2026-06,junio 2026,Clavel,Bloque 10,Nobbio Cherry,1,1040,66
+2026-06,junio 2026,Clavel,Bloque 10,Nobbio Violet,1,1040,26
+2026-06,junio 2026,Clavel,Bloque 10,Novia,2,2192,237
+2026-06,junio 2026,Clavel,Bloque 10,Olympia,2,2192,240
+2026-06,junio 2026,Clavel,Bloque 10,Prinz,3,3120,84
+2026-06,junio 2026,Clavel,Bloque 10,Trueno,11,12336,888
+2026-06,junio 2026,Clavel,Bloque 10,Virgilio,10,11520,658
+2026-06,junio 2026,Clavel,Bloque 10,Zafiro,2,2304,224
+2026-06,junio 2026,Clavel,Bloque 10,Zenit,2,2080,23
+2026-06,junio 2026,Clavel,Bloque 11,Daniko,25,26472,1103
+2026-06,junio 2026,Clavel,Bloque 11,Doncel,1,1038,5
+2026-06,junio 2026,Clavel,Bloque 11,F136°,3,3264,11
+2026-06,junio 2026,Clavel,Bloque 11,K259°,2,2076,55
+2026-06,junio 2026,Clavel,Bloque 11,Megan,9,9568,128
+2026-06,junio 2026,Clavel,Bloque 11,Novia,4,4202,122
+2026-06,junio 2026,Clavel,Bloque 11,Prinz,2,2126,44
+2026-06,junio 2026,Clavel,Bloque 11,Trueno,9,9568,18
+2026-06,junio 2026,Clavel,Bloque 11,Verona,43,45608,17
+2026-06,junio 2026,Clavel,Bloque 11,Zenit,1,1088,15
+2026-06,junio 2026,Clavel,Bloque 11,Zeppelin,21,22232,169
+2026-06,junio 2026,Clavel,Bloque 17,Diamante,25,27800,392
+2026-06,junio 2026,Clavel,Bloque 17,Doncel,9,10008,28
+2026-06,junio 2026,Clavel,Bloque 17,Megan,1,1112,1
+2026-06,junio 2026,Clavel,Bloque 17,Moon Light,50,55600,195
+2026-06,junio 2026,Clavel,Bloque 17,Olympia,2,2224,1
+2026-06,junio 2026,Clavel,Bloque 17,Verona,41,45592,7
+2026-06,junio 2026,Clavel,Bloque 17,Zenit,2,2224,11
+2026-06,junio 2026,Clavel,Bloque 17,Zeppelin,38,42256,158
+2026-06,junio 2026,Clavel,Bloque 19,Brut,4,4448,96
+2026-06,junio 2026,Clavel,Bloque 19,Caramel,4,4448,13
+2026-06,junio 2026,Clavel,Bloque 19,Caronte,4,4448,75
+2026-06,junio 2026,Clavel,Bloque 19,Corvette,18,20016,353
+2026-06,junio 2026,Clavel,Bloque 19,Daniko,4,4448,69
+2026-06,junio 2026,Clavel,Bloque 19,Diamante,16,17792,98
+2026-06,junio 2026,Clavel,Bloque 19,Diletta,3,3336,7
+2026-06,junio 2026,Clavel,Bloque 19,Gioele,8,8896,50
+2026-06,junio 2026,Clavel,Bloque 19,Golem,8,8896,16
+2026-06,junio 2026,Clavel,Bloque 19,K259°,4,4448,56
+2026-06,junio 2026,Clavel,Bloque 19,Moon Light,2,2224,5
+2026-06,junio 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,8
+2026-06,junio 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,166
+2026-06,junio 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,7
+2026-06,junio 2026,Clavel,Bloque 19,Novia,1,1112,2
+2026-06,junio 2026,Clavel,Bloque 19,Prinz,10,11120,223
+2026-06,junio 2026,Clavel,Bloque 19,Royal Damascus,3,3336,11
+2026-06,junio 2026,Clavel,Bloque 19,Selva,5,5560,17
+2026-06,junio 2026,Clavel,Bloque 19,Trueno,2,2224,0
+2026-06,junio 2026,Clavel,Bloque 19,Verona,21,23352,11
+2026-06,junio 2026,Clavel,Bloque 19,Virgilio,37,41128,1137
+2026-06,junio 2026,Clavel,Bloque 19,Zafiro,6,6672,107
+2026-06,junio 2026,Clavel,Bloque 19,Zeppelin,3,3336,32
+2026-06,junio 2026,Clavel,Bloque 5A,Brut,2,1996,0
+2026-06,junio 2026,Clavel,Bloque 5A,Caramel,2,2118,0
+2026-06,junio 2026,Clavel,Bloque 5A,Caronte,2,2016,0
+2026-06,junio 2026,Clavel,Bloque 5A,Chopin,4,3972,28
+2026-06,junio 2026,Clavel,Bloque 5A,Corvette,4,3992,2
+2026-06,junio 2026,Clavel,Bloque 5A,Daniko,14,14418,7
+2026-06,junio 2026,Clavel,Bloque 5A,Diamante,11,11156,0
+2026-06,junio 2026,Clavel,Bloque 5A,Diletta,7,7058,3
+2026-06,junio 2026,Clavel,Bloque 5A,Doncel,5,4960,1
+2026-06,junio 2026,Clavel,Bloque 5A,Gioele,4,4032,0
+2026-06,junio 2026,Clavel,Bloque 5A,Golem,7,7016,0
+2026-06,junio 2026,Clavel,Bloque 5A,J375°,1,988,0
+2026-06,junio 2026,Clavel,Bloque 5A,Megan,2,1996,2
+2026-06,junio 2026,Clavel,Bloque 5A,Metalica,3,3004,2
+2026-06,junio 2026,Clavel,Bloque 5A,Moon Light,12,12240,11
+2026-06,junio 2026,Clavel,Bloque 5A,Nobbio Cherry,1,1008,0
+2026-06,junio 2026,Clavel,Bloque 5A,Novia,4,4012,0
+2026-06,junio 2026,Clavel,Bloque 5A,Olympia,2,1976,8
+2026-06,junio 2026,Clavel,Bloque 5A,Prinz,4,4012,0
+2026-06,junio 2026,Clavel,Bloque 5A,Selva,5,5000,0
+2026-06,junio 2026,Clavel,Bloque 5A,Trueno,16,16086,0
+2026-06,junio 2026,Clavel,Bloque 5A,Verona,7,7016,0
+2026-06,junio 2026,Clavel,Bloque 5A,Virgilio,18,17824,10
+2026-06,junio 2026,Clavel,Bloque 5A,Zafiro,5,5244,3
+2026-06,junio 2026,Clavel,Bloque 5A,Zenit,2,1996,2
+2026-06,junio 2026,Clavel,Bloque 5A,Zeppelin,25,25000,2
+2026-06,junio 2026,Clavel,Bloque 7A,18ST073°,1,1308,50
+2026-06,junio 2026,Clavel,Bloque 7A,Bizet,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Brut,4,5232,0
+2026-06,junio 2026,Clavel,Bloque 7A,Capricho,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Caronte,4,5232,0
+2026-06,junio 2026,Clavel,Bloque 7A,Cheerio,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Chopin,3,3924,0
+2026-06,junio 2026,Clavel,Bloque 7A,Corvette,4,5232,0
+2026-06,junio 2026,Clavel,Bloque 7A,Daniko,42,55176,0
+2026-06,junio 2026,Clavel,Bloque 7A,Diamante,13,17000,0
+2026-06,junio 2026,Clavel,Bloque 7A,Diletta,3,3924,0
+2026-06,junio 2026,Clavel,Bloque 7A,Doncel,1,1308,0
+2026-06,junio 2026,Clavel,Bloque 7A,F425°,1,1308,75
+2026-06,junio 2026,Clavel,Bloque 7A,Farida,1,1308,0
+2026-06,junio 2026,Clavel,Bloque 7A,Gioele,11,14388,0
+2026-06,junio 2026,Clavel,Bloque 7A,Golem,5,6540,0
+2026-06,junio 2026,Clavel,Bloque 7A,Grand Slam,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,K444°,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Megan,4,5232,0
+2026-06,junio 2026,Clavel,Bloque 7A,Metalica,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Moon Light,27,35316,2240
+2026-06,junio 2026,Clavel,Bloque 7A,Nobbio Burgundy,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Nobbio Cherry,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Nobbio Party,1,1308,0
+2026-06,junio 2026,Clavel,Bloque 7A,Nobbio Violet,5,6540,0
+2026-06,junio 2026,Clavel,Bloque 7A,Novia,2,2616,168
+2026-06,junio 2026,Clavel,Bloque 7A,Olympia,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Prinz,4,5232,0
+2026-06,junio 2026,Clavel,Bloque 7A,Selva,4,5232,0
+2026-06,junio 2026,Clavel,Bloque 7A,Trueno,5,6540,0
+2026-06,junio 2026,Clavel,Bloque 7A,Verona,4,5232,0
+2026-06,junio 2026,Clavel,Bloque 7A,Virgilio,9,11772,0
+2026-06,junio 2026,Clavel,Bloque 7A,Zafiro,2,2616,0
+2026-06,junio 2026,Clavel,Bloque 7A,Zenit,1,1308,0
+2026-06,junio 2026,Clavel,Bloque 7A,Zeppelin,9,11772,317
+2026-06,junio 2026,Clavel,Bloque 7B,Brut,6,5968,26
+2026-06,junio 2026,Clavel,Bloque 7B,Caramel,4,5120,26
+2026-06,junio 2026,Clavel,Bloque 7B,Caronte,6,6000,34
+2026-06,junio 2026,Clavel,Bloque 7B,Chopin,1,1288,22
+2026-06,junio 2026,Clavel,Bloque 7B,Corvette,7,9072,55
+2026-06,junio 2026,Clavel,Bloque 7B,Daniko,30,34392,971
+2026-06,junio 2026,Clavel,Bloque 7B,Diletta,6,5904,42
+2026-06,junio 2026,Clavel,Bloque 7B,Golem,7,8920,37
+2026-06,junio 2026,Clavel,Bloque 7B,K259°,3,3864,140
+2026-06,junio 2026,Clavel,Bloque 7B,Metalica,2,2608,4
+2026-06,junio 2026,Clavel,Bloque 7B,Novia,5,6440,13
+2026-06,junio 2026,Clavel,Bloque 7B,Olympia,1,1288,14
+2026-06,junio 2026,Clavel,Bloque 7B,Prinz,16,15648,85
+2026-06,junio 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,14
+2026-06,junio 2026,Clavel,Bloque 7B,Trueno,10,13168,46
+2026-06,junio 2026,Clavel,Bloque 7B,Verona,9,11448,0
+2026-06,junio 2026,Clavel,Bloque 7B,Virgilio,8,10520,186
+2026-06,junio 2026,Clavel,Bloque 7B,Zafiro,9,11752,9
+2026-06,junio 2026,Clavel,Bloque 7B,Zeppelin,11,11120,17
+2026-07,julio 2026,Clavel,Bloque 04,Cheerio,1,1424,19
+2026-07,julio 2026,Clavel,Bloque 04,Chopin,9,12816,56
+2026-07,julio 2026,Clavel,Bloque 04,Corvette,7,9968,35
+2026-07,julio 2026,Clavel,Bloque 04,Diamante,16,22784,40
+2026-07,julio 2026,Clavel,Bloque 04,Diletta,4,5696,127
+2026-07,julio 2026,Clavel,Bloque 04,Doncel,5,7120,13
+2026-07,julio 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-07,julio 2026,Clavel,Bloque 04,Metalica,1,1424,5
+2026-07,julio 2026,Clavel,Bloque 04,Moon Light,9,12816,90
+2026-07,julio 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,2
+2026-07,julio 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,58
+2026-07,julio 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,15
+2026-07,julio 2026,Clavel,Bloque 04,Novia,2,2848,97
+2026-07,julio 2026,Clavel,Bloque 04,Prinz,1,1424,9
+2026-07,julio 2026,Clavel,Bloque 04,Trueno,4,5696,6
+2026-07,julio 2026,Clavel,Bloque 04,Virgilio,10,14240,22
+2026-07,julio 2026,Clavel,Bloque 04,Zeppelin,3,4272,0
+2026-07,julio 2026,Clavel,Bloque 08,Brut,1,1008,0
+2026-07,julio 2026,Clavel,Bloque 08,Caramel,1,1008,0
+2026-07,julio 2026,Clavel,Bloque 08,Caronte,3,3528,0
+2026-07,julio 2026,Clavel,Bloque 08,Chopin,2,2016,9
+2026-07,julio 2026,Clavel,Bloque 08,Daniko,57,61992,17
+2026-07,julio 2026,Clavel,Bloque 08,Diamante,19,20496,0
+2026-07,julio 2026,Clavel,Bloque 08,Diletta,2,2016,0
+2026-07,julio 2026,Clavel,Bloque 08,Fiesta Komachi,1,1008,0
+2026-07,julio 2026,Clavel,Bloque 08,Gioele,11,11088,0
+2026-07,julio 2026,Clavel,Bloque 08,Golem,3,3024,0
+2026-07,julio 2026,Clavel,Bloque 08,Metalica,2,2016,2
+2026-07,julio 2026,Clavel,Bloque 08,Moon Light,11,12936,1
+2026-07,julio 2026,Clavel,Bloque 08,Nobbio Burgundy,1,1008,1
+2026-07,julio 2026,Clavel,Bloque 08,Nobbio Violet,1,1008,2
+2026-07,julio 2026,Clavel,Bloque 08,Novia,1,1008,0
+2026-07,julio 2026,Clavel,Bloque 08,Prinz,3,3528,0
+2026-07,julio 2026,Clavel,Bloque 08,Trueno,16,18792,0
+2026-07,julio 2026,Clavel,Bloque 08,Virgilio,5,5712,0
+2026-07,julio 2026,Clavel,Bloque 08,Zafiro,3,3024,0
+2026-07,julio 2026,Clavel,Bloque 08,Zenit,1,1008,1
+2026-07,julio 2026,Clavel,Bloque 09,Caronte,2,2096,91
+2026-07,julio 2026,Clavel,Bloque 09,Daniko,12,13600,756
+2026-07,julio 2026,Clavel,Bloque 09,Diamante,10,10608,109
+2026-07,julio 2026,Clavel,Bloque 09,Moon Light,51,56904,578
+2026-07,julio 2026,Clavel,Bloque 09,Selva,3,3144,6
+2026-07,julio 2026,Clavel,Bloque 09,Virgilio,60,66720,2060
+2026-07,julio 2026,Clavel,Bloque 09,Zeppelin,6,7056,99
+2026-07,julio 2026,Clavel,Bloque 11,Daniko,25,26472,1791
+2026-07,julio 2026,Clavel,Bloque 11,Doncel,1,1038,11
+2026-07,julio 2026,Clavel,Bloque 11,F136°,3,3264,12
+2026-07,julio 2026,Clavel,Bloque 11,K259°,2,2076,83
+2026-07,julio 2026,Clavel,Bloque 11,Megan,9,9568,150
+2026-07,julio 2026,Clavel,Bloque 11,Novia,4,4202,229
+2026-07,julio 2026,Clavel,Bloque 11,Prinz,2,2126,57
+2026-07,julio 2026,Clavel,Bloque 11,Trueno,9,9568,108
+2026-07,julio 2026,Clavel,Bloque 11,Verona,43,45608,18
+2026-07,julio 2026,Clavel,Bloque 11,Zenit,1,1088,17
+2026-07,julio 2026,Clavel,Bloque 11,Zeppelin,21,22232,306
+2026-07,julio 2026,Clavel,Bloque 17,Diamante,25,27800,2887
+2026-07,julio 2026,Clavel,Bloque 17,Doncel,9,10008,31
+2026-07,julio 2026,Clavel,Bloque 17,Megan,1,1112,1
+2026-07,julio 2026,Clavel,Bloque 17,Moon Light,50,55600,220
+2026-07,julio 2026,Clavel,Bloque 17,Olympia,2,2224,2
+2026-07,julio 2026,Clavel,Bloque 17,Verona,41,45592,24
+2026-07,julio 2026,Clavel,Bloque 17,Zenit,2,2224,14
+2026-07,julio 2026,Clavel,Bloque 17,Zeppelin,38,42256,184
+2026-07,julio 2026,Clavel,Bloque 19,Brut,4,4448,159
+2026-07,julio 2026,Clavel,Bloque 19,Caramel,4,4448,40
+2026-07,julio 2026,Clavel,Bloque 19,Caronte,4,4448,300
+2026-07,julio 2026,Clavel,Bloque 19,Corvette,18,20016,743
+2026-07,julio 2026,Clavel,Bloque 19,Daniko,4,4448,131
+2026-07,julio 2026,Clavel,Bloque 19,Diamante,16,17792,139
+2026-07,julio 2026,Clavel,Bloque 19,Diletta,3,3336,16
+2026-07,julio 2026,Clavel,Bloque 19,Gioele,8,8896,176
+2026-07,julio 2026,Clavel,Bloque 19,Golem,8,8896,30
+2026-07,julio 2026,Clavel,Bloque 19,K259°,4,4448,85
+2026-07,julio 2026,Clavel,Bloque 19,Moon Light,2,2224,16
+2026-07,julio 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,14
+2026-07,julio 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,193
+2026-07,julio 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,8
+2026-07,julio 2026,Clavel,Bloque 19,Novia,1,1112,7
+2026-07,julio 2026,Clavel,Bloque 19,Prinz,10,11120,394
+2026-07,julio 2026,Clavel,Bloque 19,Royal Damascus,3,3336,35
+2026-07,julio 2026,Clavel,Bloque 19,Selva,5,5560,44
+2026-07,julio 2026,Clavel,Bloque 19,Trueno,2,2224,8
+2026-07,julio 2026,Clavel,Bloque 19,Verona,21,23352,0
+2026-07,julio 2026,Clavel,Bloque 19,Virgilio,37,41128,1957
+2026-07,julio 2026,Clavel,Bloque 19,Zafiro,6,6672,325
+2026-07,julio 2026,Clavel,Bloque 19,Zeppelin,3,3336,42
+2026-07,julio 2026,Clavel,Bloque 5A,Brut,2,1996,0
+2026-07,julio 2026,Clavel,Bloque 5A,Caramel,2,2118,1
+2026-07,julio 2026,Clavel,Bloque 5A,Caronte,2,2016,0
+2026-07,julio 2026,Clavel,Bloque 5A,Chopin,4,3972,38
+2026-07,julio 2026,Clavel,Bloque 5A,Corvette,4,3992,3
+2026-07,julio 2026,Clavel,Bloque 5A,Daniko,14,14418,50
+2026-07,julio 2026,Clavel,Bloque 5A,Diamante,11,11156,0
+2026-07,julio 2026,Clavel,Bloque 5A,Diletta,7,7058,11
+2026-07,julio 2026,Clavel,Bloque 5A,Doncel,5,4960,1
+2026-07,julio 2026,Clavel,Bloque 5A,Gioele,4,4032,0
+2026-07,julio 2026,Clavel,Bloque 5A,Golem,7,7016,0
+2026-07,julio 2026,Clavel,Bloque 5A,J375°,1,988,1
+2026-07,julio 2026,Clavel,Bloque 5A,Megan,2,1996,2
+2026-07,julio 2026,Clavel,Bloque 5A,Metalica,3,3004,2
+2026-07,julio 2026,Clavel,Bloque 5A,Moon Light,12,12240,22
+2026-07,julio 2026,Clavel,Bloque 5A,Nobbio Cherry,1,1008,0
+2026-07,julio 2026,Clavel,Bloque 5A,Novia,4,4012,2
+2026-07,julio 2026,Clavel,Bloque 5A,Olympia,2,1976,7
+2026-07,julio 2026,Clavel,Bloque 5A,Prinz,4,4012,0
+2026-07,julio 2026,Clavel,Bloque 5A,Selva,5,5000,0
+2026-07,julio 2026,Clavel,Bloque 5A,Trueno,16,16086,2
+2026-07,julio 2026,Clavel,Bloque 5A,Verona,7,7016,0
+2026-07,julio 2026,Clavel,Bloque 5A,Virgilio,18,17824,11
+2026-07,julio 2026,Clavel,Bloque 5A,Zafiro,5,5244,3
+2026-07,julio 2026,Clavel,Bloque 5A,Zenit,2,1996,2
+2026-07,julio 2026,Clavel,Bloque 5A,Zeppelin,25,25000,3
+2026-07,julio 2026,Clavel,Bloque 5B,Bizet,12,11880,6
+2026-07,julio 2026,Clavel,Bloque 5B,Boheme,2,1980,0
+2026-07,julio 2026,Clavel,Bloque 5B,Brut,2,2062,0
+2026-07,julio 2026,Clavel,Bloque 5B,Capricho,2,1980,0
+2026-07,julio 2026,Clavel,Bloque 5B,Caramel,1,1072,0
+2026-07,julio 2026,Clavel,Bloque 5B,Caronte,3,3216,0
+2026-07,julio 2026,Clavel,Bloque 5B,Chopin,11,11054,0
+2026-07,julio 2026,Clavel,Bloque 5B,Corvette,3,2970,0
+2026-07,julio 2026,Clavel,Bloque 5B,Daniko,14,14364,0
+2026-07,julio 2026,Clavel,Bloque 5B,Diamante,28,29360,0
+2026-07,julio 2026,Clavel,Bloque 5B,Diletta,8,8330,0
+2026-07,julio 2026,Clavel,Bloque 5B,Doncel,2,1980,0
+2026-07,julio 2026,Clavel,Bloque 5B,Epic°,1,990,0
+2026-07,julio 2026,Clavel,Bloque 5B,Fiesta Komachi,3,2970,0
+2026-07,julio 2026,Clavel,Bloque 5B,Gioele,33,34228,1
+2026-07,julio 2026,Clavel,Bloque 5B,Golem,8,8494,2
+2026-07,julio 2026,Clavel,Bloque 5B,K444°,3,2970,0
+2026-07,julio 2026,Clavel,Bloque 5B,Komachi,6,5940,1
+2026-07,julio 2026,Clavel,Bloque 5B,Megan,2,1980,0
+2026-07,julio 2026,Clavel,Bloque 5B,Metalica,1,990,0
+2026-07,julio 2026,Clavel,Bloque 5B,Moon Light,46,47754,2
+2026-07,julio 2026,Clavel,Bloque 5B,Nobbio Burgundy,2,2144,0
+2026-07,julio 2026,Clavel,Bloque 5B,Nobbio Party,4,3960,4
+2026-07,julio 2026,Clavel,Bloque 5B,Nobbio Violet,4,4042,0
+2026-07,julio 2026,Clavel,Bloque 5B,Novia,3,2970,0
+2026-07,julio 2026,Clavel,Bloque 5B,Prinz,1,990,0
+2026-07,julio 2026,Clavel,Bloque 5B,Royal Damascus,2,1980,0
+2026-07,julio 2026,Clavel,Bloque 5B,Selva,7,7012,0
+2026-07,julio 2026,Clavel,Bloque 5B,Trueno,50,52956,1
+2026-07,julio 2026,Clavel,Bloque 5B,Verona,5,4950,0
+2026-07,julio 2026,Clavel,Bloque 5B,Virgilio,13,13854,2
+2026-07,julio 2026,Clavel,Bloque 5B,Voragine,3,2970,0
+2026-07,julio 2026,Clavel,Bloque 5B,Zafiro,8,8494,0
+2026-07,julio 2026,Clavel,Bloque 5B,Zenit,1,990,0
+2026-07,julio 2026,Clavel,Bloque 5B,Zeppelin,13,12870,1
+2026-07,julio 2026,Clavel,Bloque 7B,Brut,6,5968,87
+2026-07,julio 2026,Clavel,Bloque 7B,Caramel,4,5120,32
+2026-07,julio 2026,Clavel,Bloque 7B,Caronte,6,6000,86
+2026-07,julio 2026,Clavel,Bloque 7B,Chopin,1,1288,42
+2026-07,julio 2026,Clavel,Bloque 7B,Corvette,7,9072,68
+2026-07,julio 2026,Clavel,Bloque 7B,Daniko,30,34392,1508
+2026-07,julio 2026,Clavel,Bloque 7B,Diletta,6,5904,69
+2026-07,julio 2026,Clavel,Bloque 7B,Golem,7,8920,16
+2026-07,julio 2026,Clavel,Bloque 7B,K259°,3,3864,179
+2026-07,julio 2026,Clavel,Bloque 7B,Metalica,2,2608,7
+2026-07,julio 2026,Clavel,Bloque 7B,Novia,5,6440,23
+2026-07,julio 2026,Clavel,Bloque 7B,Olympia,1,1288,18
+2026-07,julio 2026,Clavel,Bloque 7B,Prinz,16,15648,263
+2026-07,julio 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,22
+2026-07,julio 2026,Clavel,Bloque 7B,Trueno,10,13168,355
+2026-07,julio 2026,Clavel,Bloque 7B,Verona,9,11448,5
+2026-07,julio 2026,Clavel,Bloque 7B,Virgilio,8,10520,358
+2026-07,julio 2026,Clavel,Bloque 7B,Zafiro,9,11752,18
+2026-07,julio 2026,Clavel,Bloque 7B,Zeppelin,11,11120,45
+2026-08,agosto 2026,Clavel,Bloque 04,Cheerio,1,1424,19
+2026-08,agosto 2026,Clavel,Bloque 04,Chopin,9,12816,132
+2026-08,agosto 2026,Clavel,Bloque 04,Corvette,7,9968,49
+2026-08,agosto 2026,Clavel,Bloque 04,Diamante,16,22784,67
+2026-08,agosto 2026,Clavel,Bloque 04,Diletta,4,5696,160
+2026-08,agosto 2026,Clavel,Bloque 04,Doncel,5,7120,15
+2026-08,agosto 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-08,agosto 2026,Clavel,Bloque 04,Metalica,1,1424,10
+2026-08,agosto 2026,Clavel,Bloque 04,Moon Light,9,12816,83
+2026-08,agosto 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,3
+2026-08,agosto 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,69
+2026-08,agosto 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,24
+2026-08,agosto 2026,Clavel,Bloque 04,Novia,2,2848,98
+2026-08,agosto 2026,Clavel,Bloque 04,Prinz,1,1424,9
+2026-08,agosto 2026,Clavel,Bloque 04,Trueno,5,7120,7
+2026-08,agosto 2026,Clavel,Bloque 04,Virgilio,10,14240,33
+2026-08,agosto 2026,Clavel,Bloque 04,Zeppelin,3,4272,4
+2026-08,agosto 2026,Clavel,Bloque 08,Brut,1,1008,0
+2026-08,agosto 2026,Clavel,Bloque 08,Caramel,1,1008,0
+2026-08,agosto 2026,Clavel,Bloque 08,Caronte,3,3528,5
+2026-08,agosto 2026,Clavel,Bloque 08,Chopin,2,2016,21
+2026-08,agosto 2026,Clavel,Bloque 08,Daniko,57,61992,133
+2026-08,agosto 2026,Clavel,Bloque 08,Diamante,19,20496,0
+2026-08,agosto 2026,Clavel,Bloque 08,Diletta,2,2016,2
+2026-08,agosto 2026,Clavel,Bloque 08,Fiesta Komachi,1,1008,0
+2026-08,agosto 2026,Clavel,Bloque 08,Gioele,11,11088,0
+2026-08,agosto 2026,Clavel,Bloque 08,Golem,3,3024,0
+2026-08,agosto 2026,Clavel,Bloque 08,Metalica,2,2016,2
+2026-08,agosto 2026,Clavel,Bloque 08,Moon Light,11,12936,4
+2026-08,agosto 2026,Clavel,Bloque 08,Nobbio Burgundy,1,1008,2
+2026-08,agosto 2026,Clavel,Bloque 08,Nobbio Violet,1,1008,3
+2026-08,agosto 2026,Clavel,Bloque 08,Novia,1,1008,0
+2026-08,agosto 2026,Clavel,Bloque 08,Prinz,3,3528,0
+2026-08,agosto 2026,Clavel,Bloque 08,Trueno,16,18792,2
+2026-08,agosto 2026,Clavel,Bloque 08,Virgilio,5,5712,1
+2026-08,agosto 2026,Clavel,Bloque 08,Zafiro,3,3024,0
+2026-08,agosto 2026,Clavel,Bloque 08,Zenit,1,1008,1
+2026-08,agosto 2026,Clavel,Bloque 11,Daniko,25,26472,2376
+2026-08,agosto 2026,Clavel,Bloque 11,Doncel,1,1038,20
+2026-08,agosto 2026,Clavel,Bloque 11,F136°,3,3264,50
+2026-08,agosto 2026,Clavel,Bloque 11,K259°,2,2076,104
+2026-08,agosto 2026,Clavel,Bloque 11,Megan,9,9568,363
+2026-08,agosto 2026,Clavel,Bloque 11,Novia,4,4202,274
+2026-08,agosto 2026,Clavel,Bloque 11,Prinz,2,2126,78
+2026-08,agosto 2026,Clavel,Bloque 11,Trueno,9,9568,138
+2026-08,agosto 2026,Clavel,Bloque 11,Verona,43,45608,52
+2026-08,agosto 2026,Clavel,Bloque 11,Zenit,1,1088,27
+2026-08,agosto 2026,Clavel,Bloque 11,Zeppelin,21,22232,478
+2026-08,agosto 2026,Clavel,Bloque 17,Diamante,25,27800,4874
+2026-08,agosto 2026,Clavel,Bloque 17,Doncel,9,10008,28
+2026-08,agosto 2026,Clavel,Bloque 17,Megan,1,1112,1
+2026-08,agosto 2026,Clavel,Bloque 17,Moon Light,50,55600,329
+2026-08,agosto 2026,Clavel,Bloque 17,Olympia,2,2224,3
+2026-08,agosto 2026,Clavel,Bloque 17,Verona,41,45592,15
+2026-08,agosto 2026,Clavel,Bloque 17,Zenit,2,2224,20
+2026-08,agosto 2026,Clavel,Bloque 17,Zeppelin,38,42256,289
+2026-08,agosto 2026,Clavel,Bloque 19,Brut,4,4448,216
+2026-08,agosto 2026,Clavel,Bloque 19,Caramel,4,4448,53
+2026-08,agosto 2026,Clavel,Bloque 19,Caronte,4,4448,346
+2026-08,agosto 2026,Clavel,Bloque 19,Corvette,18,20016,972
+2026-08,agosto 2026,Clavel,Bloque 19,Daniko,4,4448,154
+2026-08,agosto 2026,Clavel,Bloque 19,Diamante,16,17792,148
+2026-08,agosto 2026,Clavel,Bloque 19,Diletta,3,3336,18
+2026-08,agosto 2026,Clavel,Bloque 19,Gioele,8,8896,211
+2026-08,agosto 2026,Clavel,Bloque 19,Golem,8,8896,54
+2026-08,agosto 2026,Clavel,Bloque 19,K259°,4,4448,96
+2026-08,agosto 2026,Clavel,Bloque 19,Moon Light,2,2224,16
+2026-08,agosto 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,15
+2026-08,agosto 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,211
+2026-08,agosto 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,10
+2026-08,agosto 2026,Clavel,Bloque 19,Novia,1,1112,8
+2026-08,agosto 2026,Clavel,Bloque 19,Prinz,10,11120,447
+2026-08,agosto 2026,Clavel,Bloque 19,Royal Damascus,3,3336,43
+2026-08,agosto 2026,Clavel,Bloque 19,Selva,5,5560,93
+2026-08,agosto 2026,Clavel,Bloque 19,Trueno,2,2224,8
+2026-08,agosto 2026,Clavel,Bloque 19,Verona,21,23352,25
+2026-08,agosto 2026,Clavel,Bloque 19,Virgilio,37,41128,2613
+2026-08,agosto 2026,Clavel,Bloque 19,Zafiro,6,6672,416
+2026-08,agosto 2026,Clavel,Bloque 19,Zeppelin,3,3336,51
+2026-08,agosto 2026,Clavel,Bloque 5A,Brut,2,1996,0
+2026-08,agosto 2026,Clavel,Bloque 5A,Caramel,2,2118,8
+2026-08,agosto 2026,Clavel,Bloque 5A,Caronte,2,2016,0
+2026-08,agosto 2026,Clavel,Bloque 5A,Chopin,4,3972,56
+2026-08,agosto 2026,Clavel,Bloque 5A,Corvette,4,3992,5
+2026-08,agosto 2026,Clavel,Bloque 5A,Daniko,14,14418,112
+2026-08,agosto 2026,Clavel,Bloque 5A,Diamante,11,11156,1
+2026-08,agosto 2026,Clavel,Bloque 5A,Diletta,7,7058,1
+2026-08,agosto 2026,Clavel,Bloque 5A,Doncel,5,4960,1
+2026-08,agosto 2026,Clavel,Bloque 5A,Gioele,4,4032,0
+2026-08,agosto 2026,Clavel,Bloque 5A,Golem,7,7016,0
+2026-08,agosto 2026,Clavel,Bloque 5A,J375°,1,988,2
+2026-08,agosto 2026,Clavel,Bloque 5A,Megan,2,1996,5
+2026-08,agosto 2026,Clavel,Bloque 5A,Metalica,3,3004,1
+2026-08,agosto 2026,Clavel,Bloque 5A,Moon Light,12,12240,23
+2026-08,agosto 2026,Clavel,Bloque 5A,Nobbio Cherry,1,1008,2
+2026-08,agosto 2026,Clavel,Bloque 5A,Novia,4,4012,2
+2026-08,agosto 2026,Clavel,Bloque 5A,Olympia,2,1976,3
+2026-08,agosto 2026,Clavel,Bloque 5A,Prinz,4,4012,0
+2026-08,agosto 2026,Clavel,Bloque 5A,Selva,5,5000,0
+2026-08,agosto 2026,Clavel,Bloque 5A,Trueno,16,16086,2
+2026-08,agosto 2026,Clavel,Bloque 5A,Verona,7,7016,2
+2026-08,agosto 2026,Clavel,Bloque 5A,Virgilio,18,17824,7
+2026-08,agosto 2026,Clavel,Bloque 5A,Zafiro,5,5244,4
+2026-08,agosto 2026,Clavel,Bloque 5A,Zenit,2,1996,1
+2026-08,agosto 2026,Clavel,Bloque 5A,Zeppelin,25,25000,7
+2026-08,agosto 2026,Clavel,Bloque 5B,Bizet,12,11880,3
+2026-08,agosto 2026,Clavel,Bloque 5B,Boheme,2,1980,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Brut,2,2062,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Capricho,2,1980,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Caramel,1,1072,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Caronte,3,3216,1
+2026-08,agosto 2026,Clavel,Bloque 5B,Chopin,12,12044,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Corvette,3,2970,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Daniko,14,14364,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Diamante,28,29360,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Diletta,8,8330,1
+2026-08,agosto 2026,Clavel,Bloque 5B,Doncel,2,1980,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Epic°,1,990,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Fiesta Komachi,3,2970,1
+2026-08,agosto 2026,Clavel,Bloque 5B,Gioele,33,34228,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Golem,8,8412,0
+2026-08,agosto 2026,Clavel,Bloque 5B,K444°,3,2970,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Komachi,6,5940,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Megan,2,1980,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Metalica,1,990,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Moon Light,45,46682,2
+2026-08,agosto 2026,Clavel,Bloque 5B,Nobbio Burgundy,2,2144,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Nobbio Party,4,3960,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Nobbio Violet,4,4042,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Novia,3,2970,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Prinz,1,990,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Royal Damascus,2,1980,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Selva,7,7012,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Trueno,50,52956,1
+2026-08,agosto 2026,Clavel,Bloque 5B,Verona,5,4950,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Virgilio,13,13854,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Voragine,3,2970,1
+2026-08,agosto 2026,Clavel,Bloque 5B,Zafiro,8,8494,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Zenit,1,990,0
+2026-08,agosto 2026,Clavel,Bloque 5B,Zeppelin,13,12870,0
+2026-08,agosto 2026,Clavel,Bloque 7B,Brut,6,5968,125
+2026-08,agosto 2026,Clavel,Bloque 7B,Caramel,4,5120,76
+2026-08,agosto 2026,Clavel,Bloque 7B,Caronte,6,6000,164
+2026-08,agosto 2026,Clavel,Bloque 7B,Chopin,1,1288,44
+2026-08,agosto 2026,Clavel,Bloque 7B,Corvette,7,9072,126
+2026-08,agosto 2026,Clavel,Bloque 7B,Daniko,30,34392,2398
+2026-08,agosto 2026,Clavel,Bloque 7B,Diletta,6,5904,97
+2026-08,agosto 2026,Clavel,Bloque 7B,Golem,7,8920,16
+2026-08,agosto 2026,Clavel,Bloque 7B,K259°,3,3864,239
+2026-08,agosto 2026,Clavel,Bloque 7B,Metalica,2,2608,8
+2026-08,agosto 2026,Clavel,Bloque 7B,Novia,5,6440,25
+2026-08,agosto 2026,Clavel,Bloque 7B,Olympia,1,1288,25
+2026-08,agosto 2026,Clavel,Bloque 7B,Prinz,16,15648,334
+2026-08,agosto 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,22
+2026-08,agosto 2026,Clavel,Bloque 7B,Trueno,10,13168,426
+2026-08,agosto 2026,Clavel,Bloque 7B,Verona,9,11448,5
+2026-08,agosto 2026,Clavel,Bloque 7B,Virgilio,8,10520,643
+2026-08,agosto 2026,Clavel,Bloque 7B,Zafiro,9,11752,24
+2026-08,agosto 2026,Clavel,Bloque 7B,Zeppelin,11,11120,45
+2026-09,septiembre 2026,Clavel,Bloque 04,Cheerio,1,1424,23
+2026-09,septiembre 2026,Clavel,Bloque 04,Chopin,9,12816,216
+2026-09,septiembre 2026,Clavel,Bloque 04,Corvette,7,9968,104
+2026-09,septiembre 2026,Clavel,Bloque 04,Diamante,16,22784,81
+2026-09,septiembre 2026,Clavel,Bloque 04,Diletta,4,5696,213
+2026-09,septiembre 2026,Clavel,Bloque 04,Doncel,5,7120,15
+2026-09,septiembre 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
+2026-09,septiembre 2026,Clavel,Bloque 04,Metalica,1,1424,12
+2026-09,septiembre 2026,Clavel,Bloque 04,Moon Light,9,12816,97
+2026-09,septiembre 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,3
+2026-09,septiembre 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,111
+2026-09,septiembre 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,29
+2026-09,septiembre 2026,Clavel,Bloque 04,Novia,2,2848,135
+2026-09,septiembre 2026,Clavel,Bloque 04,Prinz,1,1424,15
+2026-09,septiembre 2026,Clavel,Bloque 04,Trueno,5,7120,7
+2026-09,septiembre 2026,Clavel,Bloque 04,Virgilio,10,14240,41
+2026-09,septiembre 2026,Clavel,Bloque 04,Zeppelin,3,4272,4
+2026-09,septiembre 2026,Clavel,Bloque 08,Brut,1,1008,0
+2026-09,septiembre 2026,Clavel,Bloque 08,Caramel,1,1008,0
+2026-09,septiembre 2026,Clavel,Bloque 08,Caronte,3,3528,15
+2026-09,septiembre 2026,Clavel,Bloque 08,Chopin,2,2016,125
+2026-09,septiembre 2026,Clavel,Bloque 08,Daniko,56,60984,268
+2026-09,septiembre 2026,Clavel,Bloque 08,Diamante,19,20496,1
+2026-09,septiembre 2026,Clavel,Bloque 08,Diletta,2,2016,2
+2026-09,septiembre 2026,Clavel,Bloque 08,Fiesta Komachi,1,1008,0
+2026-09,septiembre 2026,Clavel,Bloque 08,Gioele,11,11088,0
+2026-09,septiembre 2026,Clavel,Bloque 08,Golem,3,3024,0
+2026-09,septiembre 2026,Clavel,Bloque 08,Metalica,2,2016,3
+2026-09,septiembre 2026,Clavel,Bloque 08,Moon Light,11,12936,17
+2026-09,septiembre 2026,Clavel,Bloque 08,Nobbio Burgundy,1,1008,8
+2026-09,septiembre 2026,Clavel,Bloque 08,Nobbio Violet,1,1008,5
+2026-09,septiembre 2026,Clavel,Bloque 08,Novia,1,1008,0
+2026-09,septiembre 2026,Clavel,Bloque 08,Prinz,3,3528,0
+2026-09,septiembre 2026,Clavel,Bloque 08,Trueno,16,18792,11
+2026-09,septiembre 2026,Clavel,Bloque 08,Virgilio,5,5712,14
+2026-09,septiembre 2026,Clavel,Bloque 08,Zafiro,3,3024,0
+2026-09,septiembre 2026,Clavel,Bloque 08,Zenit,1,1008,1
+2026-09,septiembre 2026,Clavel,Bloque 17,Diamante,25,27800,4834
+2026-09,septiembre 2026,Clavel,Bloque 17,Doncel,9,10008,66
+2026-09,septiembre 2026,Clavel,Bloque 17,Megan,1,1112,5
+2026-09,septiembre 2026,Clavel,Bloque 17,Moon Light,50,55600,725
+2026-09,septiembre 2026,Clavel,Bloque 17,Olympia,2,2224,6
+2026-09,septiembre 2026,Clavel,Bloque 17,Verona,41,45592,154
+2026-09,septiembre 2026,Clavel,Bloque 17,Zenit,2,2224,35
+2026-09,septiembre 2026,Clavel,Bloque 17,Zeppelin,38,42256,585
+2026-09,septiembre 2026,Clavel,Bloque 19,Brut,4,4448,203
+2026-09,septiembre 2026,Clavel,Bloque 19,Caramel,4,4448,70
+2026-09,septiembre 2026,Clavel,Bloque 19,Caronte,4,4448,385
+2026-09,septiembre 2026,Clavel,Bloque 19,Corvette,18,20016,1143
+2026-09,septiembre 2026,Clavel,Bloque 19,Daniko,4,4448,169
+2026-09,septiembre 2026,Clavel,Bloque 19,Diamante,16,17792,167
+2026-09,septiembre 2026,Clavel,Bloque 19,Diletta,3,3336,23
+2026-09,septiembre 2026,Clavel,Bloque 19,Gioele,8,8896,193
+2026-09,septiembre 2026,Clavel,Bloque 19,Golem,8,8896,75
+2026-09,septiembre 2026,Clavel,Bloque 19,K259°,4,4448,111
+2026-09,septiembre 2026,Clavel,Bloque 19,Moon Light,2,2224,16
+2026-09,septiembre 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,27
+2026-09,septiembre 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,237
+2026-09,septiembre 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,15
+2026-09,septiembre 2026,Clavel,Bloque 19,Novia,1,1112,9
+2026-09,septiembre 2026,Clavel,Bloque 19,Prinz,10,11120,485
+2026-09,septiembre 2026,Clavel,Bloque 19,Royal Damascus,3,3336,45
+2026-09,septiembre 2026,Clavel,Bloque 19,Selva,5,5560,122
+2026-09,septiembre 2026,Clavel,Bloque 19,Trueno,2,2224,10
+2026-09,septiembre 2026,Clavel,Bloque 19,Verona,21,23352,42
+2026-09,septiembre 2026,Clavel,Bloque 19,Virgilio,37,41128,3179
+2026-09,septiembre 2026,Clavel,Bloque 19,Zafiro,6,6672,466
+2026-09,septiembre 2026,Clavel,Bloque 19,Zeppelin,3,3336,65
+2026-09,septiembre 2026,Clavel,Bloque 5A,Brut,2,1996,0
+2026-09,septiembre 2026,Clavel,Bloque 5A,Caramel,2,2118,20
+2026-09,septiembre 2026,Clavel,Bloque 5A,Caronte,2,2016,2
+2026-09,septiembre 2026,Clavel,Bloque 5A,Chopin,4,3972,83
+2026-09,septiembre 2026,Clavel,Bloque 5A,Corvette,4,3992,16
+2026-09,septiembre 2026,Clavel,Bloque 5A,Daniko,14,14418,360
+2026-09,septiembre 2026,Clavel,Bloque 5A,Diamante,11,11156,15
+2026-09,septiembre 2026,Clavel,Bloque 5A,Diletta,7,7058,47
+2026-09,septiembre 2026,Clavel,Bloque 5A,Doncel,5,4960,17
+2026-09,septiembre 2026,Clavel,Bloque 5A,Gioele,4,4032,0
+2026-09,septiembre 2026,Clavel,Bloque 5A,Golem,7,7016,5
+2026-09,septiembre 2026,Clavel,Bloque 5A,J375°,1,988,2
+2026-09,septiembre 2026,Clavel,Bloque 5A,Megan,2,1996,12
+2026-09,septiembre 2026,Clavel,Bloque 5A,Metalica,3,3004,9
+2026-09,septiembre 2026,Clavel,Bloque 5A,Moon Light,12,12240,54
+2026-09,septiembre 2026,Clavel,Bloque 5A,Nobbio Cherry,1,1008,0
+2026-09,septiembre 2026,Clavel,Bloque 5A,Novia,4,4012,11
+2026-09,septiembre 2026,Clavel,Bloque 5A,Olympia,2,1976,36
+2026-09,septiembre 2026,Clavel,Bloque 5A,Prinz,4,4012,0
+2026-09,septiembre 2026,Clavel,Bloque 5A,Selva,5,5000,0
+2026-09,septiembre 2026,Clavel,Bloque 5A,Trueno,16,16086,6
+2026-09,septiembre 2026,Clavel,Bloque 5A,Verona,7,7016,0
+2026-09,septiembre 2026,Clavel,Bloque 5A,Virgilio,18,17824,55
+2026-09,septiembre 2026,Clavel,Bloque 5A,Zafiro,5,5244,54
+2026-09,septiembre 2026,Clavel,Bloque 5A,Zenit,2,1996,3
+2026-09,septiembre 2026,Clavel,Bloque 5A,Zeppelin,25,25000,26
+2026-09,septiembre 2026,Clavel,Bloque 5B,Bizet,12,11880,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Boheme,2,1980,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Brut,2,2062,3
+2026-09,septiembre 2026,Clavel,Bloque 5B,Capricho,2,1980,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Caramel,1,1072,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Caronte,3,3216,1
+2026-09,septiembre 2026,Clavel,Bloque 5B,Chopin,12,12044,14
+2026-09,septiembre 2026,Clavel,Bloque 5B,Corvette,3,2970,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Daniko,14,14364,27
+2026-09,septiembre 2026,Clavel,Bloque 5B,Diamante,28,29278,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Diletta,8,8330,2
+2026-09,septiembre 2026,Clavel,Bloque 5B,Doncel,2,1980,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Epic°,1,990,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Fiesta Komachi,3,2970,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Gioele,33,34228,6
+2026-09,septiembre 2026,Clavel,Bloque 5B,Golem,8,8412,2
+2026-09,septiembre 2026,Clavel,Bloque 5B,K444°,3,2970,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Komachi,6,5940,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Megan,2,1980,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Metalica,1,990,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Moon Light,45,46682,12
+2026-09,septiembre 2026,Clavel,Bloque 5B,Nobbio Burgundy,2,2144,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Nobbio Party,4,3960,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Nobbio Violet,4,4042,14
+2026-09,septiembre 2026,Clavel,Bloque 5B,Novia,3,2970,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Prinz,1,990,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Royal Damascus,2,1980,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Selva,7,7012,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Trueno,50,52956,7
+2026-09,septiembre 2026,Clavel,Bloque 5B,Verona,5,4950,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Virgilio,13,13854,2
+2026-09,septiembre 2026,Clavel,Bloque 5B,Voragine,3,2970,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Zafiro,8,8494,2
+2026-09,septiembre 2026,Clavel,Bloque 5B,Zenit,1,990,0
+2026-09,septiembre 2026,Clavel,Bloque 5B,Zeppelin,13,12870,0
+2026-09,septiembre 2026,Clavel,Bloque 7A,Caronte,2,2728,0
+2026-09,septiembre 2026,Clavel,Bloque 7A,Daniko,42,55152,7
+2026-09,septiembre 2026,Clavel,Bloque 7A,Diamante,11,14384,0
+2026-09,septiembre 2026,Clavel,Bloque 7A,Megan,2,2656,0
+2026-09,septiembre 2026,Clavel,Bloque 7A,Montoya,13,18104,1
+2026-09,septiembre 2026,Clavel,Bloque 7A,Selva,2,2656,0
+2026-09,septiembre 2026,Clavel,Bloque 7A,Verona,35,46480,0
+2026-09,septiembre 2026,Clavel,Bloque 7A,Virgilio,19,25080,4
+2026-09,septiembre 2026,Clavel,Bloque 7A,Zenit,1,1328,0
+2026-09,septiembre 2026,Clavel,Bloque 7A,Zeppelin,23,30544,0
+2026-09,septiembre 2026,Clavel,Bloque 7B,Brut,6,5968,132
+2026-09,septiembre 2026,Clavel,Bloque 7B,Caramel,4,5120,44
+2026-09,septiembre 2026,Clavel,Bloque 7B,Caronte,5,5000,197
+2026-09,septiembre 2026,Clavel,Bloque 7B,Chopin,1,1288,92
+2026-09,septiembre 2026,Clavel,Bloque 7B,Corvette,7,9072,100
+2026-09,septiembre 2026,Clavel,Bloque 7B,Daniko,30,34392,2996
+2026-09,septiembre 2026,Clavel,Bloque 7B,Diletta,6,5904,132
+2026-09,septiembre 2026,Clavel,Bloque 7B,Golem,7,8920,15
+2026-09,septiembre 2026,Clavel,Bloque 7B,K259°,3,3864,354
+2026-09,septiembre 2026,Clavel,Bloque 7B,Metalica,2,2608,14
+2026-09,septiembre 2026,Clavel,Bloque 7B,Novia,5,6440,26
+2026-09,septiembre 2026,Clavel,Bloque 7B,Olympia,1,1288,27
+2026-09,septiembre 2026,Clavel,Bloque 7B,Prinz,16,15648,407
+2026-09,septiembre 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,24
+2026-09,septiembre 2026,Clavel,Bloque 7B,Trueno,10,13168,507
+2026-09,septiembre 2026,Clavel,Bloque 7B,Verona,9,11448,5
+2026-09,septiembre 2026,Clavel,Bloque 7B,Virgilio,8,10520,885
+2026-09,septiembre 2026,Clavel,Bloque 7B,Zafiro,9,11752,24
+2026-09,septiembre 2026,Clavel,Bloque 7B,Zeppelin,11,11120,57
 2026-10,octubre 2026,Clavel,Bloque 04,Cheerio,1,1424,34
-2026-10,octubre 2026,Clavel,Bloque 04,Metalica,1,1424,16
-2026-10,octubre 2026,Clavel,Bloque 04,Moon Light,9,12816,230
+2026-10,octubre 2026,Clavel,Bloque 04,Chopin,9,12816,819
+2026-10,octubre 2026,Clavel,Bloque 04,Corvette,7,9968,258
+2026-10,octubre 2026,Clavel,Bloque 04,Diamante,16,22784,215
 2026-10,octubre 2026,Clavel,Bloque 04,Diletta,4,5696,506
 2026-10,octubre 2026,Clavel,Bloque 04,Doncel,5,7120,51
-2026-10,octubre 2026,Clavel,Bloque 04,Zeppelin,3,4272,16
-2026-10,octubre 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,120
-2026-10,octubre 2026,Clavel,Bloque 04,Chopin,9,12816,819
-2026-10,octubre 2026,Clavel,Bloque 04,Virgilio,10,14240,136
-2026-10,octubre 2026,Clavel,Bloque 04,Corvette,7,9968,258
-2026-10,octubre 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,12
 2026-10,octubre 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,8
+2026-10,octubre 2026,Clavel,Bloque 04,Metalica,1,1424,16
+2026-10,octubre 2026,Clavel,Bloque 04,Moon Light,9,12816,230
+2026-10,octubre 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,12
 2026-10,octubre 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,163
+2026-10,octubre 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,120
+2026-10,octubre 2026,Clavel,Bloque 04,Novia,2,2848,245
 2026-10,octubre 2026,Clavel,Bloque 04,Prinz,1,1424,57
-2026-10,octubre 2026,Clavel,Bloque 06,Doncel,6,6624,0
-2026-10,octubre 2026,Clavel,Bloque 06,Trueno,6,6648,0
-2026-10,octubre 2026,Clavel,Bloque 06,Virgilio,13,14248,3
-2026-10,octubre 2026,Clavel,Bloque 06,Corvette,10,11040,0
-2026-10,octubre 2026,Clavel,Bloque 06,Caramel,4,4416,0
-2026-10,octubre 2026,Clavel,Bloque 06,Diletta,2,2208,0
-2026-10,octubre 2026,Clavel,Bloque 06,Golem,7,7792,0
-2026-10,octubre 2026,Clavel,Bloque 06,Prinz,10,11032,0
-2026-10,octubre 2026,Clavel,Bloque 06,Zafiro,7,7672,0
-2026-10,octubre 2026,Clavel,Bloque 06,Caronte,4,4456,0
-2026-10,octubre 2026,Clavel,Bloque 06,Royal Damascus,3,3288,0
-2026-10,octubre 2026,Clavel,Bloque 06,Malbec°,2,2264,0
-2026-10,octubre 2026,Clavel,Bloque 06,Gioele,9,10104,0
-2026-10,octubre 2026,Clavel,Bloque 06,Selva,6,6720,0
+2026-10,octubre 2026,Clavel,Bloque 04,Trueno,5,7120,5
+2026-10,octubre 2026,Clavel,Bloque 04,Virgilio,10,14240,136
+2026-10,octubre 2026,Clavel,Bloque 04,Zeppelin,3,4272,16
 2026-10,octubre 2026,Clavel,Bloque 06,Brut,5,5480,0
-2026-10,octubre 2026,Clavel,Bloque 06,Petra,2,2368,0
-2026-10,octubre 2026,Clavel,Bloque 06,Verona,14,15696,0
+2026-10,octubre 2026,Clavel,Bloque 06,Caramel,4,4416,0
+2026-10,octubre 2026,Clavel,Bloque 06,Caronte,4,4456,0
 2026-10,octubre 2026,Clavel,Bloque 06,Chopin,3,3480,0
-2026-10,octubre 2026,Clavel,Bloque 06,Zeppelin,44,50152,0
+2026-10,octubre 2026,Clavel,Bloque 06,Corvette,10,11040,0
+2026-10,octubre 2026,Clavel,Bloque 06,Daniko,1,1168,0
+2026-10,octubre 2026,Clavel,Bloque 06,Diamante,1,1168,0
+2026-10,octubre 2026,Clavel,Bloque 06,Diletta,2,2208,0
+2026-10,octubre 2026,Clavel,Bloque 06,Doncel,6,6624,0
+2026-10,octubre 2026,Clavel,Bloque 06,Gioele,9,10104,0
+2026-10,octubre 2026,Clavel,Bloque 06,Golem,7,7792,0
+2026-10,octubre 2026,Clavel,Bloque 06,Malbec°,2,2264,0
 2026-10,octubre 2026,Clavel,Bloque 06,Miranda,1,1168,0
 2026-10,octubre 2026,Clavel,Bloque 06,Nobbio Burgundy,2,2368,0
 2026-10,octubre 2026,Clavel,Bloque 06,Nobbio Cherry,2,2368,0
 2026-10,octubre 2026,Clavel,Bloque 06,Nobbio Violet,2,2368,0
 2026-10,octubre 2026,Clavel,Bloque 06,Novia,1,1168,0
-2026-10,octubre 2026,Clavel,Bloque 06,Daniko,1,1168,0
-2026-10,octubre 2026,Clavel,Bloque 06,Diamante,1,1168,0
+2026-10,octubre 2026,Clavel,Bloque 06,Petra,2,2368,0
+2026-10,octubre 2026,Clavel,Bloque 06,Prinz,10,11032,0
+2026-10,octubre 2026,Clavel,Bloque 06,Royal Damascus,3,3288,0
+2026-10,octubre 2026,Clavel,Bloque 06,Selva,6,6720,0
+2026-10,octubre 2026,Clavel,Bloque 06,Trueno,6,6648,0
+2026-10,octubre 2026,Clavel,Bloque 06,Verona,14,15696,0
+2026-10,octubre 2026,Clavel,Bloque 06,Virgilio,13,14248,3
+2026-10,octubre 2026,Clavel,Bloque 06,Zafiro,7,7672,0
 2026-10,octubre 2026,Clavel,Bloque 06,Zenit,1,1168,0
-2026-10,octubre 2026,Clavel,Bloque 08,Virgilio,5,5712,44
+2026-10,octubre 2026,Clavel,Bloque 06,Zeppelin,44,50152,0
+2026-10,octubre 2026,Clavel,Bloque 08,Brut,1,1008,4
+2026-10,octubre 2026,Clavel,Bloque 08,Caramel,1,1008,1
+2026-10,octubre 2026,Clavel,Bloque 08,Caronte,3,3528,54
+2026-10,octubre 2026,Clavel,Bloque 08,Chopin,2,2016,105
 2026-10,octubre 2026,Clavel,Bloque 08,Daniko,57,61992,1001
 2026-10,octubre 2026,Clavel,Bloque 08,Diamante,19,20496,17
-2026-10,octubre 2026,Clavel,Bloque 08,Metalica,2,2016,5
-2026-10,octubre 2026,Clavel,Bloque 08,Novia,1,1008,0
-2026-10,octubre 2026,Clavel,Bloque 08,Fiesta Komachi,1,1008,0
-2026-10,octubre 2026,Clavel,Bloque 08,Caronte,3,3528,54
-2026-10,octubre 2026,Clavel,Bloque 08,Brut,1,1008,4
-2026-10,octubre 2026,Clavel,Bloque 08,Zenit,1,1008,1
-2026-10,octubre 2026,Clavel,Bloque 08,Gioele,11,11088,0
-2026-10,octubre 2026,Clavel,Bloque 08,Prinz,3,3528,9
-2026-10,octubre 2026,Clavel,Bloque 08,Moon Light,11,12936,59
 2026-10,octubre 2026,Clavel,Bloque 08,Diletta,2,2016,8
-2026-10,octubre 2026,Clavel,Bloque 08,Zafiro,3,3024,0
+2026-10,octubre 2026,Clavel,Bloque 08,Fiesta Komachi,1,1008,0
+2026-10,octubre 2026,Clavel,Bloque 08,Gioele,11,11088,0
 2026-10,octubre 2026,Clavel,Bloque 08,Golem,3,3024,2
-2026-10,octubre 2026,Clavel,Bloque 08,Caramel,1,1008,1
-2026-10,octubre 2026,Clavel,Bloque 08,Nobbio Violet,1,1008,6
+2026-10,octubre 2026,Clavel,Bloque 08,Metalica,2,2016,5
+2026-10,octubre 2026,Clavel,Bloque 08,Moon Light,11,12936,59
 2026-10,octubre 2026,Clavel,Bloque 08,Nobbio Burgundy,1,1008,26
+2026-10,octubre 2026,Clavel,Bloque 08,Nobbio Violet,1,1008,6
+2026-10,octubre 2026,Clavel,Bloque 08,Novia,1,1008,0
+2026-10,octubre 2026,Clavel,Bloque 08,Prinz,3,3528,9
 2026-10,octubre 2026,Clavel,Bloque 08,Trueno,16,18792,18
-2026-10,octubre 2026,Clavel,Bloque 08,Chopin,2,2016,105
+2026-10,octubre 2026,Clavel,Bloque 08,Virgilio,5,5712,44
+2026-10,octubre 2026,Clavel,Bloque 08,Zafiro,3,3024,0
+2026-10,octubre 2026,Clavel,Bloque 08,Zenit,1,1008,1
 2026-10,octubre 2026,Clavel,Bloque 10,Daniko,58,65584,3
-2026-10,octubre 2026,Clavel,Bloque 10,Trueno,13,13744,0
 2026-10,octubre 2026,Clavel,Bloque 10,Diamante,40,41340,0
+2026-10,octubre 2026,Clavel,Bloque 10,Metalica,2,2080,0
 2026-10,octubre 2026,Clavel,Bloque 10,Miranda,25,28576,1
 2026-10,octubre 2026,Clavel,Bloque 10,Novia,3,3120,0
-2026-10,octubre 2026,Clavel,Bloque 10,Metalica,2,2080,0
+2026-10,octubre 2026,Clavel,Bloque 10,Trueno,13,13744,0
 2026-10,octubre 2026,Clavel,Bloque 10,Verona,14,14560,0
-2026-10,octubre 2026,Clavel,Bloque 17,Olympia,2,2224,18
 2026-10,octubre 2026,Clavel,Bloque 17,Diamante,25,27800,783
-2026-10,octubre 2026,Clavel,Bloque 17,Moon Light,50,55600,1186
-2026-10,octubre 2026,Clavel,Bloque 17,Zeppelin,38,42256,909
-2026-10,octubre 2026,Clavel,Bloque 17,Megan,1,1112,8
-2026-10,octubre 2026,Clavel,Bloque 17,Zenit,2,2224,55
 2026-10,octubre 2026,Clavel,Bloque 17,Doncel,9,10008,132
+2026-10,octubre 2026,Clavel,Bloque 17,Megan,1,1112,8
+2026-10,octubre 2026,Clavel,Bloque 17,Moon Light,50,55600,1186
+2026-10,octubre 2026,Clavel,Bloque 17,Olympia,2,2224,18
 2026-10,octubre 2026,Clavel,Bloque 17,Verona,41,45592,343
-2026-10,octubre 2026,Clavel,Bloque 5A,Virgilio,18,17824,83
-2026-10,octubre 2026,Clavel,Bloque 5A,Trueno,16,16086,18
-2026-10,octubre 2026,Clavel,Bloque 5A,Corvette,4,3992,52
+2026-10,octubre 2026,Clavel,Bloque 17,Zenit,2,2224,55
+2026-10,octubre 2026,Clavel,Bloque 17,Zeppelin,38,42256,909
+2026-10,octubre 2026,Clavel,Bloque 5A,Brut,2,1996,0
+2026-10,octubre 2026,Clavel,Bloque 5A,Caramel,2,2118,20
+2026-10,octubre 2026,Clavel,Bloque 5A,Caronte,2,2016,6
 2026-10,octubre 2026,Clavel,Bloque 5A,Chopin,4,3972,155
-2026-10,octubre 2026,Clavel,Bloque 5A,Zeppelin,25,25000,77
-2026-10,octubre 2026,Clavel,Bloque 5A,Verona,7,7016,0
-2026-10,octubre 2026,Clavel,Bloque 5A,J375°,1,988,9
+2026-10,octubre 2026,Clavel,Bloque 5A,Corvette,4,3992,52
+2026-10,octubre 2026,Clavel,Bloque 5A,Daniko,14,14418,611
+2026-10,octubre 2026,Clavel,Bloque 5A,Diamante,11,11156,18
+2026-10,octubre 2026,Clavel,Bloque 5A,Diletta,7,7058,116
+2026-10,octubre 2026,Clavel,Bloque 5A,Doncel,5,4960,8
+2026-10,octubre 2026,Clavel,Bloque 5A,Gioele,4,4032,0
 2026-10,octubre 2026,Clavel,Bloque 5A,Golem,7,7016,17
+2026-10,octubre 2026,Clavel,Bloque 5A,J375°,1,988,9
 2026-10,octubre 2026,Clavel,Bloque 5A,Megan,2,1996,25
+2026-10,octubre 2026,Clavel,Bloque 5A,Metalica,3,3004,19
+2026-10,octubre 2026,Clavel,Bloque 5A,Moon Light,12,12240,64
+2026-10,octubre 2026,Clavel,Bloque 5A,Nobbio Cherry,1,1008,26
+2026-10,octubre 2026,Clavel,Bloque 5A,Novia,4,4012,14
+2026-10,octubre 2026,Clavel,Bloque 5A,Olympia,2,1976,53
 2026-10,octubre 2026,Clavel,Bloque 5A,Prinz,4,4012,5
 2026-10,octubre 2026,Clavel,Bloque 5A,Selva,5,5000,0
-2026-10,octubre 2026,Clavel,Bloque 5A,Diletta,7,7058,116
-2026-10,octubre 2026,Clavel,Bloque 5A,Brut,2,1996,0
-2026-10,octubre 2026,Clavel,Bloque 5A,Doncel,5,4960,8
-2026-10,octubre 2026,Clavel,Bloque 5A,Zenit,2,1996,3
-2026-10,octubre 2026,Clavel,Bloque 5A,Metalica,3,3004,19
-2026-10,octubre 2026,Clavel,Bloque 5A,Novia,4,4012,14
-2026-10,octubre 2026,Clavel,Bloque 5A,Diamante,11,11156,18
-2026-10,octubre 2026,Clavel,Bloque 5A,Olympia,2,1976,53
-2026-10,octubre 2026,Clavel,Bloque 5A,Moon Light,12,12240,64
-2026-10,octubre 2026,Clavel,Bloque 5A,Caramel,2,2118,20
+2026-10,octubre 2026,Clavel,Bloque 5A,Trueno,16,16086,18
+2026-10,octubre 2026,Clavel,Bloque 5A,Verona,7,7016,0
+2026-10,octubre 2026,Clavel,Bloque 5A,Virgilio,18,17824,83
 2026-10,octubre 2026,Clavel,Bloque 5A,Zafiro,5,5244,68
-2026-10,octubre 2026,Clavel,Bloque 5A,Daniko,14,14418,611
-2026-10,octubre 2026,Clavel,Bloque 5A,Gioele,4,4032,0
-2026-10,octubre 2026,Clavel,Bloque 5A,Caronte,2,2016,6
-2026-10,octubre 2026,Clavel,Bloque 5A,Nobbio Cherry,1,1008,26
-2026-10,octubre 2026,Clavel,Bloque 5B,Trueno,47,49904,50
-2026-10,octubre 2026,Clavel,Bloque 5B,Diamante,20,21440,0
-2026-10,octubre 2026,Clavel,Bloque 5B,Nobbio Burgundy,2,2144,0
-2026-10,octubre 2026,Clavel,Bloque 5B,Golem,7,7504,3
-2026-10,octubre 2026,Clavel,Bloque 5B,Zafiro,7,7504,5
-2026-10,octubre 2026,Clavel,Bloque 5B,Diletta,5,5360,8
-2026-10,octubre 2026,Clavel,Bloque 5B,Virgilio,12,12864,7
-2026-10,octubre 2026,Clavel,Bloque 5B,Chopin,2,2144,5
+2026-10,octubre 2026,Clavel,Bloque 5A,Zenit,2,1996,3
+2026-10,octubre 2026,Clavel,Bloque 5A,Zeppelin,25,25000,77
+2026-10,octubre 2026,Clavel,Bloque 5B,Brut,1,1072,5
 2026-10,octubre 2026,Clavel,Bloque 5B,Caramel,1,1072,2
 2026-10,octubre 2026,Clavel,Bloque 5B,Caronte,3,3216,7
+2026-10,octubre 2026,Clavel,Bloque 5B,Chopin,2,2144,5
+2026-10,octubre 2026,Clavel,Bloque 5B,Daniko,12,12384,121
+2026-10,octubre 2026,Clavel,Bloque 5B,Diamante,20,21440,0
+2026-10,octubre 2026,Clavel,Bloque 5B,Diletta,5,5360,8
+2026-10,octubre 2026,Clavel,Bloque 5B,Gioele,19,20368,27
+2026-10,octubre 2026,Clavel,Bloque 5B,Golem,7,7504,3
+2026-10,octubre 2026,Clavel,Bloque 5B,Moon Light,27,28944,20
+2026-10,octubre 2026,Clavel,Bloque 5B,Nobbio Burgundy,2,2144,0
 2026-10,octubre 2026,Clavel,Bloque 5B,Nobbio Violet,1,1072,21
 2026-10,octubre 2026,Clavel,Bloque 5B,Selva,1,1072,0
-2026-10,octubre 2026,Clavel,Bloque 5B,Brut,1,1072,5
-2026-10,octubre 2026,Clavel,Bloque 5B,Moon Light,27,28944,20
-2026-10,octubre 2026,Clavel,Bloque 5B,Gioele,19,20368,27
-2026-10,octubre 2026,Clavel,Bloque 5B,Daniko,12,12384,121
-2026-10,octubre 2026,Clavel,Bloque 7A,Verona,35,46480,18
-2026-10,octubre 2026,Clavel,Bloque 7A,Zeppelin,23,30544,3
-2026-10,octubre 2026,Clavel,Bloque 7A,Megan,2,2656,0
-2026-10,octubre 2026,Clavel,Bloque 7A,Zenit,1,1328,0
-2026-10,octubre 2026,Clavel,Bloque 7A,Selva,2,2656,1
+2026-10,octubre 2026,Clavel,Bloque 5B,Trueno,47,49904,50
+2026-10,octubre 2026,Clavel,Bloque 5B,Virgilio,12,12864,7
+2026-10,octubre 2026,Clavel,Bloque 5B,Zafiro,7,7504,5
 2026-10,octubre 2026,Clavel,Bloque 7A,Caronte,2,2728,5
-2026-10,octubre 2026,Clavel,Bloque 7A,Virgilio,19,25080,15
 2026-10,octubre 2026,Clavel,Bloque 7A,Daniko,41,53836,667
 2026-10,octubre 2026,Clavel,Bloque 7A,Diamante,11,14384,1
+2026-10,octubre 2026,Clavel,Bloque 7A,Megan,2,2656,0
 2026-10,octubre 2026,Clavel,Bloque 7A,Montoya,13,18104,10
+2026-10,octubre 2026,Clavel,Bloque 7A,Selva,2,2656,1
+2026-10,octubre 2026,Clavel,Bloque 7A,Verona,35,46480,18
+2026-10,octubre 2026,Clavel,Bloque 7A,Virgilio,19,25080,15
+2026-10,octubre 2026,Clavel,Bloque 7A,Zenit,1,1328,0
+2026-10,octubre 2026,Clavel,Bloque 7A,Zeppelin,23,30544,3
+2026-10,octubre 2026,Clavel,Bloque 7B,Brut,6,5968,231
+2026-10,octubre 2026,Clavel,Bloque 7B,Caramel,4,5120,62
+2026-10,octubre 2026,Clavel,Bloque 7B,Caronte,6,6000,780
+2026-10,octubre 2026,Clavel,Bloque 7B,Chopin,1,1288,387
+2026-10,octubre 2026,Clavel,Bloque 7B,Corvette,7,9072,113
+2026-10,octubre 2026,Clavel,Bloque 7B,Daniko,30,34392,5648
+2026-10,octubre 2026,Clavel,Bloque 7B,Diletta,6,5904,324
+2026-10,octubre 2026,Clavel,Bloque 7B,Golem,7,8920,27
+2026-10,octubre 2026,Clavel,Bloque 7B,K259°,3,3864,527
+2026-10,octubre 2026,Clavel,Bloque 7B,Metalica,2,2608,27
+2026-10,octubre 2026,Clavel,Bloque 7B,Novia,5,6440,107
+2026-10,octubre 2026,Clavel,Bloque 7B,Olympia,1,1288,32
+2026-10,octubre 2026,Clavel,Bloque 7B,Prinz,16,15648,663
+2026-10,octubre 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,35
 2026-10,octubre 2026,Clavel,Bloque 7B,Trueno,10,13168,2479
+2026-10,octubre 2026,Clavel,Bloque 7B,Verona,9,11448,8
 2026-10,octubre 2026,Clavel,Bloque 7B,Virgilio,8,10520,1602
 2026-10,octubre 2026,Clavel,Bloque 7B,Zafiro,9,11752,45
-2026-10,octubre 2026,Clavel,Bloque 7B,Metalica,2,2608,27
-2026-10,octubre 2026,Clavel,Bloque 7B,Corvette,7,9072,113
-2026-10,octubre 2026,Clavel,Bloque 7B,K259°,3,3864,527
-2026-10,octubre 2026,Clavel,Bloque 7B,Novia,5,6440,107
-2026-10,octubre 2026,Clavel,Bloque 7B,Chopin,1,1288,387
-2026-10,octubre 2026,Clavel,Bloque 7B,Olympia,1,1288,32
-2026-10,octubre 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,35
-2026-10,octubre 2026,Clavel,Bloque 7B,Caramel,4,5120,62
-2026-10,octubre 2026,Clavel,Bloque 7B,Golem,7,8920,27
-2026-10,octubre 2026,Clavel,Bloque 7B,Verona,9,11448,8
-2026-10,octubre 2026,Clavel,Bloque 7B,Daniko,30,34392,5648
 2026-10,octubre 2026,Clavel,Bloque 7B,Zeppelin,11,11120,83
-2026-10,octubre 2026,Clavel,Bloque 7B,Caronte,6,6000,780
-2026-10,octubre 2026,Clavel,Bloque 7B,Brut,6,5968,231
-2026-10,octubre 2026,Clavel,Bloque 7B,Diletta,6,5904,324
-2026-10,octubre 2026,Clavel,Bloque 7B,Prinz,16,15648,663
-2026-09,septiembre 2026,Clavel,Bloque 04,Trueno,5,7120,7
-2026-09,septiembre 2026,Clavel,Bloque 04,Diamante,16,22784,81
-2026-09,septiembre 2026,Clavel,Bloque 04,Novia,2,2848,135
-2026-09,septiembre 2026,Clavel,Bloque 04,Cheerio,1,1424,23
-2026-09,septiembre 2026,Clavel,Bloque 04,Metalica,1,1424,12
-2026-09,septiembre 2026,Clavel,Bloque 04,Moon Light,9,12816,97
-2026-09,septiembre 2026,Clavel,Bloque 04,Diletta,4,5696,213
-2026-09,septiembre 2026,Clavel,Bloque 04,Doncel,5,7120,15
-2026-09,septiembre 2026,Clavel,Bloque 04,Zeppelin,3,4272,4
-2026-09,septiembre 2026,Clavel,Bloque 04,Nobbio Violet,3,4272,29
-2026-09,septiembre 2026,Clavel,Bloque 04,Chopin,9,12816,216
-2026-09,septiembre 2026,Clavel,Bloque 04,Virgilio,10,14240,41
-2026-09,septiembre 2026,Clavel,Bloque 04,Corvette,7,9968,104
-2026-09,septiembre 2026,Clavel,Bloque 04,Nobbio Burgundy,1,1424,3
-2026-09,septiembre 2026,Clavel,Bloque 04,Fiesta Komachi,2,2848,0
-2026-09,septiembre 2026,Clavel,Bloque 04,Nobbio Cherry,5,7120,111
-2026-09,septiembre 2026,Clavel,Bloque 04,Prinz,1,1424,15
-2026-09,septiembre 2026,Clavel,Bloque 08,Virgilio,5,5712,14
-2026-09,septiembre 2026,Clavel,Bloque 08,Daniko,56,60984,268
-2026-09,septiembre 2026,Clavel,Bloque 08,Diamante,19,20496,1
-2026-09,septiembre 2026,Clavel,Bloque 08,Metalica,2,2016,3
-2026-09,septiembre 2026,Clavel,Bloque 08,Novia,1,1008,0
-2026-09,septiembre 2026,Clavel,Bloque 08,Fiesta Komachi,1,1008,0
-2026-09,septiembre 2026,Clavel,Bloque 08,Caronte,3,3528,15
-2026-09,septiembre 2026,Clavel,Bloque 08,Brut,1,1008,0
-2026-09,septiembre 2026,Clavel,Bloque 08,Zenit,1,1008,1
-2026-09,septiembre 2026,Clavel,Bloque 08,Gioele,11,11088,0
-2026-09,septiembre 2026,Clavel,Bloque 08,Prinz,3,3528,0
-2026-09,septiembre 2026,Clavel,Bloque 08,Moon Light,11,12936,17
-2026-09,septiembre 2026,Clavel,Bloque 08,Diletta,2,2016,2
-2026-09,septiembre 2026,Clavel,Bloque 08,Zafiro,3,3024,0
-2026-09,septiembre 2026,Clavel,Bloque 08,Golem,3,3024,0
-2026-09,septiembre 2026,Clavel,Bloque 08,Caramel,1,1008,0
-2026-09,septiembre 2026,Clavel,Bloque 08,Nobbio Violet,1,1008,5
-2026-09,septiembre 2026,Clavel,Bloque 08,Nobbio Burgundy,1,1008,8
-2026-09,septiembre 2026,Clavel,Bloque 08,Trueno,16,18792,11
-2026-09,septiembre 2026,Clavel,Bloque 08,Chopin,2,2016,125
-2026-09,septiembre 2026,Clavel,Bloque 17,Olympia,2,2224,6
-2026-09,septiembre 2026,Clavel,Bloque 17,Diamante,25,27800,4834
-2026-09,septiembre 2026,Clavel,Bloque 17,Moon Light,50,55600,725
-2026-09,septiembre 2026,Clavel,Bloque 17,Zeppelin,38,42256,585
-2026-09,septiembre 2026,Clavel,Bloque 17,Megan,1,1112,5
-2026-09,septiembre 2026,Clavel,Bloque 17,Zenit,2,2224,35
-2026-09,septiembre 2026,Clavel,Bloque 17,Doncel,9,10008,66
-2026-09,septiembre 2026,Clavel,Bloque 17,Verona,41,45592,154
-2026-09,septiembre 2026,Clavel,Bloque 19,Diamante,16,17792,167
-2026-09,septiembre 2026,Clavel,Bloque 19,Trueno,2,2224,10
-2026-09,septiembre 2026,Clavel,Bloque 19,Virgilio,37,41128,3179
-2026-09,septiembre 2026,Clavel,Bloque 19,Zeppelin,3,3336,65
-2026-09,septiembre 2026,Clavel,Bloque 19,Diletta,3,3336,23
-2026-09,septiembre 2026,Clavel,Bloque 19,Corvette,18,20016,1143
-2026-09,septiembre 2026,Clavel,Bloque 19,Golem,8,8896,75
-2026-09,septiembre 2026,Clavel,Bloque 19,Zafiro,6,6672,466
-2026-09,septiembre 2026,Clavel,Bloque 19,Caramel,4,4448,70
-2026-09,septiembre 2026,Clavel,Bloque 19,Selva,5,5560,122
-2026-09,septiembre 2026,Clavel,Bloque 19,Royal Damascus,3,3336,45
-2026-09,septiembre 2026,Clavel,Bloque 19,Caronte,4,4448,385
-2026-09,septiembre 2026,Clavel,Bloque 19,Brut,4,4448,203
-2026-09,septiembre 2026,Clavel,Bloque 19,Gioele,8,8896,193
-2026-09,septiembre 2026,Clavel,Bloque 19,Prinz,10,11120,485
-2026-09,septiembre 2026,Clavel,Bloque 19,Nobbio Cherry,2,2224,237
-2026-09,septiembre 2026,Clavel,Bloque 19,Nobbio Burgundy,2,2224,27
-2026-09,septiembre 2026,Clavel,Bloque 19,Moon Light,2,2224,16
-2026-09,septiembre 2026,Clavel,Bloque 19,Verona,21,23352,42
-2026-09,septiembre 2026,Clavel,Bloque 19,Novia,1,1112,9
-2026-09,septiembre 2026,Clavel,Bloque 19,Nobbio Violet,1,1112,15
-2026-09,septiembre 2026,Clavel,Bloque 19,K259°,4,4448,111
-2026-09,septiembre 2026,Clavel,Bloque 19,Daniko,4,4448,169
-2026-09,septiembre 2026,Clavel,Bloque 5A,Virgilio,18,17824,55
-2026-09,septiembre 2026,Clavel,Bloque 5A,Trueno,16,16086,6
-2026-09,septiembre 2026,Clavel,Bloque 5A,Corvette,4,3992,16
-2026-09,septiembre 2026,Clavel,Bloque 5A,Chopin,4,3972,83
-2026-09,septiembre 2026,Clavel,Bloque 5A,Zeppelin,25,25000,26
-2026-09,septiembre 2026,Clavel,Bloque 5A,Verona,7,7016,0
-2026-09,septiembre 2026,Clavel,Bloque 5A,J375°,1,988,2
-2026-09,septiembre 2026,Clavel,Bloque 5A,Golem,7,7016,5
-2026-09,septiembre 2026,Clavel,Bloque 5A,Megan,2,1996,12
-2026-09,septiembre 2026,Clavel,Bloque 5A,Prinz,4,4012,0
-2026-09,septiembre 2026,Clavel,Bloque 5A,Selva,5,5000,0
-2026-09,septiembre 2026,Clavel,Bloque 5A,Diletta,7,7058,47
-2026-09,septiembre 2026,Clavel,Bloque 5A,Brut,2,1996,0
-2026-09,septiembre 2026,Clavel,Bloque 5A,Doncel,5,4960,17
-2026-09,septiembre 2026,Clavel,Bloque 5A,Zenit,2,1996,3
-2026-09,septiembre 2026,Clavel,Bloque 5A,Metalica,3,3004,9
-2026-09,septiembre 2026,Clavel,Bloque 5A,Novia,4,4012,11
-2026-09,septiembre 2026,Clavel,Bloque 5A,Diamante,11,11156,15
-2026-09,septiembre 2026,Clavel,Bloque 5A,Olympia,2,1976,36
-2026-09,septiembre 2026,Clavel,Bloque 5A,Moon Light,12,12240,54
-2026-09,septiembre 2026,Clavel,Bloque 5A,Caramel,2,2118,20
-2026-09,septiembre 2026,Clavel,Bloque 5A,Zafiro,5,5244,54
-2026-09,septiembre 2026,Clavel,Bloque 5A,Daniko,14,14418,360
-2026-09,septiembre 2026,Clavel,Bloque 5A,Gioele,4,4032,0
-2026-09,septiembre 2026,Clavel,Bloque 5A,Caronte,2,2016,2
-2026-09,septiembre 2026,Clavel,Bloque 5A,Nobbio Cherry,1,1008,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Trueno,50,52956,7
-2026-09,septiembre 2026,Clavel,Bloque 5B,Diamante,28,29278,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Nobbio Burgundy,2,2144,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Golem,8,8412,2
-2026-09,septiembre 2026,Clavel,Bloque 5B,Zafiro,8,8494,2
-2026-09,septiembre 2026,Clavel,Bloque 5B,Zeppelin,13,12870,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Diletta,8,8330,2
-2026-09,septiembre 2026,Clavel,Bloque 5B,Bizet,12,11880,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Virgilio,13,13854,2
-2026-09,septiembre 2026,Clavel,Bloque 5B,Epic°,1,990,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Daniko,14,14364,27
-2026-09,septiembre 2026,Clavel,Bloque 5B,Voragine,3,2970,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Chopin,12,12044,14
-2026-09,septiembre 2026,Clavel,Bloque 5B,Caramel,1,1072,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Caronte,3,3216,1
-2026-09,septiembre 2026,Clavel,Bloque 5B,Selva,7,7012,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Nobbio Violet,4,4042,14
-2026-09,septiembre 2026,Clavel,Bloque 5B,Boheme,2,1980,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Brut,2,2062,3
-2026-09,septiembre 2026,Clavel,Bloque 5B,Royal Damascus,2,1980,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Komachi,6,5940,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Moon Light,45,46682,12
-2026-09,septiembre 2026,Clavel,Bloque 5B,Fiesta Komachi,3,2970,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Gioele,33,34228,6
-2026-09,septiembre 2026,Clavel,Bloque 5B,Capricho,2,1980,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Doncel,2,1980,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Corvette,3,2970,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Nobbio Party,4,3960,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Novia,3,2970,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Verona,5,4950,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Prinz,1,990,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Metalica,1,990,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Megan,2,1980,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,K444°,3,2970,0
-2026-09,septiembre 2026,Clavel,Bloque 5B,Zenit,1,990,0
-2026-09,septiembre 2026,Clavel,Bloque 7A,Verona,35,46480,0
-2026-09,septiembre 2026,Clavel,Bloque 7A,Zeppelin,23,30544,0
-2026-09,septiembre 2026,Clavel,Bloque 7A,Megan,2,2656,0
-2026-09,septiembre 2026,Clavel,Bloque 7A,Zenit,1,1328,0
-2026-09,septiembre 2026,Clavel,Bloque 7A,Selva,2,2656,0
-2026-09,septiembre 2026,Clavel,Bloque 7A,Caronte,2,2728,0
-2026-09,septiembre 2026,Clavel,Bloque 7A,Virgilio,19,25080,4
-2026-09,septiembre 2026,Clavel,Bloque 7A,Daniko,42,55152,7
-2026-09,septiembre 2026,Clavel,Bloque 7A,Diamante,11,14384,0
-2026-09,septiembre 2026,Clavel,Bloque 7A,Montoya,13,18104,1
-2026-09,septiembre 2026,Clavel,Bloque 7B,Trueno,10,13168,507
-2026-09,septiembre 2026,Clavel,Bloque 7B,Virgilio,8,10520,885
-2026-09,septiembre 2026,Clavel,Bloque 7B,Zafiro,9,11752,24
-2026-09,septiembre 2026,Clavel,Bloque 7B,Metalica,2,2608,14
-2026-09,septiembre 2026,Clavel,Bloque 7B,Corvette,7,9072,100
-2026-09,septiembre 2026,Clavel,Bloque 7B,K259°,3,3864,354
-2026-09,septiembre 2026,Clavel,Bloque 7B,Novia,5,6440,26
-2026-09,septiembre 2026,Clavel,Bloque 7B,Chopin,1,1288,92
-2026-09,septiembre 2026,Clavel,Bloque 7B,Olympia,1,1288,27
-2026-09,septiembre 2026,Clavel,Bloque 7B,Royal Damascus,3,3856,24
-2026-09,septiembre 2026,Clavel,Bloque 7B,Caramel,4,5120,44
-2026-09,septiembre 2026,Clavel,Bloque 7B,Golem,7,8920,15
-2026-09,septiembre 2026,Clavel,Bloque 7B,Verona,9,11448,5
-2026-09,septiembre 2026,Clavel,Bloque 7B,Daniko,30,34392,2996
-2026-09,septiembre 2026,Clavel,Bloque 7B,Zeppelin,11,11120,57
-2026-09,septiembre 2026,Clavel,Bloque 7B,Caronte,5,5000,197
-2026-09,septiembre 2026,Clavel,Bloque 7B,Brut,6,5968,132
-2026-09,septiembre 2026,Clavel,Bloque 7B,Diletta,6,5904,132
-2026-09,septiembre 2026,Clavel,Bloque 7B,Prinz,16,15648,407

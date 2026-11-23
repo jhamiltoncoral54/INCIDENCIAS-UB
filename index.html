@@ -194,10 +194,24 @@
     <div class="cards" data-draw="mort-cards" data-source="mortalidad" style="margin-top: var(--cds-gap-md)"></div>
   </section>
 
+  <section id="mort-anual">
+    <h2>Mortalidad mes a mes</h2>
+    <p class="sub">General del cultivo en cada lectura mensual de 2026, frente a la meta del 2 %.</p>
+    <div data-draw="mort-anual" data-source="mortalidad"></div>
+  </section>
+
   <section id="mort-bloques">
     <h2>Mortalidad por bloque</h2>
-    <p class="sub">Plantas muertas sobre plantas sembradas de cada bloque. La línea punteada marca la mortalidad de todo el cultivo.</p>
+    <p class="sub">Plantas muertas sobre plantas sembradas de cada bloque. La línea punteada marca la meta del 2 %. Toca un bloque para ver sus camas.</p>
     <div class="hbar" data-draw="mort-hbar" data-source="mortalidad"></div>
+  </section>
+
+  <section id="mort-camas">
+    <h2>Camas más afectadas <span data-draw="mort-camas-tit">—</span></h2>
+    <p class="sub">Toca una barra de bloque para ver sus camas. Se listan las ocho con mayor mortalidad de la lectura.</p>
+    <div class="wrap">
+      <table class="t-left" data-draw="mort-camas" data-source="camas" aria-label="Camas con mayor mortalidad del bloque"></table>
+    </div>
   </section>
 
   <section id="mort-variedades">
@@ -212,8 +226,8 @@
       <table data-draw="mort-matriz" data-source="mortalidad" aria-label="Mortalidad por bloque y variedad"></table>
     </div>
     <div class="legend">
-      <span><span class="sw" style="background: color-mix(in srgb, var(--color-bad) 30%, transparent)"></span>5 % o más</span>
-      <span><span class="sw b"></span>Entre 1 % y 5 %</span>
+      <span><span class="sw" style="background: color-mix(in srgb, var(--color-bad) 30%, transparent)"></span>Sobre la meta de 2 %</span>
+      <span><span class="sw b"></span>Entre 1 % y 2 %</span>
       <span>Celda vacía: la variedad no está sembrada en ese bloque</span>
       <span>Última fila y última columna: totales ponderados por plantas sembradas</span>
     </div>
@@ -225,6 +239,6 @@
 <script src="d3.min.js"></script>
 <script src="dash.js"></script>
 <script src="ub.js"></script>
-<script>window.UB_cargar({ incidencia: 'datos.csv', mortalidad_src: 'mortalidad.csv' });</script>
+<script>window.UB_cargar({ incidencia: 'datos.csv', mortalidad_src: 'mortalidad.csv', camas_src: 'camas.csv' });</script>
 </body>
 </html>

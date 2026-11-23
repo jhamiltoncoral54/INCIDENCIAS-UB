@@ -11,7 +11,8 @@ Sitio estático. No necesita servidor ni compilación: son archivos planos.
 | `dash.js` | Carga el CSV y coordina cálculos y dibujos |
 | `d3.min.js` | Librería de gráficas (incluida, sin CDN) |
 | `datos.csv` | Incidencia por cultivo, semana, bloque y blanco (semanas 36 a 47 de 2026) |
-| `mortalidad.csv` | Mortalidad de clavel por bloque y variedad, lectura mensual (septiembre y octubre de 2026) |
+| `mortalidad.csv` | Mortalidad de clavel por bloque y variedad, lecturas mensuales de enero a octubre de 2026 |
+| `camas.csv` | Las ocho camas con mayor mortalidad de cada bloque en cada lectura |
 | `base.css` | Tipografía y colores |
 | `vercel.json` | Configuración mínima de despliegue |
 

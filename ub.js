@@ -444,7 +444,8 @@ window.UB_MORT = () => {
     variedades: agrupa('variedad').sort((a, b) => b.mortalidad - a.mortalidad) };
 };
 
-window.UB_MORT_COLOR = (v) => v >= 5 ? 'var(--cds-chart-status-critical)'
+window.UB_META_MORT = 2;
+window.UB_MORT_COLOR = (v) => v > window.UB_META_MORT ? 'var(--cds-chart-status-critical)'
   : v >= 1 ? 'color-mix(in srgb, var(--color-warn) 75%, var(--color-fg))' : dash.colors[0];
 
 dash.draw('sel-mes', (sel) => {
@@ -473,7 +474,7 @@ dash.draw('mort-lead', (el) => {
   const f = (v) => window.UB_FMT(v) + ' %';
   const n = (v) => v.toLocaleString('es-CO');
   const peor = m.bloques[0], pv = m.variedades.filter((v) => v.sembradas >= 2000)[0];
-  let t = 'Mortalidad del cultivo ' + window.UB_FMT2(m.total) + ' %: ' + n(m.muertas) + ' plantas muertas de ' + n(m.sembradas) + ' sembradas en ' + m.bloques.length + ' bloques.';
+  let t = 'Mortalidad del cultivo ' + window.UB_FMT2(m.total) + ' % (meta ' + window.UB_META_MORT + ' %): ' + n(m.muertas) + ' plantas muertas de ' + n(m.sembradas) + ' sembradas en ' + m.bloques.length + ' bloques.';
   if (peor) t += ' El bloque más afectado es el ' + peor.k.replace('Bloque ', '') + ' con ' + f(peor.mortalidad) + '.';
   if (pv) t += ' Entre las variedades de volumen, la más afectada es ' + pv.k + ' con ' + f(pv.mortalidad) + '.';
   el.textContent = t;
@@ -484,11 +485,11 @@ dash.draw('mort-cards', (el) => {
   el.replaceChildren();
   if (!m) { el.textContent = '—'; return; }
   const n = (v) => v.toLocaleString('es-CO');
-  const sobre = m.bloques.filter((b) => b.mortalidad >= 5).length;
+  const sobre = m.bloques.filter((b) => b.mortalidad > window.UB_META_MORT).length;
   const datos = [
     ['Mortalidad del cultivo', window.UB_FMT2(m.total) + ' %', n(m.muertas) + ' de ' + n(m.sembradas) + ' plantas'],
     ['Bloque más afectado', m.bloques[0] ? m.bloques[0].k.replace('Bloque ', '') : '—', m.bloques[0] ? window.UB_FMT(m.bloques[0].mortalidad) + ' %' : ''],
-    ['Bloques en 5 % o más', String(sobre), 'de ' + m.bloques.length + ' bloques'],
+    ['Bloques sobre la meta', String(sobre), 'de ' + m.bloques.length + ' bloques · meta ' + window.UB_META_MORT + ' %'],
     ['Variedades sembradas', String(m.variedades.length), n(d3.sum(m.rows, (r) => r.camas)) + ' camas']
   ];
   for (const [lbl, big, det] of datos) {
@@ -500,7 +501,7 @@ dash.draw('mort-cards', (el) => {
   }
 });
 
-window.UB_MORT_BARRAS = (el, items, etiqueta, general) => {
+window.UB_MORT_BARRAS = (el, items, etiqueta, general, alTocar) => {
   el.replaceChildren();
   if (!items.length) { el.textContent = 'Sin datos en esta lectura.'; return; }
   const f = (v) => window.UB_FMT(v) + ' %';
@@ -523,20 +524,25 @@ window.UB_MORT_BARRAS = (el, items, etiqueta, general) => {
     .attr('width', (r) => Math.max(0, x(r.mortalidad) - x(0))).style('fill', (r) => window.UB_MORT_COLOR(r.mortalidad));
   g.append('text').attr('x', (r) => x(r.mortalidad) + 8).attr('y', rowH / 2).attr('dy', '0.35em')
     .style('font-variant-numeric', 'tabular-nums').text((r) => f(r.mortalidad));
-  if (general != null) svg.append('line').attr('x1', x(general)).attr('x2', x(general)).attr('y1', 0).attr('y2', h)
-    .style('stroke', 'var(--color-fg)').style('stroke-dasharray', '4 3').style('stroke-width', 1.5);
+  if (general != null && x(general) != null) svg.append('line').attr('x1', x(general)).attr('x2', x(general)).attr('y1', 0).attr('y2', h)
+    .style('stroke', 'var(--color-bad)').style('stroke-dasharray', '4 3').style('stroke-width', 1.5);
   const tip = d3.select(el).append('div').attr('class', 'tip').style('display', 'none');
   g.append('rect').attr('width', W).attr('height', rowH).style('fill', 'transparent')
     .on('pointermove', (ev, r) => { const [px, py] = d3.pointer(ev, el);
       tip.style('display', null).style('left', Math.min(px + 12, el.clientWidth - 260) + 'px').style('top', (py + 12) + 'px')
         .text(r.etq + ': ' + f(r.mortalidad) + ' · ' + n(r.muertas) + ' de ' + n(r.sembradas) + ' plantas · ' + r.camas + ' camas'); })
-    .on('pointerleave', () => tip.style('display', 'none'));
+    .on('pointerleave', () => tip.style('display', 'none'))
+    .style('cursor', alTocar ? 'pointer' : null)
+    .on('click', (ev, r) => { if (alTocar) alTocar(r); });
+  if (alTocar) g.filter((r) => r.k === window.UB.mortBloque).select('rect')
+    .style('stroke', 'var(--color-fg)').style('stroke-width', 2);
 };
 
 dash.draw('mort-hbar', (el) => {
   const m = window.UB_MORT();
   if (!m) { el.textContent = dash.data('mortalidad').status === 'error' ? 'No se pudo cargar' : '—'; return; }
-  window.UB_MORT_BARRAS(el, m.bloques.map((b) => ({ ...b, etq: b.k.replace('Bloque ', 'Bl ') })), 'Mortalidad por bloque', m.total);
+  window.UB_MORT_BARRAS(el, m.bloques.map((b) => ({ ...b, etq: b.k.replace('Bloque ', 'Bl ') })), 'Mortalidad por bloque', window.UB_META_MORT,
+    (r) => { window.UB.mortBloque = r.k; window.UB_MORT_redraw(); });
 });
 
 dash.draw('mort-var', (el) => {
@@ -557,8 +563,8 @@ dash.draw('mort-matriz', (tbl) => {
   for (const v of vars) { const h = document.createElement('th'); h.textContent = v; th.append(h); }
   const hT = document.createElement('th'); hT.textContent = 'Bloque %'; hT.className = 'meta'; th.append(hT);
   const pinta = (td, v) => {
-    if (v >= 5) { td.classList.add('over'); td.style.background = 'color-mix(in srgb, var(--color-bad) 30%, transparent)'; }
-    else if (v >= 1) td.style.background = 'color-mix(in srgb, var(--color-warn) ' + Math.min(45, 8 + v * 5) + '%, transparent)';
+    if (v > window.UB_META_MORT) { td.classList.add('over'); td.style.background = 'color-mix(in srgb, var(--color-bad) 30%, transparent)'; }
+    else if (v >= 1) td.style.background = 'color-mix(in srgb, var(--color-warn) ' + Math.min(45, 8 + v * 12) + '%, transparent)';
   };
   const body = tbl.createTBody();
   for (const bl of bloques) {
@@ -580,4 +586,106 @@ dash.draw('mort-matriz', (tbl) => {
 });
 
 window.UB_MORT_LISTA = ['sel-mes', 'mort-fuente', 'mort-tit', 'mort-lead', 'mort-cards', 'mort-hbar', 'mort-var', 'mort-matriz'];
+window.UB_MORT_redraw = () => window.UB_MORT_LISTA.forEach((n) => dash.draw(n));
+
+/* ---------- Camas más afectadas y tendencia anual ---------- */
+
+dash.calc('camas', {
+  title: 'Camas con mayor mortalidad',
+  inputs: ['camas_src'],
+  fn: (src) => src.map((r) => {
+    const sem = +r.sembradas, mue = +r.muertas;
+    return { periodo: r.periodo, bloque: r.bloque, nave: r.nave, lado: r.lado, cama: r.cama,
+      variedad: r.variedad, sembradas: sem, muertas: mue,
+      mortalidad: sem ? Math.round(mue / sem * 10000) / 100 : 0 };
+  })
+});
+
+window.UB_MORT_CAMAS = () => {
+  const d = dash.data('camas');
+  const m = window.UB_MORT();
+  if (d.status !== 'ok' || !d.data || !m) return null;
+  const bloques = m.bloques.map((b) => b.k);
+  let bl = window.UB.mortBloque;
+  if (!bl || !bloques.includes(bl)) bl = m.bloques[0] ? m.bloques[0].k : null;
+  window.UB.mortBloque = bl;
+  const rows = d.data.filter((r) => r.periodo === window.UB.mes && r.bloque === bl)
+    .sort((a, b) => b.mortalidad - a.mortalidad);
+  return { bloque: bl, rows, nombre: m.nombre };
+};
+
+dash.draw('mort-camas-tit', (el) => {
+  const c = window.UB_MORT_CAMAS();
+  el.textContent = c ? '· ' + c.bloque + ' · ' + c.nombre : '—';
+});
+
+dash.draw('mort-camas', (tbl) => {
+  const c = window.UB_MORT_CAMAS();
+  tbl.replaceChildren();
+  if (!c) { tbl.createTBody().insertRow().insertCell().textContent = dash.data('camas').status === 'error' ? 'No se pudo cargar' : 'Cargando…'; return; }
+  const th = tbl.createTHead().insertRow();
+  for (const t of ['Cama', 'Nave', 'Lado', 'Variedad', 'Sembradas', 'Muertas', 'Mortalidad']) {
+    const h = document.createElement('th'); h.textContent = t; th.append(h);
+  }
+  const body = tbl.createTBody();
+  if (!c.rows.length) {
+    const td = body.insertRow().insertCell(); td.colSpan = 7;
+    td.textContent = 'Ninguna cama de este bloque registró plantas muertas en esta lectura.';
+    return;
+  }
+  const n = (v) => v.toLocaleString('es-CO');
+  for (const r of c.rows) {
+    const tr = body.insertRow();
+    tr.insertCell().textContent = r.cama;
+    tr.insertCell().textContent = r.nave;
+    tr.insertCell().textContent = r.lado;
+    tr.insertCell().textContent = r.variedad;
+    tr.insertCell().textContent = n(r.sembradas);
+    tr.insertCell().textContent = n(r.muertas);
+    const td = tr.insertCell(); td.textContent = window.UB_FMT(r.mortalidad) + ' %';
+    if (r.mortalidad > window.UB_META_MORT) { td.className = 'over'; td.style.background = 'color-mix(in srgb, var(--color-bad) 25%, transparent)'; }
+  }
+});
+
+dash.draw('mort-anual', (el) => {
+  const d = dash.data('mortalidad');
+  el.replaceChildren();
+  if (d.status !== 'ok' || !d.data) { el.textContent = d.status === 'error' ? 'No se pudo cargar' : '—'; return; }
+  const g = new Map();
+  for (const r of d.data) {
+    const o = g.get(r.periodo) || { periodo: r.periodo, nombre: r.periodo_nombre, s: 0, m: 0 };
+    o.s += r.sembradas; o.m += r.muertas; g.set(r.periodo, o);
+  }
+  const serie = [...g.values()].sort((a, b) => a.periodo.localeCompare(b.periodo))
+    .map((o) => ({ ...o, mortalidad: Math.round(o.m / o.s * 10000) / 100 }));
+  const meta = window.UB_META_MORT;
+  const W = Math.max(320, el.clientWidth), H = 220, mg = { t: 14, r: 14, b: 34, l: 40 };
+  const x = d3.scaleBand().domain(serie.map((r) => r.periodo)).range([mg.l, W - mg.r]).padding(0.25);
+  const y = d3.scaleLinear().domain([0, Math.max(meta * 1.5, d3.max(serie, (r) => r.mortalidad) || 0)]).nice().range([H - mg.b, mg.t]);
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('role', 'img').attr('aria-label', 'Mortalidad mensual del clavel en 2026 frente a la meta');
+  svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', mg.l).attr('x2', W - mg.r)
+    .attr('y1', (q) => y(q)).attr('y2', (q) => y(q)).style('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', mg.l - 6).attr('y', (q) => y(q))
+    .attr('dy', '0.35em').attr('text-anchor', 'end').text((q) => q + ' %');
+  svg.append('g').selectAll('rect').data(serie).join('rect')
+    .attr('x', (r) => x(r.periodo)).attr('width', x.bandwidth())
+    .attr('y', (r) => y(r.mortalidad)).attr('height', (r) => y(0) - y(r.mortalidad)).attr('rx', 2)
+    .style('fill', (r) => window.UB_MORT_COLOR(r.mortalidad))
+    .style('stroke', (r) => r.periodo === window.UB.mes ? 'var(--color-fg)' : 'none').style('stroke-width', 2)
+    .style('cursor', 'pointer')
+    .on('click', (ev, r) => { window.UB.mes = r.periodo; window.UB_MORT_redraw(); });
+  svg.append('line').attr('x1', mg.l).attr('x2', W - mg.r).attr('y1', y(meta)).attr('y2', y(meta))
+    .style('stroke', 'var(--color-bad)').style('stroke-dasharray', '4 3').style('stroke-width', 1.5);
+  svg.append('g').selectAll('text').data(serie).join('text')
+    .attr('x', (r) => x(r.periodo) + x.bandwidth() / 2).attr('y', (r) => y(r.mortalidad) - 5)
+    .attr('text-anchor', 'middle').style('font-variant-numeric', 'tabular-nums')
+    .text((r) => window.UB_FMT(r.mortalidad));
+  svg.append('g').selectAll('text').data(serie).join('text')
+    .attr('x', (r) => x(r.periodo) + x.bandwidth() / 2).attr('y', H - 10).attr('text-anchor', 'middle')
+    .style('font-weight', (r) => r.periodo === window.UB.mes ? 700 : 400)
+    .text((r) => r.nombre.slice(0, 3));
+});
+
+window.UB_MORT_LISTA = ['sel-mes', 'mort-fuente', 'mort-tit', 'mort-lead', 'mort-cards', 'mort-anual', 'mort-hbar', 'mort-camas-tit', 'mort-camas', 'mort-var', 'mort-matriz'];
 window.UB_MORT_redraw = () => window.UB_MORT_LISTA.forEach((n) => dash.draw(n));
