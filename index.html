@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reporte de incidencia por bloque · Finca UB</title>
+<link rel="stylesheet" href="base.css">
+<style>
+.ub { display: flex; flex-direction: column; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); }
+.ub h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.ub h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-sm); }
+.ub .sub { color: var(--color-fg-muted); margin: 0; }
+.ub .lead { margin: 0; max-width: 75ch; }
+.ub .bar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-md); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); }
+.ub .bar label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .03em; margin-right: 4px; }
+.ub .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: var(--cds-gap-md); }
+.ub .card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.ub .card .lbl { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .03em; }
+.ub .card .big { font-family: var(--font-anthropic-serif); font-size: 2rem; font-variant-numeric: tabular-nums; }
+.ub .card .big.over { color: var(--color-bad); }
+.ub .card .big.ok { color: var(--color-ok); }
+.ub .card .det { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ub .wrap { overflow-x: auto; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); }
+.ub table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: var(--cds-font-size-caption); }
+.ub th, .ub td { padding: 6px 8px; border-bottom: 1px solid var(--color-border-line); text-align: right; white-space: nowrap; }
+.ub th { background: var(--color-panel); font-weight: var(--cds-font-weight-medium); vertical-align: bottom; }
+.ub th.meta { border-bottom: 2px solid var(--color-bad); }
+.ub th .m { display: block; font-weight: 400; color: var(--color-fg-muted); }
+.ub th:first-child, .ub td:first-child { text-align: left; position: sticky; left: 0; background: var(--color-bg); }
+.ub thead th:first-child { background: var(--color-panel); }
+.ub td.over { color: var(--color-bad); font-weight: var(--cds-font-weight-medium); }
+.ub tr.total td { font-weight: var(--cds-font-weight-medium); border-top: 2px solid var(--color-fg-muted); }
+.ub tr.sel td { box-shadow: inset 0 0 0 9999px color-mix(in srgb, var(--color-fg) 6%, transparent); }
+.ub .legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-sm); }
+.ub .sw { display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: -3px; margin-right: 4px; }
+.ub .sw.a { background: color-mix(in srgb, var(--color-bad) 30%, transparent); }
+.ub .sw.b { background: color-mix(in srgb, var(--color-warn) 35%, transparent); }
+.ub .sw.c { background: var(--cds-chart-status-critical); }
+.ub .mk { display: inline-block; vertical-align: middle; margin-right: 4px; }
+.ub .mk.meta { width: 2px; height: 14px; background: var(--color-bad); }
+.ub .mk.prom { width: 9px; height: 9px; border-radius: 50%; border: 2px solid var(--color-fg); }
+.ub .ln { display: inline-block; width: 18px; height: 0; vertical-align: middle; margin-right: 4px; border-top: 2px solid; }
+.ub .ln.blq { border-color: var(--color-fg); border-top-width: 3px; }
+.ub .ln.fin { border-color: var(--color-fg-muted); }
+.ub .ln.met { border-top-style: dashed; border-color: var(--color-bad); }
+.ub .hbar { position: relative; min-height: 360px; }
+.ub .hbar text { font-size: 12px; fill: var(--color-fg); }
+.ub .hbar .axis text { fill: var(--cds-text-secondary); font-size: var(--cds-font-size-caption); }
+.ub .tip { position: absolute; pointer-events: none; z-index: 2; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: 6px 10px; font-size: var(--cds-font-size-caption); white-space: nowrap; }
+.ub .est { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); }
+.ub .est.sobre { background: color-mix(in srgb, var(--color-bad) 18%, transparent); color: var(--color-bad); }
+.ub .est.bajo { background: color-mix(in srgb, var(--color-ok) 18%, transparent); color: var(--color-ok); }
+.ub .est.sin { color: var(--color-fg-muted); }
+.ub .t-left td, .ub .t-left th { text-align: left; }
+.ub .t-left td:nth-child(2), .ub .t-left td:nth-child(3), .ub .t-left td:nth-child(4), .ub .t-left th:nth-child(2), .ub .t-left th:nth-child(3), .ub .t-left th:nth-child(4) { text-align: right; }
+.ub .tr-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--cds-gap-md); min-height: 220px; }
+.ub .tr-card { position: relative; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); }
+.ub .tr-card h3 { margin: 0 0 4px; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+.ub .tr-card .tr-v { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.ub .tr-card svg text { font-size: 11px; fill: var(--cds-text-secondary); }
+.ub .note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; }
+.ub .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--color-border-line); }
+.ub .tab { font: inherit; background: none; border: none; border-bottom: 2px solid transparent; padding: var(--cds-pad-sm) var(--cds-pad-md); color: var(--color-fg-muted); cursor: pointer; margin-bottom: -1px; }
+.ub .tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.ub .vista { display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.ub .vista[hidden] { display: none; }
+.ub #tendencia { border-top: 1px solid var(--color-border-line); padding-top: var(--cds-pad-lg); }
+@media print { .ub .tabs { display: none; } .ub #historico { break-before: page; } }
+@media print { .ub #matriz { break-before: page; } .ub .bar select { border: none; } }
+</style>
+</head>
+<body>
+<div class="page">
+<div class="ub">
+  <header>
+    <h1>Reporte de incidencia por bloque · Finca UB</h1>
+    <p class="sub">Monitoreo directo WiPest · % de incidencia · semana <span data-draw="sem-ult">—</span> de 2026 y tendencia de las semanas 36 a 47</p>
+  </header>
+
+  <div class="bar" id="filtros">
+    <span><label for="ub-cult">Cultivo</label>
+      <select id="ub-cult" class="dash-select" aria-label="Cultivo">
+        <option value="Clavel">Clavel</option>
+        <option value="Statice">Statice</option>
+        <option value="Sinensis">Sinensis</option>
+        <option value="Limonium">Limonium</option>
+      </select></span>
+    <span><label for="ub-sem">Semana</label>
+      <select id="ub-sem" class="dash-select" data-draw="sel-semana" aria-label="Semana"></select></span>
+    <span><label for="ub-blq">Bloque</label>
+      <select id="ub-blq" class="dash-select" data-draw="sel-bloque" aria-label="Bloque"></select></span>
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Vistas del reporte">
+    <button type="button" class="tab" role="tab" data-tab="vista-semana" aria-selected="true">Semana</button>
+    <button type="button" class="tab" role="tab" data-tab="historico" aria-selected="false">Histórico</button>
+  </nav>
+
+  <div id="vista-semana" class="vista">
+  <section id="bloque">
+    <h2 data-draw="tit-bloque">—</h2>
+    <p class="lead" data-draw="lead">—</p>
+    <p class="note" data-draw="nota-metas"></p>
+  </section>
+
+  <section id="metas-bloque">
+    <div class="cards" data-draw="cards" data-source="ultima"></div>
+  </section>
+
+  <section id="semana">
+    <h2>Incidencia del bloque en la semana elegida</h2>
+    <div class="hbar" data-draw="hbar" data-source="ultima"></div>
+    <div class="legend">
+      <span><span class="sw c"></span>Supera la meta</span>
+      <span><span class="mk meta"></span>Meta</span>
+      <span><span class="mk prom"></span>Promedio del cultivo</span>
+    </div>
+    <div class="wrap" style="margin-top: var(--cds-gap-md)">
+      <table class="t-left" data-source="ultima" data-row-key="semana,cultivo,bloque,blanco" aria-label="Estado del bloque por blanco biológico">
+        <thead><tr>
+          <th data-field="blanco">Blanco biológico</th>
+          <th data-field="incidencia">Bloque</th>
+          <th data-field="promedio_cultivo">Promedio cultivo</th>
+          <th data-field="meta">Meta</th>
+          <th data-field="estado">Estado</th>
+        </tr></thead>
+        <tbody data-draw="tabla-bloque"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="graf-bloques">
+    <h2>Incidencia por bloque · semana elegida</h2>
+    <p class="sub">Cada barra es un bloque del cultivo; la franja gris es el general de la finca (promedio de los bloques) y la línea roja punteada, la meta.</p>
+    <div class="tr-grid" data-draw="gb-charts" data-source="ultima"></div>
+    <div class="legend">
+      <span><span class="sw" style="background: var(--cds-chart-status-critical)"></span>Bloque sobre la meta</span>
+      <span><span class="sw" style="background: color-mix(in srgb, var(--color-fg) 18%, transparent)"></span>General finca</span>
+      <span><span class="ln met"></span>Meta</span>
+      <span>Barra con borde: bloque elegido</span>
+    </div>
+  </section>
+
+  <section id="tendencia">
+    <h2>Histórico por bloque <span data-draw="hist-tit">—</span></h2>
+    <p class="sub">Semanas 36 a 47: el bloque frente al general finca (promedio del cultivo) y la meta de cada blanco.</p>
+    <p class="lead" data-draw="tr-lead">—</p>
+    <div class="tr-grid" data-draw="tr-charts" data-source="tendencia"></div>
+    <div class="legend">
+      <span><span class="ln" style="border-color: var(--cds-chart-series-1, #2a6fdb); border-top-width: 3px"></span>Bloque elegido</span>
+      <span><span class="sw" style="background: color-mix(in srgb, var(--color-fg) 15%, transparent)"></span>General finca (promedio del cultivo)</span>
+      <span><span class="ln met"></span>Meta</span>
+      <span>Punto rojo: sobre la meta · punto vacío: semana sin monitoreo · franja gris: semana elegida</span>
+    </div>
+  </section>
+
+  <section id="matriz">
+    <h2>Todos los bloques del cultivo · semana elegida (%)</h2>
+    <div class="wrap">
+      <table data-draw="matriz" data-source="ultima" aria-label="Incidencia de todos los bloques del cultivo en la última semana"></table>
+    </div>
+    <div class="legend">
+      <span><span class="sw a"></span>Supera la meta</span>
+      <span><span class="sw b"></span>Sin meta: tono según incidencia</span>
+      <span>Última fila: promedio simple de los bloques monitoreados</span>
+    </div>
+  </section>
+  </div>
+
+  <div id="historico" class="vista" hidden>
+  <section id="hist-cultivo">
+    <h2>Histórico por producto <span data-draw="histc-tit">—</span></h2>
+    <p class="sub">General finca del producto: promedio de la incidencia de sus bloques, semana a semana (semanas 36 a 47), frente a la meta de cada blanco.</p>
+    <p class="lead" data-draw="trc-lead">—</p>
+    <div class="tr-grid" data-draw="trc-charts" data-source="tendencia"></div>
+    <div class="legend">
+      <span><span class="ln blq"></span>General finca (promedio de bloques)</span>
+      <span><span class="ln met"></span>Meta</span>
+      <span>Punto rojo: sobre la meta · franja gris: semana elegida</span>
+    </div>
+  </section>
+  </div>
+</div>
+</div>
+
+<script src="d3.min.js"></script>
+<script src="dash.js"></script>
+<script src="ub.js"></script>
+<script>window.UB_cargar('datos.csv');</script>
+</body>
+</html>
