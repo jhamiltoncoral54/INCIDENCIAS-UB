@@ -3,8 +3,16 @@
   "cleanUrls": true,
   "headers": [
     {
-      "source": "/(d3.min.js|datos.csv)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+      "source": "/datos.csv",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/(index.html|ub.js|dash.js|base.css)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/d3.min.js",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, immutable" }]
     }
   ]
 }
