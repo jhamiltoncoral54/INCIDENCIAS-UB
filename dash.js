@@ -46,7 +46,7 @@
 
   window.UB_cargar = async function (url) {
     try {
-      datasets.incidencia = { status: 'ok', data: await d3.csv(url) };
+      datasets.incidencia = { status: 'ok', data: await d3.csv(url, { cache: 'no-cache' }) };
     } catch (e) {
       console.error('no se pudo cargar ' + url, e);
       datasets.incidencia = { status: 'error', data: null };
