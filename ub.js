@@ -799,3 +799,111 @@ document.querySelectorAll('#ub-edad').forEach((sel) => {
 
 window.UB_MORT_LISTA = ['sel-mes', 'mort-fuente', 'mort-tit', 'mort-lead', 'mort-cards', 'mort-anual', 'mort-hbar', 'mort-camas-tit', 'mort-camas', 'edad-lead', 'edad-charts', 'mort-var', 'mort-matriz'];
 window.UB_MORT_redraw = () => window.UB_MORT_LISTA.forEach((n) => dash.draw(n));
+
+/* ---------- Consolidado de plantas muertas ---------- */
+
+dash.calc('camas_oct', {
+  title: 'Plantas muertas por cama, octubre 2026',
+  inputs: ['camas_oct_src'],
+  fn: (src) => src.map((r) => {
+    const sem = +r.sembradas, mue = +r.muertas;
+    return { bloque: r.bloque, nave: r.nave, lado: r.lado, cama: r.cama, variedad: r.variedad,
+      sembradas: sem, muertas: mue, mortalidad: sem ? Math.round(mue / sem * 10000) / 100 : 0 };
+  })
+});
+
+window.UB_CONS = () => {
+  const m = window.UB_MORT();
+  if (!m) return null;
+  const pct = (mu, s) => s ? Math.round(mu / s * 10000) / 100 : 0;
+  const g = new Map();
+  for (const r of m.rows) {
+    const o = g.get(r.variedad) || { variedad: r.variedad, bloques: new Set(), camas: 0, sembradas: 0, muertas: 0 };
+    o.bloques.add(r.bloque); o.camas += r.camas; o.sembradas += r.sembradas; o.muertas += r.muertas;
+    g.set(r.variedad, o);
+  }
+  const variedades = [...g.values()].map((o) => ({ ...o, nBloques: o.bloques.size, mortalidad: pct(o.muertas, o.sembradas) }))
+    .sort((a, b) => b.muertas - a.muertas);
+  const porBloque = m.rows.map((r) => ({ ...r })).sort((a, b) => a.bloque.localeCompare(b.bloque) || b.muertas - a.muertas);
+  return { nombre: m.nombre, variedades, porBloque, total: m.muertas, sembradas: m.sembradas };
+};
+
+const UB_tabla = (tbl, cabeceras, filas, pinta) => {
+  tbl.replaceChildren();
+  const th = tbl.createTHead().insertRow();
+  for (const t of cabeceras) { const h = document.createElement('th'); h.textContent = t; th.append(h); }
+  const body = tbl.createTBody();
+  for (const f of filas) {
+    const tr = body.insertRow();
+    if (f.clase) tr.className = f.clase;
+    f.celdas.forEach((v, i) => {
+      const td = tr.insertCell();
+      td.textContent = v;
+      if (pinta) pinta(td, f, i);
+    });
+  }
+};
+
+dash.draw('cons-tit', (el) => { const c = window.UB_CONS(); el.textContent = c ? '· ' + c.nombre : '—'; });
+dash.draw('consc-tit', (el) => {
+  const c = window.UB_MORT_CAMAS();
+  el.textContent = c ? '· ' + c.bloque : '—';
+});
+
+dash.draw('cons-lead', (el) => {
+  const c = window.UB_CONS();
+  el.classList.toggle('dash-skeleton', dash.data('mortalidad').status === 'loading');
+  if (!c) { el.textContent = '—'; return; }
+  const n = (v) => v.toLocaleString('es-CO');
+  const top = c.variedades.slice(0, 3);
+  const suma = d3.sum(top, (v) => v.muertas);
+  el.textContent = n(c.total) + ' plantas muertas en total. Las tres variedades que más aportan son '
+    + top.map((v) => v.variedad + ' con ' + n(v.muertas)).join(', ')
+    + ', que juntas son ' + Math.round(suma / c.total * 100) + ' % de las muertas del cultivo.';
+});
+
+dash.draw('cons-variedad', (tbl) => {
+  const c = window.UB_CONS();
+  if (!c) { tbl.replaceChildren(); tbl.createTBody().insertRow().insertCell().textContent = 'Cargando…'; return; }
+  const n = (v) => v.toLocaleString('es-CO');
+  const filas = c.variedades.map((v) => ({ mort: v.mortalidad,
+    celdas: [v.variedad, String(v.nBloques), n(v.camas), n(v.sembradas), n(v.muertas), window.UB_FMT(v.mortalidad) + ' %'] }));
+  filas.push({ clase: 'total', mort: null,
+    celdas: ['TOTAL', '', n(d3.sum(c.variedades, (v) => v.camas)), n(c.sembradas), n(c.total),
+      window.UB_FMT2(c.total / c.sembradas * 100) + ' %'] });
+  UB_tabla(tbl, ['Variedad', 'Bloques', 'Camas', 'Plantas sembradas', 'Plantas muertas', 'Mortalidad'], filas,
+    (td, f, i) => { if (i === 5 && f.mort != null && f.mort > window.UB_META_MORT) { td.className = 'over'; } });
+});
+
+dash.draw('cons-varbloque', (tbl) => {
+  const c = window.UB_CONS();
+  if (!c) { tbl.replaceChildren(); tbl.createTBody().insertRow().insertCell().textContent = 'Cargando…'; return; }
+  const n = (v) => v.toLocaleString('es-CO');
+  const filas = c.porBloque.filter((r) => r.muertas > 0).map((r) => ({ mort: r.mortalidad,
+    celdas: [r.bloque, r.variedad, n(r.camas), n(r.sembradas), n(r.muertas), window.UB_FMT(r.mortalidad) + ' %'] }));
+  UB_tabla(tbl, ['Bloque', 'Variedad', 'Camas', 'Plantas sembradas', 'Plantas muertas', 'Mortalidad'], filas,
+    (td, f, i) => { if (i === 5 && f.mort > window.UB_META_MORT) { td.className = 'over'; } });
+});
+
+dash.draw('cons-camas', (tbl) => {
+  const d = dash.data('camas_oct');
+  const c = window.UB_MORT_CAMAS();
+  if (d.status !== 'ok' || !d.data || !c) { tbl.replaceChildren(); tbl.createTBody().insertRow().insertCell().textContent = d.status === 'error' ? 'No se pudo cargar' : 'Cargando…'; return; }
+  const n = (v) => v.toLocaleString('es-CO');
+  const rows = d.data.filter((r) => r.bloque === c.bloque).sort((a, b) => b.muertas - a.muertas);
+  if (!rows.length) {
+    tbl.replaceChildren();
+    const td = tbl.createTBody().insertRow().insertCell();
+    td.textContent = 'Este bloque no registró plantas muertas en octubre de 2026.';
+    return;
+  }
+  const filas = rows.map((r) => ({ mort: r.mortalidad,
+    celdas: [r.cama, r.nave, r.lado, r.variedad, n(r.sembradas), n(r.muertas), window.UB_FMT(r.mortalidad) + ' %'] }));
+  filas.push({ clase: 'total', mort: null,
+    celdas: ['TOTAL', '', '', String(rows.length) + ' camas', n(d3.sum(rows, (r) => r.sembradas)), n(d3.sum(rows, (r) => r.muertas)), ''] });
+  UB_tabla(tbl, ['Cama', 'Nave', 'Lado', 'Variedad', 'Plantas sembradas', 'Plantas muertas', 'Mortalidad'], filas,
+    (td, f, i) => { if (i === 6 && f.mort != null && f.mort > window.UB_META_MORT) { td.className = 'over'; } });
+});
+
+window.UB_MORT_LISTA = ['sel-mes', 'mort-fuente', 'mort-tit', 'mort-lead', 'mort-cards', 'mort-anual', 'mort-hbar', 'mort-camas-tit', 'mort-camas', 'cons-tit', 'cons-lead', 'cons-variedad', 'cons-varbloque', 'consc-tit', 'cons-camas', 'edad-lead', 'edad-charts', 'mort-var', 'mort-matriz'];
+window.UB_MORT_redraw = () => window.UB_MORT_LISTA.forEach((n) => dash.draw(n));

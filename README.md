@@ -14,6 +14,7 @@ Sitio estático. No necesita servidor ni compilación: son archivos planos.
 | `mortalidad.csv` | Mortalidad de clavel por bloque y variedad, lecturas mensuales de enero a octubre de 2026 |
 | `camas.csv` | Las ocho camas con mayor mortalidad de cada bloque en cada lectura |
 | `edad.csv` | Mortalidad por edad del cultivo (semanas desde siembra o poda) y bloque |
+| `camas_oct.csv` | Las 669 camas con plantas muertas de la lectura de octubre de 2026 |
 | `base.css` | Tipografía y colores |
 | `vercel.json` | Configuración mínima de despliegue |
 

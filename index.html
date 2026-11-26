@@ -221,6 +221,26 @@
     </div>
   </section>
 
+  <section id="mort-consolidado">
+    <h2>Consolidado de plantas muertas <span data-draw="cons-tit">—</span></h2>
+    <p class="sub">Número de plantas muertas, no porcentaje. Primero por variedad en toda la finca, después por variedad dentro de cada bloque.</p>
+    <p class="lead" data-draw="cons-lead">—</p>
+    <div class="wrap" style="margin-bottom: var(--cds-gap-md)">
+      <table class="t-left" data-draw="cons-variedad" data-source="mortalidad" aria-label="Plantas muertas por variedad"></table>
+    </div>
+    <div class="wrap">
+      <table class="t-left" data-draw="cons-varbloque" data-source="mortalidad" aria-label="Plantas muertas por variedad y bloque"></table>
+    </div>
+  </section>
+
+  <section id="mort-camas-todas">
+    <h2>Plantas muertas por cama <span data-draw="consc-tit">—</span></h2>
+    <p class="sub">Todas las camas del bloque elegido que registraron plantas muertas en octubre de 2026. Toca un bloque en la gráfica de arriba para cambiarlo.</p>
+    <div class="wrap">
+      <table class="t-left" data-draw="cons-camas" data-source="camas_oct" aria-label="Plantas muertas por cama"></table>
+    </div>
+  </section>
+
   <section id="mort-edad">
     <h2>Rango de edad y mortalidad, por bloque</h2>
     <p class="sub">Edad del cultivo desde la siembra o poda, hasta 72 semanas, frente al porcentaje de mortalidad acumulada. Reúne las diez lecturas mensuales de 2026, así que muestra a qué edad empieza a morir el cultivo en cada bloque.</p>
@@ -258,6 +278,6 @@
 <script src="d3.min.js"></script>
 <script src="dash.js"></script>
 <script src="ub.js"></script>
-<script>window.UB_cargar({ incidencia: 'datos.csv', mortalidad_src: 'mortalidad.csv', camas_src: 'camas.csv', edad_src: 'edad.csv' });</script>
+<script>window.UB_cargar({ incidencia: 'datos.csv', mortalidad_src: 'mortalidad.csv', camas_src: 'camas.csv', edad_src: 'edad.csv', camas_oct_src: 'camas_oct.csv' });</script>
 </body>
 </html>
