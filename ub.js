@@ -5,6 +5,16 @@ window.UB_METAS = {
   Sinensis: { 'ACAROS': 8, 'BABOSA DAÑO Y/O PRESENCIA': 4, 'TRIPS ADULTO': 8, 'TRIPS LARVA': 5, 'BOTRYTIS FLOR': 3 }
 };
 window.UB_CORTO = { 'ACAROS':'Ácaros','AFIDOS':'Áfidos','BABOSA DAÑO Y/O PRESENCIA':'Babosa','BOTRYTIS BASAL (CORONA)':'Botrytis basal (corona)','BOTRYTIS FLOR':'Botrytis flor','CHARCOS':'Charcos','FLOR ABIERTA':'Flor abierta','FUSARIUM OXYSPORUM':'F. oxysporum','FUSARIUM ROSEUM':'F. roseum','HETEROSPORIUM':'Heterosporium','LEPIDOPTERA DAÑO':'Lepidóptera daño','MALEZAS':'Malezas','MILDEO VELLOSO':'Mildeo velloso','PARCHES':'Parches','PUDRICION FLOR':'Pudrición flor','TRIPS BROTE':'Trips brote','TRIPS FLOR':'Trips flor','TRIPS ADULTO':'Trips adulto','TRIPS LARVA':'Trips larva','TRIPS DAÑO':'Trips daño','MILDEO POLVOSO':'Mildeo polvoso','PUDRICION BASAL':'Bacteria basal','PUDRICION FOLLAJE':'Bacteria follaje','BACTERIA':'Bacteria','FUNGUS GNAT':'Fungus gnat','GOTERAS':'Goteras','VIRUS':'Virus','MANCHAS CLOROTICAS FOLIARES':'Mancha clorótica','TALLO VELLOSO':'Tallo velloso','LEPIDOPTERA LARVA':'Lepidóptera larva','LEPIDOPTERA POSTURA':'Lepidóptera postura','FITOTOXICIDAD':'Fitotoxicidad','MINADOR LARVA':'Minador larva' };
+window.UB_ORDEN_BLOQUE = (b) => {
+  const t = String(b).replace('Bloque ', '').trim();
+  const m = t.match(/^(\d+)([A-Za-z]*)$/);
+  if (!m) return [999, t];
+  return [+m[1], m[2].toUpperCase()];
+};
+window.UB_CMP_BLOQUE = (a, b) => {
+  const x = window.UB_ORDEN_BLOQUE(a), y = window.UB_ORDEN_BLOQUE(b);
+  return x[0] - y[0] || String(x[1]).localeCompare(String(y[1]));
+};
 window.UB_NOMBRE = (b) => window.UB_CORTO[b] || (b.charAt(0) + b.slice(1).toLowerCase());
 window.UB = window.UB || { cultivo: 'Clavel', bloque: null };
 window.UB_FMT = (v) => v == null ? '—' : (+v).toLocaleString('es-CO', { maximumFractionDigits: 1 });
@@ -56,7 +66,7 @@ window.UB_ctx = () => {
   const semanas = [...new Set(u.data.map((r) => r.semana))].sort((a, b) => b - a);
   if (!st.semana || !semanas.includes(st.semana)) st.semana = semanas[0];
   const rowsC = u.data.filter((r) => r.cultivo === st.cultivo && r.semana === st.semana);
-  const bloques = [...new Set(rowsC.map((r) => r.bloque))].sort();
+  const bloques = [...new Set(rowsC.map((r) => r.bloque))].sort(window.UB_CMP_BLOQUE);
   if (!st.bloque || !bloques.includes(st.bloque)) st.bloque = bloques[0] || null;
   const metas = window.UB_METAS[st.cultivo] || {};
   const tieneMetas = Object.keys(metas).length > 0;
@@ -555,7 +565,7 @@ dash.draw('mort-matriz', (tbl) => {
   const m = window.UB_MORT();
   tbl.replaceChildren();
   if (!m) { tbl.createTBody().insertRow().insertCell().textContent = dash.data('mortalidad').status === 'error' ? 'No se pudo cargar' : 'Cargando…'; return; }
-  const bloques = [...new Set(m.rows.map((r) => r.bloque))].sort();
+  const bloques = [...new Set(m.rows.map((r) => r.bloque))].sort(window.UB_CMP_BLOQUE);
   const vars = m.variedades.map((v) => v.k);
   const celda = new Map(m.rows.map((r) => [r.bloque + '|' + r.variedad, r]));
   const th = tbl.createTHead().insertRow();
@@ -715,7 +725,7 @@ window.UB_EDAD = () => {
         out.push({ ini: 73, fin: 999, etq: '73+' });
         return out;
       })();
-  const bloques = [...new Set(d.data.map((r) => r.bloque))].sort();
+  const bloques = [...new Set(d.data.map((r) => r.bloque))].sort(window.UB_CMP_BLOQUE);
   const por = bloques.map((bl) => {
     const filas = d.data.filter((r) => r.bloque === bl);
     const serie = rangos.map((g) => {
@@ -824,7 +834,7 @@ window.UB_CONS = () => {
   }
   const variedades = [...g.values()].map((o) => ({ ...o, nBloques: o.bloques.size, mortalidad: pct(o.muertas, o.sembradas) }))
     .sort((a, b) => b.muertas - a.muertas);
-  const porBloque = m.rows.map((r) => ({ ...r })).sort((a, b) => a.bloque.localeCompare(b.bloque) || b.muertas - a.muertas);
+  const porBloque = m.rows.map((r) => ({ ...r })).sort((a, b) => window.UB_CMP_BLOQUE(a.bloque, b.bloque) || b.muertas - a.muertas);
   return { nombre: m.nombre, variedades, porBloque, total: m.muertas, sembradas: m.sembradas };
 };
 
