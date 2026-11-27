@@ -917,3 +917,10 @@ dash.draw('cons-camas', (tbl) => {
 
 window.UB_MORT_LISTA = ['sel-mes', 'mort-fuente', 'mort-tit', 'mort-lead', 'mort-cards', 'mort-anual', 'mort-hbar', 'mort-camas-tit', 'mort-camas', 'cons-tit', 'cons-lead', 'cons-variedad', 'cons-varbloque', 'consc-tit', 'cons-camas', 'edad-lead', 'edad-charts', 'mort-var', 'mort-matriz'];
 window.UB_MORT_redraw = () => window.UB_MORT_LISTA.forEach((n) => dash.draw(n));
+
+dash.draw('rango-sem', (el) => {
+  const c = window.UB_ctx();
+  if (!c || !c.semanas.length) { el.textContent = '—'; return; }
+  const s = [...c.semanas].sort((a, b) => a - b);
+  el.textContent = s[0] + ' a ' + s[s.length - 1];
+});
